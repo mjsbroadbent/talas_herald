@@ -189,19 +189,34 @@ class Claude:
         ]
 
     def call(self, model: str, tool: dict, user: str, max_tokens: int) -> dict:
+        import anthropic
+        forced = model not in getattr(self, "no_forced", set())
         for attempt in range(3):
             try:
-                resp = self.client.messages.create(model=model, max_tokens=max_tokens, system=self.system, tools=[tool],
-                                                   tool_choice={"type": "tool", "name": tool["name"]},
-                                                   messages=[{"role": "user", "content": user}])
+                kw = dict(model=model, max_tokens=max_tokens, system=self.system, tools=[tool])
+                if forced:
+                    resp = self.client.messages.create(**kw, tool_choice={"type": "tool", "name": tool["name"]},
+                                                       messages=[{"role": "user", "content": user}])
+                else:
+                    resp = self.client.messages.create(**kw, tool_choice={"type": "auto"}, messages=[{"role": "user", "content":
+                        user + f"\n\nRespond only by calling the {tool['name']} tool, exactly once."}])
                 u = resp.usage
                 log(f"    [{model}] in={u.input_tokens} cache_read={getattr(u, 'cache_read_input_tokens', 0)} "
                     f"cache_write={getattr(u, 'cache_creation_input_tokens', 0)} out={u.output_tokens}")
                 for b in resp.content:
                     if b.type == "tool_use":
                         return b.input
+                log(f"    no tool call (stop_reason={resp.stop_reason}), retrying")
+            except anthropic.BadRequestError as exc:
+                msg = str(exc)
+                print(f"::warning::{model}: {msg[:300]}", flush=True)
+                if "tool_choice" in msg and forced:
+                    self.no_forced = getattr(self, "no_forced", set()) | {model}
+                    forced = False
+                    continue
+                raise RuntimeError(f"{model} refused the request: {msg[:300]}")
             except Exception as exc:
-                log(f"    call failed ({exc.__class__.__name__}: {str(exc)[:200]}), retrying")
+                print(f"::warning::{model}: {exc.__class__.__name__}: {str(exc)[:300]}", flush=True)
                 time.sleep(5 * (attempt + 1))
         raise RuntimeError("Claude call failed three times")
 
