@@ -137,6 +137,15 @@ def load_state() -> dict:
     return {"memories": {}, "runs": 0, "last_run": None}
 
 
+def recent_activity(mem_state: dict, today: dt.date) -> dict:
+    act = mem_state.setdefault("activity", {"welcomed": [], "answered": [], "bumped": {}})
+    cutoff = (today - dt.timedelta(days=3)).isoformat()
+    act["bumped"] = {k: v for k, v in act["bumped"].items() if v >= cutoff}
+    act["welcomed"] = act["welcomed"][-200:]
+    act["answered"] = act["answered"][-500:]
+    return act
+
+
 # ---------------------------------------------------------------- Claude
 
 PLAN_TOOL = {
@@ -331,7 +340,8 @@ def thread_digest(t: dict) -> str:
 
 
 def plan_and_write(claude: Claude, state: dict, stories: list[dict], memory: dict, chars: dict,
-                   day_start: dt.datetime, mock: bool) -> tuple[list[dict], dict]:
+                   day_start: dt.datetime, mock: bool, act: dict | None = None) -> tuple[list[dict], dict]:
+    act = act if act is not None else {"welcomed": [], "answered": [], "bumped": {}}
     settings = state["settings"]
     per_day, real_cap = settings["per_day"], settings["real_replies"]
     members = [m for m in state["members"] if m in chars and m not in FCONFIG["excluded_members"]
@@ -347,8 +357,9 @@ def plan_and_write(claude: Claude, state: dict, stories: list[dict], memory: dic
     story_txt = "\n".join(f"* [{s['outlet']}, {s['section']}, {s['published']}] {s['headline']}: {s['dek']}" for s in stories) or "(no new stories today)"
     thread_txt = "\n\n".join(thread_digest(t) for t in threads[:40])
     real_txt = "\n".join(f"* post {p['post_id']} by {p['user']} in thread #{p['thread_id']} \"{p['thread']}\": {p['text'][:400]}"
-                         for p in state.get("real_posts", [])) or "(none)"
-    newcomers = ", ".join(state.get("newcomers", [])) or "(none)"
+                         for p in state.get("real_posts", []) if p["post_id"] not in act["answered"]) or "(none)"
+    newcomers = ", ".join(n for n in state.get("newcomers", []) if n not in act["welcomed"]) or "(none)"
+    bumped = ", ".join(f"#{k}" for k in act["bumped"]) or "(none)"
     boards = ", ".join(b["name"] for b in state["boards"] if not b["locked"])
 
     user = (f"Today is {today:%A %d %B %Y} (Irad Time). Plan the next 24 hours on FREEFORUM: about {per_day} posts in total, "
@@ -360,6 +371,7 @@ def plan_and_write(claude: Claude, state: dict, stories: list[dict], memory: dic
             "regulars, sometimes an occasional poster. Never the same member twice in a row in one event unless it's a joke.\n\n"
             f"Boards: {boards}\n\nToday's stories:\n{story_txt}\n\nActive threads (recent posts):\n{thread_txt}\n\n"
             f"Recent posts by real members:\n{real_txt}\n\nNew real members to welcome: {newcomers}\n\n"
+            f"Threads the regulars already bumped in the last three days (leave them alone unless today's news is about them): {bumped}\n\n"
             f"Members who can post:\n{roster}")
     plan = mock_plan(state, stories, per_day, members) if mock else claude.call(FCONFIG["planner_model"], PLAN_TOOL, user, 4000)
 
@@ -376,9 +388,15 @@ def plan_and_write(claude: Claude, state: dict, stories: list[dict], memory: dic
             break
         kind = ev.get("type")
         if kind == "real_reply":
-            if real_used >= real_cap:
+            if real_used >= real_cap or ev.get("real_post_id") in act["answered"]:
                 continue
             real_used += 1
+        if kind == "welcome":
+            if not [n for n in state.get("newcomers", []) if n not in act["welcomed"]]:
+                continue
+        if kind == "reply" and str(ev.get("thread_id")) in act["bumped"] and not ev.get("story"):
+            log(f"  skip event {n}: thread #{ev.get('thread_id')} was bumped recently")
+            continue
         if kind != "new_thread" and ev.get("thread_id") not in by_id:
             log(f"  skip event {n}: unknown thread {ev.get('thread_id')}")
             continue
@@ -436,6 +454,13 @@ def plan_and_write(claude: Claude, state: dict, stories: list[dict], memory: dic
                     item["quote_post_id"] = ev.get("real_post_id", 0)
             items.append(item)
         total += len(good)
+        if kind != "new_thread":
+            act["bumped"][str(ev["thread_id"])] = today.isoformat()
+        if kind == "real_reply":
+            act["answered"].append(ev.get("real_post_id"))
+        if kind == "welcome":
+            act["welcomed"] += [n for n in state.get("newcomers", []) if n not in act["welcomed"]
+                                and (n.lower() in " ".join(p["body"].lower() for p in good) or len(state.get("newcomers", [])) == 1)]
         for m in as_list(out.get("memory")):
             if m.get("user") in members and m.get("note"):
                 new_mem.setdefault(m["user"], []).append({"date": today.isoformat(), "note": m["note"][:200]})
@@ -495,7 +520,8 @@ def cmd_run(args) -> None:
     log(f"{len(stories)} stories, {len(st['threads'])} threads, {len(st.get('real_posts', []))} real posts, "
         f"{len(st.get('newcomers', []))} newcomers, target {st['settings']['per_day']} posts")
     claude = Claude(args.mock, chars_md)
-    items, new_mem = plan_and_write(claude, st, stories, mem_state["memories"], chars, start, args.mock)
+    act = recent_activity(mem_state, start.astimezone(IRT).date())
+    items, new_mem = plan_and_write(claude, st, stories, mem_state["memories"], chars, start, args.mock, act)
     if not items:
         log("Nothing written.")
         return
@@ -519,14 +545,16 @@ def cmd_preview(args) -> None:
     chars_md = characters_text()
     chars = parse_characters(chars_md)
     claude = Claude(args.mock, chars_md)
-    memory = json.loads(json.dumps(load_state()["memories"]))
+    sim = json.loads(json.dumps(load_state()))
+    memory = sim["memories"]
     out = ["# FREEFORUM live regulars: preview", "",
            f"Written {now:%Y-%m-%d %H:%M} UTC. A simulation of {args.days} days using the stories of the last {args.days} days, "
            f"{st['settings']['per_day']} posts a day. Nothing here was posted to the forum.", ""]
     for d in range(args.days, 0, -1):
         day_end = now - dt.timedelta(days=d - 1)
         stories = recent_stories(24, day_end, until=day_end)
-        items, new_mem = plan_and_write(claude, st, stories, memory, chars, day_end, args.mock)
+        act = recent_activity(sim, day_end.astimezone(IRT).date())
+        items, new_mem = plan_and_write(claude, st, stories, memory, chars, day_end, args.mock, act)
         merge_memory(memory, new_mem)
         out.append(f"## Day ending {day_end.astimezone(IRT):%a %d %b %Y} ({len(stories)} stories, {len(items)} posts)\n")
         titles = {}
