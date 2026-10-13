@@ -1,0 +1,80 @@
+name: FREEFORUM live regulars
+
+on:
+  schedule:
+    # Every day at 07:17 Irad Time (UTC+6): queue the next 24 hours of forum posts.
+    - cron: "17 1 * * *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "run = queue the next day on the forum; preview = write a simulated week to _work/forum_preview.md"
+        type: choice
+        options: [preview, run]
+        default: preview
+      days:
+        description: "Preview length in days"
+        default: "7"
+      force:
+        description: "Run even if a day is already queued"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: forum
+  cancel-in-progress: false
+
+jobs:
+  forum:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check out the Irad lore
+        uses: actions/checkout@v4
+        with:
+          repository: mjsbroadbent/irad_persona_skill
+          path: _lore
+          sparse-checkout: |
+            quickref.md
+            canon.md
+            freeforum/CHARACTERS.md
+          sparse-checkout-cone-mode: false
+
+      - run: pip install -r newsroom/requirements.txt
+
+      - name: Write the forum
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FORUM_LIVE_KEY: ${{ secrets.FORUM_LIVE_KEY }}
+          LORE_DIR: _lore
+        run: |
+          if [ -z "$FORUM_LIVE_KEY" ]; then
+            echo "::error::Add a FORUM_LIVE_KEY repository secret (the same as live_key in freeirad-secrets.php)."
+            exit 1
+          fi
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.mode }}" = "preview" ]; then
+            python newsroom/forum.py preview --days "${{ inputs.days }}"
+          else
+            ARGS=""
+            [ "${{ inputs.force }}" = "true" ] && ARGS="--force"
+            python newsroom/forum.py run $ARGS
+          fi
+
+      - name: Save
+        if: always()
+        run: |
+          git config user.name "Talas Herald Newsroom"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add newsroom/forum_state.json _work/forum_preview.md 2>/dev/null || true
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Forum: $(date -u +'%Y-%m-%d %H:%M') UTC"
+          git pull --rebase --autostash origin main
+          git push
