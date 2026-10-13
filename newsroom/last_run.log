@@ -1,0 +1,20 @@
+Talas Herald newsroom run, 2026-10-13 14:17 IRT
+Plan: 2 stories
+Fetching feeds
+  Kabar: 50 items
+  RFE/RL Kyrgyzstan: 6 items
+  The Times of Central Asia: 10 items
+  Gazeta.uz: 20 items
+  RFE/RL Kazakhstan: 7 items
+  RFE/RL Uzbekistan: 6 items
+  IradOne: 11 stories
+40 fresh candidates, 3 also on IradOne
+    [claude-haiku-5-5] in=5841 cache_read=0 cache_write=47871 out=330
+Triage picked 3: [{"id": 3, "treatment": "domestic", "section": "Across Irad", "angle": "A customs roadmap for 2027–2028 between Irad's neighbours sets out who will pay for faster trucking across the line, and what Trans-Chuy drivers and Bazar-i Kalan traders will notice first."}, {"id": 33, "treatment": "domestic", "section": "Business", "angle": "Thirteen new small plants in a district creating 138 jobs: the Herald asks how many are full-time, who funds the small hydro stations, and what the district's jobs figures actually count."}, {"id": 39, "treatment": "domestic", "section": "Sport", "angle": "Mountain-tourism safety talks in Astana prompt a look at rescue cover in the Talas Alatau and Chatkal, where the ATR clan wardens and the Gendarmerie share the call-out work."}]
+Writing: Kyrgyzstan, Uzbekistan to expand customs cooperation  [domestic, Across Irad]
+    [claude-sonnet-5-5] in=1585 cache_read=0 cache_write=48226 out=3515
+  published: Customs roadmap with Kazakhstan puts scanner costs on ISEZ budget and carriers  (Erkin Bolot uulu)
+Writing: 13 industrial enterprises opened and 138 jobs created in Kyrgyzstan's Kadamjai  [domestic, Business]
+    [claude-sonnet-5-5] in=1684 cache_read=48226 cache_write=0 out=3788
+  published: Sary-Bulak's 13 new plants create 138 jobs, but only 91 are year-round  (Olga Fedorenko)
+Done: 2 new pieces, 0 failed calls
