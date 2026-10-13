@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}">
+  <link rel="canonical" href="{{canonical}}">
+  <meta property="og:site_name" content="The Talas Herald">
+  <meta property="og:title" content="{{title}}">
+  <meta property="og:description" content="{{description}}">
+  <meta property="og:image" content="{{og_image}}">
+  <meta property="og:type" content="{{og_type}}">
+  <link rel="alternate" type="application/rss+xml" title="The Talas Herald" href="{{base}}feed.xml">
+  <link rel="icon" type="image/svg+xml" href="{{base}}assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=IBM+Plex+Sans+Condensed:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{base}}assets/herald.css">
+</head>
+<body class="{{body_class}}" data-meter-free="{{meter}}" data-base="{{base}}">
+  <div class="topbar">
+    <div class="wrap topbar-inner">
+      <span class="tb-date" data-irad-date>Talas</span>
+      <span class="tb-issue">{{issue}}</span>
+      <span class="tb-weather" data-weather hidden></span>
+      <span class="tb-som">Som 5.00 = US$1</span>
+      <span class="tb-links"><a href="{{base}}subscribe.html" class="tb-sub">Subscribe</a><a href="{{base}}subscribe.html#login">Log in</a></span>
+    </div>
+  </div>
+  <header class="masthead">
+    <div class="wrap">
+      <a class="mast-name" href="{{base}}index.html">The Talas Herald</a>
+      <p class="mast-sub"><span>Talas Jarchysy</span><span>Founded 1993</span><span>Talas, Irad</span></p>
+    </div>
+  </header>
+  <nav class="sections" aria-label="Sections">
+    <div class="wrap">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="section-links">Sections</button>
+      <ul id="section-links">
+        <li><a href="{{base}}index.html">Front page</a></li>
+        <li><a href="{{base}}section/news.html">News</a></li>
+        <li><a href="{{base}}section/courts.html">Courts</a></li>
+        <li><a href="{{base}}section/business.html">Business</a></li>
+        <li><a href="{{base}}section/across-irad.html">Across Irad</a></li>
+        <li><a href="{{base}}section/culture.html">Culture</a></li>
+        <li><a href="{{base}}section/sport.html">Sport</a></li>
+        <li><a href="{{base}}section/opinion.html">Opinion</a></li>
+        <li><a href="{{base}}tv.html">TV</a></li>
+        <li><a href="{{base}}archive/index.html">Archive</a></li>
+        <li><a href="{{base}}jarchy.html" lang="ky">Jarchy</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="wrap">
+{{content}}
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap foot-grid">
+      <div>
+        <p class="foot-name">The Talas Herald</p>
+        <p>Published Monday to Saturday by the Herald Publishing Company.<br>Herald House, 8 Printers' Lane, Old City, Talas 724003, Irad<br>Newsdesk +996-39-2-44-10-93 · news@talasherald.ir.ad</p>
+      </div>
+      <ul>
+        <li><a href="{{base}}about.html">About the Herald</a></li>
+        <li><a href="{{base}}staff.html">Our journalists</a></li>
+        <li><a href="{{base}}corrections.html">Corrections</a></li>
+        <li><a href="{{base}}contact.html">Contact and letters</a></li>
+      </ul>
+      <ul>
+        <li><a href="{{base}}subscribe.html">Subscribe</a></li>
+        <li><a href="{{base}}advertise.html">Advertise</a></li>
+        <li><a href="{{base}}archive/index.html">Archive since 1993</a></li>
+        <li><a href="{{base}}feed.xml">RSS</a></li>
+      </ul>
+    </div>
+    <div class="wrap foot-note">
+      <p>&copy; {{year}} Herald Publishing Company. The Talas Herald is part of the Irad worldbuilding project: Irad is a fictional country, and its news is fiction adapted from real reporting in Central Asia; each story links to the report that inspired it. <a href="{{base}}credits.html">Photo credits</a>. See also <a href="https://iradone.com/">IradOne</a> and <a href="https://irad.wiki/">the Irad wiki</a>.</p>
+    </div>
+  </footer>
+  <script src="{{base}}assets/herald.js"></script>{{scripts}}
+</body>
+</html>

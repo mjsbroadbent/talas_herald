@@ -1,0 +1,124 @@
+{
+  "site_url": "https://talasherald.com",
+  "site_name": "The Talas Herald",
+  "edition": {
+    "_comment": "The paper comes out Monday to Saturday. On each edition day the run publishes up to 'stories' news stories from 'publish_from' Irad Time; on 'editorial_days' it adds The Herald's View, a leader on the week's news. Retries hourly until 'give_up_hour' if nothing usable came up.",
+    "days": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat"
+    ],
+    "stories": 2,
+    "publish_from": "05:30",
+    "give_up_hour": 13,
+    "editorial_days": [
+      "sat"
+    ],
+    "first_issue": "1993-03-15",
+    "iradone_overlap": "About one edition in three should cover a real report IradOne also adapted, in the Herald's own way."
+  },
+  "iradone_index": "https://iradone.com/news/index.json",
+  "max_age_hours": 96,
+  "max_candidates_for_triage": 40,
+  "triage_model": "claude-haiku-5-5",
+  "writer_model": "claude-sonnet-5-5",
+  "lore_files": [
+    "quickref.md",
+    "canon.md"
+  ],
+  "feeds": [
+    {
+      "name": "Kabar",
+      "url": "https://en.kabar.kg/rss",
+      "country": "Kyrgyzstan"
+    },
+    {
+      "name": "RFE/RL Kyrgyzstan",
+      "url": "https://www.rferl.org/api/zqii_l-vomx-tpeigmy",
+      "country": "Kyrgyzstan"
+    },
+    {
+      "name": "The Times of Central Asia",
+      "url": "https://timesca.com/feed/",
+      "country": "Central Asia"
+    },
+    {
+      "name": "Gazeta.uz",
+      "url": "https://www.gazeta.uz/en/rss/",
+      "country": "Uzbekistan"
+    },
+    {
+      "name": "RFE/RL Kazakhstan",
+      "url": "https://www.rferl.org/api/zriiml-vomx-tpeogm_",
+      "country": "Kazakhstan"
+    },
+    {
+      "name": "RFE/RL Uzbekistan",
+      "url": "https://www.rferl.org/api/ztiiml-vomx-tpekgm_",
+      "country": "Uzbekistan"
+    }
+  ],
+  "skip_keywords": [
+    "killed",
+    "kills",
+    "dead",
+    "death",
+    "deaths",
+    "died",
+    "dies",
+    "murder",
+    "homicide",
+    "rape",
+    "sexual",
+    "abuse",
+    "suicide",
+    "terror",
+    "terrorist",
+    "bomb",
+    "explosion",
+    "shooting",
+    "shot dead",
+    "massacre",
+    "hostage",
+    "attack on",
+    "airstrike",
+    "drone attack",
+    "child abuse",
+    "trafficking",
+    "fatal",
+    "victims",
+    "funeral",
+    "mourning",
+    "crash"
+  ],
+  "real_people_watchlist": [
+    "Zhaparov",
+    "Japarov",
+    "Tashiev",
+    "Tokayev",
+    "Mirziyoyev",
+    "Rahmon",
+    "Berdimuhamedov",
+    "Putin",
+    "Xi Jinping",
+    "Trump",
+    "Biden",
+    "Erdogan",
+    "Erdoğan",
+    "Lavrov",
+    "Rubio",
+    "Kasymaliev",
+    "Bektenov",
+    "Aripov",
+    "Nazarbayev",
+    "Atambayev",
+    "Jeenbekov"
+  ],
+  "meter": {
+    "_comment": "Metered paywall (soft): free articles per calendar month before the subscribe panel appears. Readers can always close it. Set free_articles to 0 to turn the meter off.",
+    "free_articles": 5
+  }
+}

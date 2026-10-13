@@ -1,0 +1,126 @@
+/* The Talas Herald: date and weather in the top bar, section menu,
+ * the metered paywall and the archive search. */
+(function () {
+  "use strict";
+
+  var IRT_MS = 6 * 3600000;
+  var DAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  var MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August",
+                "September", "October", "November", "December"];
+
+  function store(key, value) {
+    try {
+      if (value === undefined) return JSON.parse(localStorage.getItem(key) || "null");
+      localStorage.setItem(key, JSON.stringify(value));
+    } catch (e) { return null; }
+  }
+
+  function irt() { return new Date(Date.now() + IRT_MS); }
+
+  // ---- date and weather ----
+  function topbar() {
+    var d = irt();
+    var el = document.querySelector("[data-irad-date]");
+    if (el) el.textContent = DAYS[d.getUTCDay()] + " " + d.getUTCDate() + " " + MONTHS[d.getUTCMonth()] + " " + d.getUTCFullYear();
+    var w = document.querySelector("[data-weather]");
+    if (!w) return;
+    var hit = store("herald-wx");
+    var show = function (j) {
+      if (!j || !j.current) return;
+      var t = Math.round(j.current.temperature_2m);
+      w.textContent = "Talas " + (t > 0 ? "+" : "") + t + "°C";
+      w.hidden = false;
+    };
+    if (hit && Date.now() - hit.at < 30 * 60000) return show(hit.data);
+    fetch("https://api.open-meteo.com/v1/forecast?latitude=42.52&longitude=72.24&current=temperature_2m&timezone=auto")
+      .then(function (r) { return r.json(); })
+      .then(function (j) { store("herald-wx", { at: Date.now(), data: j }); show(j); })
+      .catch(function () {});
+  }
+
+  // ---- section menu (small screens) ----
+  function menu() {
+    var btn = document.querySelector(".nav-toggle");
+    if (!btn) return;
+    btn.addEventListener("click", function () {
+      var nav = btn.closest(".sections");
+      var open = nav.classList.toggle("open");
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+  }
+
+  // ---- metered paywall: N free stories a month, then a subscribe panel you can close ----
+  function meter() {
+    var art = document.querySelector("[data-meter]");
+    var free = parseInt(document.body.getAttribute("data-meter-free") || "0", 10);
+    if (!art || !free) return;
+    var base = document.body.getAttribute("data-base") || "";
+    var d = irt();
+    var month = d.getUTCFullYear() + "-" + (d.getUTCMonth() + 1);
+    var m = store("herald-meter");
+    if (!m || m.month !== month) m = { month: month, read: [] };
+    var slug = art.getAttribute("data-meter");
+    if (m.read.indexOf(slug) === -1) m.read.push(slug);
+    store("herald-meter", m);
+    var n = m.read.indexOf(slug) + 1;
+    var head = art.querySelector(".story-head");
+    if (n <= free) {
+      var left = free - n;
+      var note = document.createElement("p");
+      note.className = "meter-count";
+      note.innerHTML = left === 0
+        ? "This is your last free article this month. <a href=\"" + base + "subscribe.html\">Subscribe</a> for unlimited access."
+        : "You have " + left + " free article" + (left === 1 ? "" : "s") + " left this month. <a href=\"" + base + "subscribe.html\">Subscribe</a>";
+      if (head) head.parentNode.insertBefore(note, head);
+      return;
+    }
+    var panel = document.createElement("div");
+    panel.className = "meter-panel";
+    panel.setAttribute("role", "dialog");
+    panel.setAttribute("aria-label", "Subscribe to the Talas Herald");
+    panel.innerHTML =
+      '<div class="meter-inner"><button class="meter-close" type="button">Not now ✕</button>' +
+      "<h2>You've read your " + free + " free articles this month</h2>" +
+      "<p>Independent reporting from the courts, the councils and the record costs money. Subscribe from 40 som a month, or 20 som for students.</p>" +
+      '<a class="btn" href="' + base + 'subscribe.html">See subscription options</a></div>';
+    document.body.appendChild(panel);
+    panel.querySelector(".meter-close").addEventListener("click", function () { panel.remove(); });
+  }
+
+  // ---- archive search ----
+  function archiveSearch() {
+    var input = document.getElementById("archive-q");
+    var data = document.getElementById("archive-data");
+    var out = document.getElementById("archive-results");
+    if (!input || !data || !out) return;
+    var items = JSON.parse(data.textContent);
+    input.addEventListener("input", function () {
+      var q = input.value.trim().toLowerCase();
+      out.innerHTML = "";
+      if (q.length < 2) return;
+      var words = q.split(/\s+/);
+      items.filter(function (it) {
+        var h = (it.h + " " + it.s + " " + it.d.slice(0, 4)).toLowerCase();
+        return words.every(function (w) { return h.indexOf(w) !== -1; });
+      }).slice(0, 40).forEach(function (it) {
+        var li = document.createElement("li");
+        var t = document.createElement("time");
+        var p = it.d.split("-");
+        t.textContent = parseInt(p[2], 10) + " " + MONTHS[parseInt(p[1], 10) - 1].slice(0, 3) + " " + p[0];
+        var a = document.createElement("a");
+        a.href = it.u;
+        a.textContent = it.h;
+        var s = document.createElement("span");
+        s.className = "li-sec";
+        s.textContent = it.s;
+        li.appendChild(t); li.appendChild(a); li.appendChild(s);
+        out.appendChild(li);
+      });
+      if (!out.children.length) out.innerHTML = '<li><span></span><span>No headlines match.</span></li>';
+    });
+  }
+
+  function init() { topbar(); menu(); meter(); archiveSearch(); }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
+  else init();
+})();

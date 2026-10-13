@@ -1,0 +1,93 @@
+{
+  "_comment": "Photo pool by subject (paths from the site root). Add your own photos to photos/, with a credits.json entry, then list them here.",
+  "politics": [
+    "photos/talas-skyline.jpg",
+    "photos/nurzhan-square.jpg",
+    "photos/apartment-blocks.jpg"
+  ],
+  "economy": [
+    "photos/talas-skyline.jpg",
+    "photos/livestock-bazaar.jpg",
+    "photos/bazaar-dairy.jpg",
+    "photos/bazaar-produce.jpg",
+    "photos/bazaar-dried-fruit.jpg",
+    "photos/freight-yard.jpg"
+  ],
+  "energy": [
+    "photos/nurzhan-refinery.jpg",
+    "photos/toktogul-dam.jpg",
+    "photos/kurpsai-dam.jpg",
+    "photos/refinery-dusk.jpg",
+    "photos/tank-farm.jpg",
+    "photos/toktogul-autumn.jpg",
+    "photos/toktogul-clouds.jpg"
+  ],
+  "agriculture": [
+    "photos/chu-valley-fields.jpg",
+    "photos/chu-canal.jpg",
+    "photos/livestock-bazaar.jpg",
+    "photos/kymyz.jpg",
+    "photos/karakul-sheep.jpg",
+    "photos/zhayloo-yurts.jpg",
+    "photos/horses-pasture.jpg",
+    "photos/pasture-yurt.jpg"
+  ],
+  "infrastructure": [
+    "photos/chu-river-bridge.jpg",
+    "photos/chu-canal.jpg",
+    "photos/kok-art-pass.jpg",
+    "photos/freight-loco.jpg",
+    "photos/freight-steppe.jpg",
+    "photos/freight-yard.jpg",
+    "photos/mountain-pass.jpg"
+  ],
+  "city": [
+    "photos/talas-skyline.jpg",
+    "photos/nurzhan-square.jpg",
+    "photos/bazar-korgon-street.jpg",
+    "photos/tash-komur.jpg",
+    "photos/apartment-blocks.jpg"
+  ],
+  "environment": [
+    "photos/arslanbob-walnuts.jpg",
+    "photos/sary-chelek.jpg",
+    "photos/chatkal-gorge.jpg",
+    "photos/kara-suu-canyon.jpg",
+    "photos/besh-tash-lake.jpg",
+    "photos/ibex.jpg",
+    "photos/kok-art-pass.jpg",
+    "photos/mailuu-suu.jpg",
+    "photos/mountain-meadow.jpg",
+    "photos/toktogul-clouds.jpg",
+    "photos/mountain-pass.jpg"
+  ],
+  "culture": [
+    "photos/komuz-players.jpg",
+    "photos/shyrdak.jpg",
+    "photos/yurt.jpg",
+    "photos/caravanserai.jpg",
+    "photos/akyrtas-ruins.jpg",
+    "photos/petroglyphs.jpg",
+    "photos/golden-eagle.jpg",
+    "photos/white-rider-painting.jpg",
+    "photos/kurut.jpg",
+    "photos/zhayloo-yurts.jpg"
+  ],
+  "sport": [
+    "photos/ulak-riders.jpg",
+    "photos/akyel-golden.jpg",
+    "photos/akyel-head.jpg"
+  ],
+  "technology": [],
+  "regional": [
+    "photos/kok-art-pass.jpg",
+    "photos/tash-komur.jpg",
+    "photos/mountain-pass.jpg",
+    "photos/freight-steppe.jpg"
+  ],
+  "courts": [
+    "photos/talas-skyline.jpg",
+    "photos/nurzhan-square.jpg",
+    "photos/apartment-blocks.jpg"
+  ]
+}

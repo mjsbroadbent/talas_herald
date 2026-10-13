@@ -1,0 +1,64 @@
+{
+  "slug": "2026-10-13-toktogul-s-extra-240-mw-raises-the-question-of-who-shares-the-revenue",
+  "kind": "story",
+  "headline": "Toktogul's extra 240 MW raises the question of who shares the revenue",
+  "dek": "All four units now run at 360 MW, but the cost of the refit and the formula that divides export income remain unpublished.",
+  "dateline": "TASH-KÖMÜR",
+  "section": "Across Irad",
+  "byline": "Kubat Duishenaliev",
+  "tags": [
+    "Toktogul",
+    "Naryn Water and Power Protocol",
+    "electricity exports",
+    "Kökjal",
+    "Lower Naryn"
+  ],
+  "paragraphs": [
+    "The Toktogul power station can now generate 1,440 MW after a refit of its four units, officials confirmed on Saturday, but neither the cost of the work nor the way the extra export income will be shared has been made public.",
+    "According to a technical bulletin of the joint technical commission that runs the station under the Naryn Water and Power Protocol, each of the four generating units has been raised from 300 MW to 360 MW, the last of them returning to service in September. The Minister of Natural Resources, Chingiz Asanov, reviewed the work on Saturday at the Lower Naryn switchyard and the national dispatch centre and met members of the commission, with Uzbek, Kazakh and Kyrgyz observers present.",
+    "The Protocol divides the station between the two sides of the Qara-Chik line. The dam, reservoir and generating hall are on the tribal side; the switchyard, the dispatch centre and the export lines to Uzbekistan and Kazakhstan are in the ISEZ. Revenue from power exports is divided under an annex that has never been published. Commission minutes from 2023 approve the refit programme but give no figure for its cost, and the ministry did not say on Monday who had paid for it.",
+    "Officials stress that the upgrade does not change the volume of water the reservoir holds or the release schedule. The Uzbek observer delegation nevertheless filed a written reservation at Saturday's meeting, as it does at every session, asking that more generating capacity not be used to justify larger releases in winter, when downstream channels freeze.",
+    "Elnur Rakhimbaev, an energy economist in Talas, said the gain mattered most at winter peak. \"Two hundred and forty megawatts at the right hour is worth more than at any other time of year, because that is when the neighbours pay most,\" he said. \"If the formula is fixed shares, both sides gain. If it is not, the extra money is something to argue about.\"",
+    "In the reservoir settlements, Kökjal families want to know whether their share will grow. Since the Long Kurultai of 2022, a fixed yearly share of the tribal side's Toktogul revenue has gone to a fund for basin families run by Kökjal elders. Kerimbek Abylai uulu, who keeps the fund's accounts in Ozgörüsh, said the elders had not been told whether the extra output would raise it. \"Our grandparents' pastures are under that water,\" he said. \"If the water now makes more money, the families who lost the land should hear about it first.\"",
+    "Zarema Ismanova, a spokeswoman for the Ministry of Natural Resources, said revenue arrangements were a matter for the two delegations and would be considered during talks on the 2027 schedule. She said the ministry would publish the results of a joint load test of the new units, due before the end of November.",
+    "The Protocol's five-year schedule expires in 2027, and preparatory talks are expected to begin in the spring."
+  ],
+  "pull_quote": "Our grandparents' pastures are under that water",
+  "pull_quote_by": "Kerimbek Abylai uulu, Kökjal basin families' fund",
+  "people_quoted": [
+    {
+      "name": "Chingiz Asanov",
+      "role": "Minister of Natural Resources",
+      "canon": true
+    },
+    {
+      "name": "Elnur Rakhimbaev",
+      "role": "Energy economist, Talas",
+      "canon": false
+    },
+    {
+      "name": "Kerimbek Abylai uulu",
+      "role": "Accounts keeper, Toktogul basin families' fund, Ozgörüsh",
+      "canon": false
+    },
+    {
+      "name": "Zarema Ismanova",
+      "role": "Spokeswoman, Ministry of Natural Resources",
+      "canon": false
+    }
+  ],
+  "image": "photos/toktogul-dam.jpg",
+  "published": "2026-10-13T06:05+06:00",
+  "treatment": "domestic",
+  "source": {
+    "name": "Kabar",
+    "title": "Upgraded Toktogul HPP capacity increased to 1,440 MW",
+    "url": "https://en.kabar.kg/news/toktogul-hpp-capacity-increased-to-1440-mw-following-modernization/",
+    "published": "2026-10-12T05:59:00+00:00"
+  },
+  "generated_by": "launch",
+  "iradone": {
+    "headline": "Toktogul Upgrade Lifts Capacity to 1,440 MW, Strengthening Irad's Power Exports",
+    "slug": "2026-10-13-toktogul-upgrade-lifts-capacity-to-1-440-mw-strengthening-irad-s-power"
+  }
+}

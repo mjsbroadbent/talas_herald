@@ -1,0 +1,61 @@
+{
+  "slug": "2026-10-05-ministry-proposes-halting-potato-imports-until-march-as-harvest",
+  "kind": "story",
+  "headline": "Ministry proposes halting potato imports until March as harvest outruns demand",
+  "dek": "Growers in the Talas valley welcome the draft, but the self-sufficiency rate it cites does not match the ministry's own forecasts.",
+  "dateline": "KYZYL-ADYR",
+  "section": "Business",
+  "byline": "Timur Sadyrbaev",
+  "tags": [
+    "agriculture",
+    "potatoes",
+    "imports",
+    "Ministry of Economy",
+    "Kazakhstan",
+    "prices"
+  ],
+  "paragraphs": [
+    "The ISEZ Ministry of Economy has proposed a temporary halt to potato imports until 1 March 2027, saying this year's harvest is large enough to feed the zone without them and that local growers need room to sell.",
+    "The draft resolution, published for comment on Saturday, forecasts a 2026 harvest of about 352,000 tonnes in the Talas valley, Kara-Buura and Chu districts against annual demand of about 231,000 tonnes. It describes the zone as 172 percent self-sufficient in potatoes. The ministry's own two figures give a rate of about 152 percent. The draft does not say how the higher number was calculated.",
+    "Most imported potatoes come from southern Kazakhstan, with smaller lots from Uzbekistan in late spring. Figures from the Talas Customs Clearance Terminal show about 19,000 tonnes entered between January and August, most of it before the local harvest began.",
+    "At collection points around Kyzyl-Adyr, buyers were paying growers IS 0.90 a kilogram last week, against IS 1.50 a year ago, according to the Talas Basin Agricultural Directorate's weekly price sheet. Asylbek Mamatkul uulu, who grows potatoes and beans on 14 hectares outside the town, said the price barely covered diesel, seed and the water fee. \"At ninety tyiyn I am digging for the truck driver, not for my family,\" he said. \"If the Kazakh lorries stop until spring, the price may at least pay for the seed.\"",
+    "Joomart Tilekov, an extension officer at the directorate's Kyzyl-Adyr office, said many growers had planted more after last year's prices and that storage was the bigger problem. \"Half the crop has to be sold in October because there are not enough cellars,\" he said. \"Whatever happens at the border, that is the problem that pushes prices down.\"",
+    "Wholesalers at the Bazar-i Kalan say a ban could cost shoppers later. Shukhrat Nazarov, whose family has traded vegetables in the market since the 1990s, said local stocks usually ran short in February. \"In February the cellars are empty and the Kazakh potatoes are cheaper than anything stored here,\" he said. \"A ban until March means paying more in the last month.\" Aliya Kudabaeva, an agricultural economist at Talas State University, said a fixed end date gave traders time to plan but that the ministry should publish its stock estimates so the market could see whether the forecast held.",
+    "Asked about the difference between 172 and 152 percent, a ministry spokeswoman said the figures were being checked and would be corrected in the final text if necessary. She said the restriction would cover fresh potatoes for consumption, not certified seed potatoes.",
+    "Comments on the draft may be sent to the ministry until 17 October. A final decision is expected before the end of the month, and any restriction would need to be notified to Kazakh customs under the existing border coordination arrangements."
+  ],
+  "pull_quote": "At ninety tyiyn I am digging for the truck driver, not for my family",
+  "pull_quote_by": "Asylbek Mamatkul uulu, potato grower, Kara-Buura District",
+  "people_quoted": [
+    {
+      "name": "Asylbek Mamatkul uulu",
+      "role": "Potato grower near Kyzyl-Adyr",
+      "canon": false
+    },
+    {
+      "name": "Joomart Tilekov",
+      "role": "Extension officer, Talas Basin Agricultural Directorate",
+      "canon": false
+    },
+    {
+      "name": "Shukhrat Nazarov",
+      "role": "Vegetable wholesaler, Bazar-i Kalan",
+      "canon": false
+    },
+    {
+      "name": "Aliya Kudabaeva",
+      "role": "Agricultural economist, Talas State University",
+      "canon": false
+    }
+  ],
+  "image": "photos/chu-valley-fields.jpg",
+  "published": "2026-10-05T05:47+06:00",
+  "treatment": "domestic",
+  "source": {
+    "name": "24.kg",
+    "title": "Kyrgyz Agriculture Ministry proposes restricting potato imports until March 2027",
+    "url": "https://24.kg/en/article/kyrgyz-agriculture-ministry-proposes-restricting-potato-imports-until-march-2027",
+    "published": "2026-10-03"
+  },
+  "generated_by": "launch"
+}
