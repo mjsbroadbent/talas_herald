@@ -369,7 +369,9 @@ def plan_and_write(claude: Claude, state: dict, stories: list[dict], memory: dic
     real_used = 0
     total = 0
     by_id = {t["id"]: t for t in threads}
-    for n, ev in enumerate(plan.get("events", [])):
+    for n, ev in enumerate(as_list(plan.get("events"))):
+        if not ev.get("cast"):
+            continue
         if total >= per_day + 3:
             break
         kind = ev.get("type")
@@ -404,7 +406,7 @@ def plan_and_write(claude: Claude, state: dict, stories: list[dict], memory: dic
                  + "Write like the real forum: mostly short posts, natural quoting of each other, typos where the voice has them. "
                    "Give gap_minutes between posts (people answer within minutes to hours). Add memory notes only for genuinely new durable facts.")
         out = mock_write(ev) if mock else claude.call(FCONFIG["writer_model"], WRITE_TOOL, wuser, 6000)
-        posts = [p for p in out.get("posts", []) if p.get("user") and p.get("body")]
+        posts = [p for p in as_list(out.get("posts")) if p.get("user") and p.get("body")]
         good = []
         for i, p in enumerate(posts):
             prob = checker.post_problem(p["user"], p["body"], today)
@@ -434,11 +436,21 @@ def plan_and_write(claude: Claude, state: dict, stories: list[dict], memory: dic
                     item["quote_post_id"] = ev.get("real_post_id", 0)
             items.append(item)
         total += len(good)
-        for m in out.get("memory", []) or []:
+        for m in as_list(out.get("memory")):
             if m.get("user") in members and m.get("note"):
                 new_mem.setdefault(m["user"], []).append({"date": today.isoformat(), "note": m["note"][:200]})
         log(f"  event {n} ({kind}): {len(good)} posts" + (f", \"{title}\"" if kind == "new_thread" else f", thread #{ev.get('thread_id')}"))
     return items, new_mem
+
+
+def as_list(v) -> list:
+    """Tool inputs sometimes arrive with a list encoded as a JSON string; accept both and drop junk."""
+    if isinstance(v, str):
+        try:
+            v = json.loads(v)
+        except ValueError:
+            return []
+    return [x for x in v if isinstance(x, dict)] if isinstance(v, list) else []
 
 
 def merge_memory(memory: dict, new: dict) -> None:
