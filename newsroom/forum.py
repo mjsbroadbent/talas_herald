@@ -68,7 +68,11 @@ class Forum:
                                               "User-Agent": "TalasHeraldNewsroom/1.0 (forum)"})
         try:
             with urllib.request.urlopen(req, timeout=60) as r:
-                return json.loads(r.read())
+                raw = r.read()
+            try:
+                return json.loads(raw)
+            except ValueError:
+                raise SystemExit(f"The forum didn't answer with data (HTTP 200): {raw[:300].decode('utf-8', 'replace')}")
         except urllib.error.HTTPError as e:
             detail = e.read()[:300].decode("utf-8", "replace")
             hint = {403: "the key doesn't match live_key in freeirad-secrets.php (or the server clock is off)",
@@ -520,6 +524,11 @@ def main() -> None:
     except SystemExit as e:
         if e.code not in (0, None) and isinstance(e.code, str):
             print(f"::error::{e.code}", flush=True)
+        raise
+    except Exception as e:
+        import traceback
+        tb = traceback.extract_tb(e.__traceback__)[-1]
+        print(f"::error::{e.__class__.__name__}: {str(e)[:300]} (forum.py line {tb.lineno})", flush=True)
         raise
 
 
