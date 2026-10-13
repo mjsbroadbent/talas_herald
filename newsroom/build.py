@@ -409,7 +409,7 @@ def archive_entry_page(a: dict) -> str:
     {''.join(paras)}
     <div class="archive-wall">
       <p><strong>This article continues in the Herald archive.</strong> Subscribers can read every edition since March 1993 in full.</p>
-      <p><a class="btn" href="{base}subscribe.html">Subscribe</a> <a class="btn btn-ghost" href="{base}subscribe.html#login">Log in</a></p>
+      <p><a class="btn" href="{base}subscribe.html">Subscribe</a> <a class="btn btn-ghost" href="{base}login.html">Log in</a></p>
     </div>
   </div>
 </article>"""

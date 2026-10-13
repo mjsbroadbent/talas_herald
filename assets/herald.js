@@ -120,7 +120,42 @@
     });
   }
 
-  function init() { topbar(); menu(); meter(); archiveSearch(); }
+
+  // ---- subscriber login: the account system is never reachable, so every attempt fails.
+  // Nothing typed here is sent anywhere or stored. ----
+  function login() {
+    var form = document.getElementById("login-form");
+    if (!form) return;
+    var err = document.getElementById("login-error");
+    var btn = form.querySelector(".login-btn");
+    var pass = document.getElementById("login-pass");
+    var tries = 0;
+    var show = function (msg) { err.textContent = msg; err.hidden = false; };
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var user = document.getElementById("login-user").value.trim();
+      if (!user || !pass.value) { show("Please enter your email or subscriber number and your password."); return; }
+      btn.disabled = true;
+      btn.textContent = "Logging in\u2026";
+      err.hidden = true;
+      setTimeout(function () {
+        tries += 1;
+        pass.value = "";
+        btn.disabled = false;
+        btn.textContent = "Log in";
+        if (tries >= 3) show("Too many unsuccessful attempts. Please try again later, or contact circulation@talasherald.ir.ad.");
+        else show("Incorrect username or password.");
+        pass.focus();
+      }, 900 + Math.floor(Math.random() * 700));
+    });
+    var forgot = document.getElementById("login-forgot");
+    if (forgot) forgot.addEventListener("click", function (e) {
+      e.preventDefault();
+      show("Password reset is temporarily unavailable. Please contact circulation@talasherald.ir.ad.");
+    });
+  }
+
+  function init() { topbar(); menu(); meter(); archiveSearch(); login(); }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
   else init();
 })();
