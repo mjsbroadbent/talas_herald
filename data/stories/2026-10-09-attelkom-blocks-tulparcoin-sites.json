@@ -1,0 +1,43 @@
+{
+  "slug": "2026-10-09-attelkom-blocks-tulparcoin-sites",
+  "kind": "story",
+  "headline": "Attelkom blocks Tulparcoin sites; operator cites Department of Public Information list",
+  "dek": "The coin's website and its Seychelles exchange became unreachable on Thursday; the department says it acted on a request from \"financial supervisors\".",
+  "dateline": "TALAS",
+  "section": "News",
+  "byline": "Nadia Osmonalieva",
+  "tags": [
+    "Tulparcoin",
+    "Attelkom",
+    "Department of Public Information",
+    "internet"
+  ],
+  "paragraphs": [
+    "Attelkom, Irad's largest internet provider, blocked the website of Tulparcoin and the foreign exchange on which it trades on Thursday morning. Users who tried to reach them saw a page saying the sites had been restricted \"in accordance with the instructions of the competent authorities\".",
+    "An Attelkom spokesman said the company had added the addresses to its blocking list after receiving them from the Department of Public Information, which supplies the operator with lists of sites to be restricted. The department said in a statement that it had acted \"at the request of financial supervisors, to protect citizens from unlicensed financial activity\". It did not name the supervisors. The Bank of Irad, which said last month that it had no power over the coin, declined to comment.",
+    "Mr. Ilyasov called the block \"the first honest review Tulparcoin has received\" and posted instructions for reaching the sites through virtual private networks. The Liberty Forum said registrations for its free coins had passed 120,000.",
+    "The coin's price fell by about a third on Thursday, to around three US cents, according to figures from the exchange that remained visible from abroad.",
+    "Erkinbek Kenjeshov, a delivery courier in Talas who registered for the free coins, said he had not expected to make money from them. \"I signed up because the levy in 2023 was on us couriers, and he spoke for us,\" he said. \"Now I cannot even open the page. That tells you something, but I don't know what.\"",
+    "FreeIrad.org, the anonymous opposition website, claimed on Thursday that the coin was a trap designed to collect the phone numbers of government critics. The Liberty Forum called the claim \"absurd\". The Department of Public Information said it did not comment on anonymous websites. The claim could not be verified.",
+    "The Talas District Court is due to hear the Talas Commercial Development Group's request for an injunction against the coin's name on Monday."
+  ],
+  "pull_quote": "",
+  "pull_quote_by": "",
+  "people_quoted": [
+    {
+      "name": "Jason Ilyasov",
+      "role": "Founder, Liberty Forum of Irad",
+      "canon": true
+    },
+    {
+      "name": "Erkinbek Kenjeshov",
+      "role": "Delivery courier, Talas",
+      "canon": false
+    }
+  ],
+  "image": "photos/apartment-blocks.jpg",
+  "published": "2026-10-09T06:20+06:00",
+  "treatment": "original",
+  "source": null,
+  "generated_by": "tulparcoin storyline"
+}

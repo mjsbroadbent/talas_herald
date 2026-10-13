@@ -1,0 +1,47 @@
+{
+  "slug": "2026-10-12-court-adjourns-tulparcoin-name-case",
+  "kind": "story",
+  "headline": "Court adjourns Tulparcoin name case to November without an injunction",
+  "dek": "Judge Asel Mamytbekova asked both sides whether a cryptocurrency is a \"financial service\" at all, and gave them five weeks to answer.",
+  "dateline": "TALAS",
+  "section": "Courts",
+  "byline": "Elmira Beishenova",
+  "tags": [
+    "Tulparcoin",
+    "Talas District Court",
+    "trademark",
+    "Jason Ilyasov"
+  ],
+  "paragraphs": [
+    "The Talas District Court on Monday adjourned the Talas Commercial Development Group's request for an injunction against Tulparcoin until 16 November, leaving Jason Ilyasov's Liberty Forum free to go on using the name in the meantime.",
+    "Judge Asel Mamytbekova told the hearing that the company's trademark registrations covered \"financial services\" and \"digital products\", and that the court would first have to decide whether a cryptocurrency fell under either. She asked both sides for written submissions on the question within four weeks and said the court might seek the opinion of the Bank of Irad.",
+    "Vadim Sorokin, for the company, argued that every day of delay caused \"irreparable confusion\" among supporters of Tulpar Talas, and asked for at least a temporary order on the logo. The judge declined, saying the company had not shown evidence that anyone had been confused.",
+    "Mr. Ilyasov, who attended in person, told reporters on the courthouse steps that the horse was \"still running\". His lawyer, Kanykei Imanbekova, said the Forum would argue that the word tulpar was part of Iradi folklore and could not be monopolized.",
+    "The coin remains blocked by Attelkom. It traded at about three US cents on Monday, according to figures visible from abroad.",
+    "The hearing drew about forty people, including several students wearing Tulpar Talas scarves, who said they supported both the club and the coin."
+  ],
+  "pull_quote": "",
+  "pull_quote_by": "",
+  "people_quoted": [
+    {
+      "name": "Vadim Sorokin",
+      "role": "Lawyer for the Talas Commercial Development Group",
+      "canon": false
+    },
+    {
+      "name": "Jason Ilyasov",
+      "role": "Founder, Liberty Forum of Irad",
+      "canon": true
+    },
+    {
+      "name": "Kanykei Imanbekova",
+      "role": "Lawyer for the Liberty Forum",
+      "canon": false
+    }
+  ],
+  "image": "photos/talas-skyline.jpg",
+  "published": "2026-10-12T06:41+06:00",
+  "treatment": "original",
+  "source": null,
+  "generated_by": "tulparcoin storyline"
+}

@@ -1,0 +1,48 @@
+{
+  "slug": "2026-09-25-bank-of-irad-says-tulparcoin-is-not-money",
+  "kind": "story",
+  "headline": "Bank of Irad says Tulparcoin is not money and buyers are on their own",
+  "dek": "The currency board's warning stops short of a ban; Talasbank tells customers it will not process payments to the coin's exchange.",
+  "dateline": "TALAS",
+  "section": "Business",
+  "byline": "Timur Sadyrbaev",
+  "tags": [
+    "Tulparcoin",
+    "Bank of Irad",
+    "som",
+    "Talasbank"
+  ],
+  "paragraphs": [
+    "The Bank of Irad said on Thursday that Tulparcoin, the cryptocurrency launched this week by the commentator Jason Ilyasov, is not legal tender, is not backed by the bank's dollar reserves and is not covered by any deposit protection, and that people who buy it \"do so entirely at their own risk\".",
+    "The statement, the bank's first on any cryptocurrency, did not call for the coin to be banned. Ermek Sadykbekov, a deputy chairman, said the law gave the bank no power over assets that were neither money nor bank deposits. \"Our task is the som at five to the dollar,\" he said. \"Nobody should confuse a token on a foreign website with that promise.\"",
+    "Talasbank told customers by text message on Thursday evening that it would not process card payments to the Seychelles exchange where the coin trades, citing its rules on transfers to unlicensed foreign platforms. Two smaller banks in Talas said they were reviewing their position.",
+    "The coin's price fell from about seven US cents to under five after the bank's statement, then recovered to just above six cents on Friday morning, according to the exchange's figures. The Liberty Forum said 71,000 people had now registered for its free distribution of 100 coins.",
+    "Mr. Ilyasov said on his podcast that the bank's statement proved his point. \"A currency board that is afraid of a horse,\" he said. \"They tell you the som is safe because it is tied to the dollar. Tulpar is tied to nobody.\"",
+    "The Lieutenant Governor's office said on Thursday that it would \"protect citizens' savings from speculation\", without giving details. IradOne's evening bulletin led with the bank's warning and did not mention Mr. Ilyasov by name.",
+    "Bolot Ormokoev, a finance lecturer at Talas State University, said the bank had chosen its words carefully. \"It has warned without banning, because it cannot ban,\" he said. \"The real powers here sit with whoever controls the payment rails and the internet, not with the currency board.\""
+  ],
+  "pull_quote": "A currency board that is afraid of a horse",
+  "pull_quote_by": "Jason Ilyasov",
+  "people_quoted": [
+    {
+      "name": "Ermek Sadykbekov",
+      "role": "Deputy chairman, Bank of Irad",
+      "canon": false
+    },
+    {
+      "name": "Jason Ilyasov",
+      "role": "Founder, Liberty Forum of Irad",
+      "canon": true
+    },
+    {
+      "name": "Bolot Ormokoev",
+      "role": "Finance lecturer, Talas State University",
+      "canon": false
+    }
+  ],
+  "image": "photos/bazaar-produce.jpg",
+  "published": "2026-09-25T06:11+06:00",
+  "treatment": "original",
+  "source": null,
+  "generated_by": "tulparcoin storyline"
+}
