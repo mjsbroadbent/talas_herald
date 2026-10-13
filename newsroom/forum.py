@@ -70,7 +70,15 @@ class Forum:
             with urllib.request.urlopen(req, timeout=60) as r:
                 return json.loads(r.read())
         except urllib.error.HTTPError as e:
-            raise SystemExit(f"Forum said {e.code}: {e.read()[:300]!r}")
+            detail = e.read()[:300].decode("utf-8", "replace")
+            hint = {403: "the key doesn't match live_key in freeirad-secrets.php (or the server clock is off)",
+                    404: "forum/live.php isn't on the server yet (upload freeirad_live_regulars.zip)",
+                    503: "live_key is missing from freeirad-secrets.php"}.get(e.code, "")
+            print(f"::error::Forum said {e.code} {hint}: {detail}", flush=True)
+            raise SystemExit(f"Forum said {e.code}: {detail}")
+        except urllib.error.URLError as e:
+            print(f"::error::Couldn't reach the forum at {self.url}: {e.reason}", flush=True)
+            raise SystemExit(f"Couldn't reach the forum: {e.reason}")
 
     def state(self, since: int) -> dict:
         return self._request("GET", "state", query=f"&since={since}")
@@ -507,6 +515,15 @@ def cmd_preview(args) -> None:
 
 
 def main() -> None:
+    try:
+        _main()
+    except SystemExit as e:
+        if e.code not in (0, None) and isinstance(e.code, str):
+            print(f"::error::{e.code}", flush=True)
+        raise
+
+
+def _main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
     for name in ("run", "preview"):
