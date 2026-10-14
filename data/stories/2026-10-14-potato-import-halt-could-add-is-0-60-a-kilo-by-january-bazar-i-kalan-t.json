@@ -1,0 +1,65 @@
+{
+  "slug": "2026-10-14-potato-import-halt-could-add-is-0-60-a-kilo-by-january-bazar-i-kalan-t",
+  "kind": "story",
+  "headline": "Potato import halt could add IS 0.60 a kilo by January, Bazar-i Kalan traders say",
+  "dek": "The ministry says a pause until March would stop a harvest-time price slump; wholesalers say shoppers would pay for it once stores run low.",
+  "dateline": "TALAS",
+  "section": "Business",
+  "byline": "Timur Sadyrbaev",
+  "tags": [
+    "potatoes",
+    "Bazar-i Kalan",
+    "import ban",
+    "food prices",
+    "harvest"
+  ],
+  "paragraphs": [
+    "Wholesalers in Bazar-i Kalan say a proposed halt on potato imports until 31 March would lift the price of a 50-kilo sack by about IS 30 before the end of January, a cost that would fall mainly on households and on the stallholders who sell to them.",
+    "The draft order, circulated by the Ministry of Agriculture last week and open for written comment until 23 October, would suspend licences for imported potatoes for the rest of the season. The ministry's paper puts the marketable ISEZ harvest at 141,000 tonnes against annual demand of about 132,000 tonnes, and says imports of 21,000 tonnes over the past twelve months, mostly from Kazakhstan and Kyrgyzstan, pushed autumn wholesale prices down. Growers are now selling at IS 2.60 a kilo, against IS 3.40 a year ago. The ministry's own farm-cost survey puts the cost of growing a kilo at IS 2.90.",
+    "\"A grower who sells below cost this month does not plant as much in April,\" said Marina Dzhaparova, a ministry spokeswoman. \"The halt is temporary and it is meant to hold the price at the farm gate, not to raise it at the stall.\" The draft includes a safeguard: the halt would lapse if the average retail price stayed above IS 4.80 a kilo for two consecutive weeks. Retail potatoes in the Bazar-i Kalan now sell at about IS 3.90.",
+    "Rustam Nasyrov, who has wholesaled vegetables in the bazaar's main row for 19 years, said local stocks usually thin out in February. \"The Kazakh sacks are IS 12 to 15 cheaper than ours today, and in March they are the only ones that are firm and clean,\" he said. He expects a sack that now costs IS 130 to reach IS 160 by late January without imports, and IS 175 if cold-store losses are heavy. On his figures a household of five that buys 25 kilos a month would pay roughly IS 15 more.",
+    "Zinaida Kovalenko, who sells by the kilo from a stall near the Old City gate, said her customers already watch the scale closely. \"People buy five kilos where they bought eight, and they ask which pile is cheaper,\" she said. She said retailers who buy a sack at IS 160 cannot hold margins without passing the cost on.",
+    "Growers welcome the proposal. Askat Baktybek uulu, who farms about 14 hectares near Arsha-Say in Talas District, said he has stored half his crop in a pit cellar because the cooperative's cold store is full. \"Last October I paid off my seed loan in one sale. This year I am waiting,\" he said.",
+    "Tatiana Verbitskaya, an economist at Talas State University, said both sides were partly right. A halt would support the autumn price, she said, but the benefit goes mainly to farmers with storage, while those who must sell now see little gain. \"The ministry is protecting the farmer who can wait,\" she said. \"Consumers pay in the second half of winter, when the stock is smaller and the quality worse.\" She urged the ministry to publish national cold-store capacity before deciding.",
+    "Asked about the traders' estimates, Ms Dzhaparova said they assumed the halt would run to its full term with no trigger, and that the ministry had not yet modelled February prices. A decision would be taken by the Lieutenant Governor's office after the comment period closes. Neither the ministry nor the office said when a ruling would follow."
+  ],
+  "pull_quote": "The ministry is protecting the farmer who can wait",
+  "pull_quote_by": "Tatiana Verbitskaya",
+  "people_quoted": [
+    {
+      "name": "Marina Dzhaparova",
+      "role": "Spokeswoman, Ministry of Agriculture",
+      "canon": false
+    },
+    {
+      "name": "Rustam Nasyrov",
+      "role": "Wholesaler, Bazar-i Kalan",
+      "canon": false
+    },
+    {
+      "name": "Zinaida Kovalenko",
+      "role": "Retail stallholder, Old City",
+      "canon": false
+    },
+    {
+      "name": "Askat Baktybek uulu",
+      "role": "Potato grower, Arsha-Say, Talas District",
+      "canon": false
+    },
+    {
+      "name": "Tatiana Verbitskaya",
+      "role": "Economist, Talas State University",
+      "canon": false
+    }
+  ],
+  "image": "photos/chu-valley-fields.jpg",
+  "published": "2026-10-14T08:00+06:00",
+  "treatment": "domestic",
+  "source": {
+    "name": "The Times of Central Asia",
+    "title": "Kyrgyzstan Proposes Apple and Potato Import Ban to Protect Domestic Farmers",
+    "url": "https://timesca.com/kyrgyzstan-apple-potato-import-ban/",
+    "published": "2026-10-13T11:40:47+00:00"
+  },
+  "generated_by": "claude-sonnet-5-5"
+}

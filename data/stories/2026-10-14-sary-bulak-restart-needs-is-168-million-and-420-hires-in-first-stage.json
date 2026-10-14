@@ -1,0 +1,64 @@
+{
+  "slug": "2026-10-14-sary-bulak-restart-needs-is-168-million-and-420-hires-in-first-stage",
+  "kind": "story",
+  "headline": "Sary-Bulak restart needs IS 168 million and 420 hires in first stage",
+  "dek": "Budget and company papers put the state's share at IS 54 million, while the partners and the smelter's start date remain open.",
+  "dateline": "SARY-BULAK",
+  "section": "Business",
+  "byline": "Olga Fedorenko",
+  "tags": [
+    "antimony",
+    "Sary-Bulak",
+    "Chatkal smelter",
+    "jobs",
+    "budget"
+  ],
+  "paragraphs": [
+    "The first stage of reopening the Sary-Bulak Antimony Works and the Chatkal smelter would cost about IS 168 million (US$20 million) and create 420 jobs, according to figures in the 2027 draft budget and a restart schedule the works filed with the Ministry of Natural Resources. The state would carry IS 54 million of that. The remaining IS 114 million is assigned to partners that neither the government nor the works has named.",
+    "Lieutenant Governor Aidar Maksat told workers at the mine on Tuesday that idled lines would restart in stages, with hiring from Lower Naryn and Chu. IradOne reported his remarks the same evening. The draft budget, circulated to Mejlis committees, carries the state's money under a single line for 'restoration of mineral processing capacity': a power connection to the mine, repairs to a rail siding and a retraining fund.",
+    "The works' own filings show how far the plant has fallen. Headcount dropped from 1,860 at the end of 2019 to 310 at the end of 2025, and the schedule lists two of four smelting furnaces as cold. Stage one would bring back the open-pit crushing line and one furnace, with a peak of 900 jobs if all stages go ahead. The filing does not say when stage two would begin.",
+    "'Nothing here restarts on a promise,' Maksat told the workers, according to a transcript from the Lieutenant Governor's office. 'Each line restarts when it can pay for itself, and the first ones can.' The office said mine-side lines would resume by spring, with the smelter furnace to follow in the second half of 2027.",
+    "Asked who the partners are, a spokesman for the works said they would be named when contracts are signed, and that relining a furnace takes about nine months from signature. The Ministry of Natural Resources did not reply to written questions by deadline. The Herald reported last week that the combine had not identified its backers.",
+    "Gulmira Ismailova, who chairs the works' union committee, welcomed the hiring but said the committee had seen no wage scale. 'Men ask me whether a restart job pays the old rate or a new one, and I cannot tell them,' she said. Samagan Almaz uulu, a truck driver from a Lower Naryn village, said he would apply if the shifts were fixed. 'Three months of work and then a layoff is no better than the bazaar,' he said.",
+    "Damir Alymkulov, an economist at Talas State University, said the numbers were plausible but the risk was lopsided. Chinese export controls imposed in 2024 lifted antimony prices and made hand-picked stibnite worth carrying across the Qara-Chik line, he said, but prices could fall again before furnaces are lit. 'The state's IS 54 million is committed early. The partners' IS 114 million is not yet committed to anyone we can name,' he said.",
+    "The smelter's trioxide and ingot output is sold to buyers in China, and the works' filing does not include an environmental permit for the Chatkal site. The Mejlis budget committee is due to take up the 2027 draft later this month. The Lieutenant Governor's office said partner contracts would be disclosed to the committee before the restart's first payments."
+  ],
+  "pull_quote": "The state's IS 54 million is committed early. The partners' IS 114 million is not yet committed to anyone we can name",
+  "pull_quote_by": "Damir Alymkulov",
+  "people_quoted": [
+    {
+      "name": "Aidar Maksat",
+      "role": "Lieutenant Governor",
+      "canon": true
+    },
+    {
+      "name": "Gulmira Ismailova",
+      "role": "chair, works' union committee, Sary-Bulak Antimony Works",
+      "canon": false
+    },
+    {
+      "name": "Samagan Almaz uulu",
+      "role": "truck driver, Lower Naryn",
+      "canon": false
+    },
+    {
+      "name": "Damir Alymkulov",
+      "role": "economist, Talas State University",
+      "canon": false
+    }
+  ],
+  "image": "photos/bazaar-produce.jpg",
+  "published": "2026-10-14T08:09+06:00",
+  "treatment": "domestic",
+  "source": {
+    "name": "Kabar",
+    "title": "Kyrgyzstan to restore antimony and mercury plants in Kadamjay district",
+    "url": "https://en.kabar.kg/news/kyrgyzstan-to-restore-antimony-and-mercury-plants-in-kadamjay-district/",
+    "published": "2026-10-12T09:55:00+00:00"
+  },
+  "generated_by": "claude-sonnet-5-5",
+  "iradone": {
+    "headline": "Sary-Bulak Antimony Works and Chatkal Smelter Set for Phased Reopening",
+    "slug": "2026-10-13-sary-bulak-antimony-works-and-chatkal-smelter-set-for-phased-reopening"
+  }
+}

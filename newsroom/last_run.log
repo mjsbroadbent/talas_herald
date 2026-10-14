@@ -1,20 +1,21 @@
-Talas Herald newsroom run, 2026-10-13 14:17 IRT
+Talas Herald newsroom run, 2026-10-14 08:09 IRT
+Edition: edition due (0/2 stories out)
 Plan: 2 stories
 Fetching feeds
   Kabar: 50 items
   RFE/RL Kyrgyzstan: 6 items
   The Times of Central Asia: 10 items
   Gazeta.uz: 20 items
-  RFE/RL Kazakhstan: 7 items
+  RFE/RL Kazakhstan: 6 items
   RFE/RL Uzbekistan: 6 items
-  IradOne: 11 stories
-40 fresh candidates, 3 also on IradOne
-    [claude-haiku-5-5] in=5841 cache_read=0 cache_write=47871 out=330
-Triage picked 3: [{"id": 3, "treatment": "domestic", "section": "Across Irad", "angle": "A customs roadmap for 2027–2028 between Irad's neighbours sets out who will pay for faster trucking across the line, and what Trans-Chuy drivers and Bazar-i Kalan traders will notice first."}, {"id": 33, "treatment": "domestic", "section": "Business", "angle": "Thirteen new small plants in a district creating 138 jobs: the Herald asks how many are full-time, who funds the small hydro stations, and what the district's jobs figures actually count."}, {"id": 39, "treatment": "domestic", "section": "Sport", "angle": "Mountain-tourism safety talks in Astana prompt a look at rescue cover in the Talas Alatau and Chatkal, where the ATR clan wardens and the Gendarmerie share the call-out work."}]
-Writing: Kyrgyzstan, Uzbekistan to expand customs cooperation  [domestic, Across Irad]
-    [claude-sonnet-5-5] in=1585 cache_read=0 cache_write=48226 out=3515
-  published: Customs roadmap with Kazakhstan puts scanner costs on ISEZ budget and carriers  (Erkin Bolot uulu)
-Writing: 13 industrial enterprises opened and 138 jobs created in Kyrgyzstan's Kadamjai  [domestic, Business]
-    [claude-sonnet-5-5] in=1684 cache_read=48226 cache_write=0 out=3788
-  published: Sary-Bulak's 13 new plants create 138 jobs, but only 91 are year-round  (Olga Fedorenko)
+  IradOne: 12 stories
+40 fresh candidates, 1 also on IradOne (IradOne overlap day)
+    [claude-haiku-5-5] in=5878 cache_read=0 cache_write=54453 out=322
+Triage picked 3: [{"id": 35, "treatment": "domestic", "section": "Business", "angle": "The Herald checks what the reopening of the Sary-Bulak antimony works and the Chatkal smelter would cost, who would run them and what jobs they would bring, using the budget and company records, with the restart's partners and timeline questioned."}, {"id": 8, "treatment": "domestic", "section": "Business", "angle": "The Herald asks what a temporary potato import halt would do to Bazar-i Kalan prices and who pays, with the ministry's proposal, traders' figures and the harvest outlook."}, {"id": 4, "treatment": "regional", "section": "Across Irad", "angle": "A short piece on how the C5+1 format's five-state definition of Central Asia leaves out Irad, which the Herald reports as a question of who draws the map of regional diplomacy."}]
+Writing: Kyrgyzstan to restore antimony and mercury plants in Kadamjay district  [domestic, Business]  (IradOne overlap)
+    [claude-sonnet-5-5] in=2100 cache_read=0 cache_write=54808 out=3938
+  published: Sary-Bulak restart needs IS 168 million and 420 hires in first stage  (Olga Fedorenko)
+Writing: Kyrgyzstan Proposes Apple and Potato Import Ban to Protect Domestic Farmers  [domestic, Business]
+    [claude-sonnet-5-5] in=1873 cache_read=54808 cache_write=0 out=3828
+  published: Potato import halt could add IS 0.60 a kilo by January, Bazar-i Kalan traders say  (Timur Sadyrbaev)
 Done: 2 new pieces, 0 failed calls
