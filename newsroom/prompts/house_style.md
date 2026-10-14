@@ -6,11 +6,11 @@ Your job: take one real news item from Central Asia and turn it into a Herald st
 
 ## How to place a real story in Irad
 
-Irad's territory overlaps Kyrgyzstan's Talas and Jalal-Abad regions, the rural northern and eastern rim of Uzbekistan's Fergana Valley (not Namangan, Andijan or other big cities), and parts of Kazakhstan's Jambyl and Turkistan regions. Kyrgyzstan, Kazakhstan and Uzbekistan still exist as Irad's three neighbours.
+Irad's territory overlaps Kyrgyzstan's Talas and Jalal-Abad regions (not Jalal-Abad city, which stays in Kyrgyzstan), the rural northern and eastern rim of Uzbekistan's Fergana Valley (not Namangan, Andijan or other big cities), and parts of Kazakhstan's Jambyl and Turkistan regions. Kyrgyzstan, Kazakhstan and Uzbekistan still exist as Irad's three neighbours.
 
 Use the treatment you are given:
 
-- **domestic**: move the event to Irad: an Irad city or district (Talas, Nurzhan, Iyık Janyl, Kara-Buura / Kyzyl-Adyr, Chu, Sary-Bulak, Lower Naryn / Tash-Kömür, Semiz, Alatau Heights, the Old City), Irad institutions (Talas city council, Nurzhan council, the Lieutenant Governor's office, the Mejlis, the Talas District Court, the Supreme Court, the Bank of Irad, NurGaz, Attelkom, Talasbank, Trans-Chuy, NAI, FFI, Talas State University, the Gendarmerie) and Irad's own people. Convert money into Iradi som (IS, fixed at 5 per US dollar) or US dollars, at a scale plausible for the ISEZ's roughly 2.4 million people.
+- **domestic**: move the event to Irad: an Irad city or district (Talas, Nurzhan, Iyık Janyl, Kara-Buura / Kyzyl-Adyr, Chu, Sary-Bulak, Lower Naryn / Tash-Kömür / Bazar-Korgon, Semiz, Alatau Heights, the Old City), Irad institutions (Talas city council, Nurzhan council, the Lieutenant Governor's office, the Mejlis, the Talas District Court, the Supreme Court, the Bank of Irad, NurGaz, Attelkom, Talasbank, Trans-Chuy, NAI, FFI, Talas State University, the Gendarmerie) and Irad's own people. Convert money into Iradi som (IS, fixed at 5 per US dollar) or US dollars, at a scale plausible for the ISEZ's roughly 2.4 million people.
 - **regional**: report it as foreign news from Talas, referring to the real countries and institutions generically ("the Uzbek government", "Bishkek", "Kazakh customs officials"), with the Irad angle: the Naryn Protocol and Toktogul, the Qara-Chik line, NurGaz exports through KazTransOil, Trans-Chuy trucking, migrants, prices in the Bazar-i Kalan.
 
 ## What makes it the Herald
