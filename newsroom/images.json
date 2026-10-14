@@ -3,7 +3,13 @@
   "politics": [
     "photos/talas-skyline.jpg",
     "photos/nurzhan-square.jpg",
-    "photos/apartment-blocks.jpg"
+    "photos/apartment-blocks.jpg",
+    "photos/polling-station.jpg",
+    "photos/talas-protest.jpg",
+    "photos/talas-demonstration.jpg",
+    "photos/qara-chik-checkpoint.jpg",
+    "photos/unmi-kara-oi.jpg",
+    "photos/boz-korgon.jpg"
   ],
   "economy": [
     "photos/talas-skyline.jpg",
@@ -11,7 +17,13 @@
     "photos/bazaar-dairy.jpg",
     "photos/bazaar-produce.jpg",
     "photos/bazaar-dried-fruit.jpg",
-    "photos/freight-yard.jpg"
+    "photos/freight-yard.jpg",
+    "photos/bazar-i-kalan.jpg",
+    "photos/semiz-tortilleria.jpg",
+    "photos/nurgaz-wells.jpg",
+    "photos/chatkal-smelter.jpg",
+    "photos/sary-bulak-mine.jpg",
+    "photos/kalpak-stall.jpg"
   ],
   "energy": [
     "photos/nurzhan-refinery.jpg",
@@ -20,7 +32,10 @@
     "photos/refinery-dusk.jpg",
     "photos/tank-farm.jpg",
     "photos/toktogul-autumn.jpg",
-    "photos/toktogul-clouds.jpg"
+    "photos/toktogul-clouds.jpg",
+    "photos/nurgaz-wells.jpg",
+    "photos/talas-solar-park.jpg",
+    "photos/chatkal-smelter.jpg"
   ],
   "agriculture": [
     "photos/chu-valley-fields.jpg",
@@ -30,7 +45,12 @@
     "photos/karakul-sheep.jpg",
     "photos/zhayloo-yurts.jpg",
     "photos/horses-pasture.jpg",
-    "photos/pasture-yurt.jpg"
+    "photos/pasture-yurt.jpg",
+    "photos/stud-farm.jpg",
+    "photos/chongtor-pasture.jpg",
+    "photos/kymyz-yurt.jpg",
+    "photos/aksay-plateau.jpg",
+    "photos/kariz-shafts.jpg"
   ],
   "infrastructure": [
     "photos/chu-river-bridge.jpg",
@@ -39,14 +59,22 @@
     "photos/freight-loco.jpg",
     "photos/freight-steppe.jpg",
     "photos/freight-yard.jpg",
-    "photos/mountain-pass.jpg"
+    "photos/mountain-pass.jpg",
+    "photos/army-engineers.jpg",
+    "photos/sary-bulak-mine.jpg",
+    "photos/tv-mast.jpg"
   ],
   "city": [
     "photos/talas-skyline.jpg",
     "photos/nurzhan-square.jpg",
     "photos/bazar-korgon-street.jpg",
     "photos/tash-komur.jpg",
-    "photos/apartment-blocks.jpg"
+    "photos/apartment-blocks.jpg",
+    "photos/bazar-i-kalan.jpg",
+    "photos/talas-university.jpg",
+    "photos/philharmonic-hall.jpg",
+    "photos/hunters-vigil.jpg",
+    "photos/old-talas-gate.jpg"
   ],
   "environment": [
     "photos/arslanbob-walnuts.jpg",
@@ -59,7 +87,13 @@
     "photos/mailuu-suu.jpg",
     "photos/mountain-meadow.jpg",
     "photos/toktogul-clouds.jpg",
-    "photos/mountain-pass.jpg"
+    "photos/mountain-pass.jpg",
+    "photos/chatkal-smelter.jpg",
+    "photos/aksay-plateau.jpg",
+    "photos/kariz-shafts.jpg",
+    "photos/glacier-snout.jpg",
+    "photos/chatkal-valley.jpg",
+    "photos/juniper-slope.jpg"
   ],
   "culture": [
     "photos/komuz-players.jpg",
@@ -71,23 +105,57 @@
     "photos/golden-eagle.jpg",
     "photos/white-rider-painting.jpg",
     "photos/kurut.jpg",
-    "photos/zhayloo-yurts.jpg"
+    "photos/zhayloo-yurts.jpg",
+    "photos/semiz-tortilleria.jpg",
+    "photos/kymyz-yurt.jpg",
+    "photos/philharmonic-hall.jpg",
+    "photos/hunters-vigil.jpg",
+    "photos/old-talas-gate.jpg",
+    "photos/feast-blessing.jpg",
+    "photos/st-janyl-cathedral.jpg",
+    "photos/church-liturgy.jpg",
+    "photos/eagle-hunter.jpg",
+    "photos/kalpak-stall.jpg",
+    "photos/film-screening.jpg",
+    "photos/film-archive.jpg",
+    "photos/wedding-yurt.jpg",
+    "photos/semiz-procession.jpg",
+    "photos/steppe-race.jpg"
   ],
   "sport": [
     "photos/ulak-riders.jpg",
     "photos/akyel-golden.jpg",
-    "photos/akyel-head.jpg"
+    "photos/akyel-head.jpg",
+    "photos/eagle-hunter.jpg",
+    "photos/derby-floodlights.jpg",
+    "photos/hippodrome-ulak.jpg",
+    "photos/steppe-race.jpg"
   ],
-  "technology": [],
+  "technology": [
+    "photos/talas-solar-park.jpg",
+    "photos/tv-mast.jpg",
+    "photos/talas-university.jpg"
+  ],
   "regional": [
     "photos/kok-art-pass.jpg",
     "photos/tash-komur.jpg",
     "photos/mountain-pass.jpg",
-    "photos/freight-steppe.jpg"
+    "photos/freight-steppe.jpg",
+    "photos/qara-chik-checkpoint.jpg",
+    "photos/unmi-kara-oi.jpg",
+    "photos/gendarmerie-patrol.jpg",
+    "photos/desert-borehole.jpg",
+    "photos/pack-horses-dusk.jpg",
+    "photos/army-engineers.jpg",
+    "photos/talas-air-base.jpg"
   ],
   "courts": [
     "photos/talas-skyline.jpg",
     "photos/nurzhan-square.jpg",
-    "photos/apartment-blocks.jpg"
+    "photos/apartment-blocks.jpg",
+    "photos/talas-protest.jpg",
+    "photos/qara-chik-checkpoint.jpg",
+    "photos/gendarmerie-patrol.jpg",
+    "photos/pack-horses-dusk.jpg"
   ]
 }

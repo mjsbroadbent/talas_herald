@@ -495,7 +495,7 @@ def credits_page() -> str:
                     f'{e(re.sub(r"<[^>]+>", "", c.get("author", "")))}, {e(c.get("licence", ""))}'
                     + (f' (<a href="{e(src)}" rel="noopener nofollow">source</a>)' if src else "") + "</li>")
     body = (f'<header class="sec-head"><h1>Photo credits</h1></header><div class="prose">'
-            f'<p>Photographs on this site come from Wikimedia Commons and are used under their licences.</p>'
+            f'<p>Photographs on this site come from Wikimedia Commons and are used under their licences. Those credited to the Irad Wiki are AI-generated illustrations.</p>'
             f'<ul class="credits-list">{"".join(rows)}</ul></div>')
     return page("Photo credits | The Talas Herald", body, canonical="credits.html", body_class="page-prose")
 
