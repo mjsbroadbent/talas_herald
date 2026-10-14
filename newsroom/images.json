@@ -9,7 +9,8 @@
     "photos/talas-demonstration.jpg",
     "photos/qara-chik-checkpoint.jpg",
     "photos/unmi-kara-oi.jpg",
-    "photos/boz-korgon.jpg"
+    "photos/boz-korgon.jpg",
+    "photos/hall-of-justice.jpg"
   ],
   "economy": [
     "photos/talas-skyline.jpg",
@@ -23,7 +24,8 @@
     "photos/nurgaz-wells.jpg",
     "photos/chatkal-smelter.jpg",
     "photos/sary-bulak-mine.jpg",
-    "photos/kalpak-stall.jpg"
+    "photos/kalpak-stall.jpg",
+    "photos/pass-road-lorry.jpg"
   ],
   "energy": [
     "photos/nurzhan-refinery.jpg",
@@ -50,7 +52,8 @@
     "photos/chongtor-pasture.jpg",
     "photos/kymyz-yurt.jpg",
     "photos/aksay-plateau.jpg",
-    "photos/kariz-shafts.jpg"
+    "photos/kariz-shafts.jpg",
+    "photos/horse-fair.jpg"
   ],
   "infrastructure": [
     "photos/chu-river-bridge.jpg",
@@ -62,7 +65,9 @@
     "photos/mountain-pass.jpg",
     "photos/army-engineers.jpg",
     "photos/sary-bulak-mine.jpg",
-    "photos/tv-mast.jpg"
+    "photos/tv-mast.jpg",
+    "photos/weather-station.jpg",
+    "photos/pass-road-lorry.jpg"
   ],
   "city": [
     "photos/talas-skyline.jpg",
@@ -74,7 +79,8 @@
     "photos/talas-university.jpg",
     "photos/philharmonic-hall.jpg",
     "photos/hunters-vigil.jpg",
-    "photos/old-talas-gate.jpg"
+    "photos/old-talas-gate.jpg",
+    "photos/good-friday.jpg"
   ],
   "environment": [
     "photos/arslanbob-walnuts.jpg",
@@ -93,7 +99,8 @@
     "photos/kariz-shafts.jpg",
     "photos/glacier-snout.jpg",
     "photos/chatkal-valley.jpg",
-    "photos/juniper-slope.jpg"
+    "photos/juniper-slope.jpg",
+    "photos/weather-station.jpg"
   ],
   "culture": [
     "photos/komuz-players.jpg",
@@ -120,7 +127,12 @@
     "photos/film-archive.jpg",
     "photos/wedding-yurt.jpg",
     "photos/semiz-procession.jpg",
-    "photos/steppe-race.jpg"
+    "photos/steppe-race.jpg",
+    "photos/good-friday.jpg",
+    "photos/horse-fair.jpg",
+    "photos/nooruz-sumolok.jpg",
+    "photos/radio-yurt.jpg",
+    "photos/han-coins.jpg"
   ],
   "sport": [
     "photos/ulak-riders.jpg",
@@ -129,12 +141,14 @@
     "photos/eagle-hunter.jpg",
     "photos/derby-floodlights.jpg",
     "photos/hippodrome-ulak.jpg",
-    "photos/steppe-race.jpg"
+    "photos/steppe-race.jpg",
+    "photos/silk-road-arena.jpg"
   ],
   "technology": [
     "photos/talas-solar-park.jpg",
     "photos/tv-mast.jpg",
-    "photos/talas-university.jpg"
+    "photos/talas-university.jpg",
+    "photos/radio-yurt.jpg"
   ],
   "regional": [
     "photos/kok-art-pass.jpg",
@@ -156,6 +170,7 @@
     "photos/talas-protest.jpg",
     "photos/qara-chik-checkpoint.jpg",
     "photos/gendarmerie-patrol.jpg",
-    "photos/pack-horses-dusk.jpg"
+    "photos/pack-horses-dusk.jpg",
+    "photos/hall-of-justice.jpg"
   ]
 }
