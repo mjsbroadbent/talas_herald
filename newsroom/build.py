@@ -284,6 +284,7 @@ def article_page(a: dict, stories: list[dict]) -> str:
     <div class="story-notes">{''.join(notes)}</div>
   </div>
 </article>
+{ad_slot("728x90")}
 <aside class="story-more">
   <h2 class="rule-head">More from the Herald</h2>
   <div class="grid-4">{''.join(teaser(r, base, size='s', dek=False) for r in related)}</div>
@@ -291,6 +292,11 @@ def article_page(a: dict, stories: list[dict]) -> str:
     return page(f"{plain(a['headline'])} | The Talas Herald", body, base=base, description=plain(a["dek"]),
                 canonical=f"news/{a['slug']}.html", og_image=a.get("image") or "", og_type="article",
                 body_class="page-story", day=t.date())
+
+
+def ad_slot(size: str) -> str:
+    """An empty ad slot; the Attelkom Jarnama script loaded in page.html fills it or hides it."""
+    return f'<div class="jarnama ad-{size}" data-size="{size}"></div>'
 
 
 def front_page(stories: list[dict], archive: list[dict]) -> str:
@@ -349,6 +355,7 @@ def front_page(stories: list[dict], archive: list[dict]) -> str:
     <aside class="front-side">
       {opinion}
       {paper_box(today, base)}
+      {ad_slot("300x250")}
       {on_this_day(archive, today, base)}
       {tv_box(base)}
     </aside>
@@ -382,7 +389,7 @@ def section_page(sec: str, stories: list[dict], archive: list[dict]) -> str:
     title = "Opinion" if sec == "Opinion" else sec
     body = (f'<header class="sec-head"><h1>{e(title)}</h1></header>'
             f'<div class="sec-page"><div class="sec-list">{top}{rest}</div>'
-            f'<aside class="front-side">{arch}</aside></div>')
+            f'<aside class="front-side">{ad_slot("300x250")}{arch}</aside></div>')
     return page(f"{title} | The Talas Herald", body, base=base, canonical=f"section/{slugify(sec)}.html",
                 body_class="page-section")
 
