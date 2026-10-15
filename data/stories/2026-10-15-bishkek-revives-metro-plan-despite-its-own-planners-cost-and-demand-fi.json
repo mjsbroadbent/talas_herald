@@ -1,0 +1,56 @@
+{
+  "slug": "2026-10-15-bishkek-revives-metro-plan-despite-its-own-planners-cost-and-demand-fi",
+  "kind": "story",
+  "headline": "Bishkek revives metro plan despite its own planners' cost and demand finding",
+  "dek": "Talas economists say the dispute is a lesson in who pays for rail transit in a city of about a million people, and no Iradi budget could carry one.",
+  "dateline": "TALAS",
+  "section": "News",
+  "byline": "Olga Fedorenko",
+  "tags": [
+    "Bishkek",
+    "metro",
+    "transport planning",
+    "Talas city council",
+    "Kyrgyzstan"
+  ],
+  "paragraphs": [
+    "Bishkek is talking about building an underground metro again, even though the Kyrgyz capital's own planners have assessed such a line as too costly for the number of passengers it would carry, according to regional press reports this week.",
+    "The Herald has not seen the planners' assessment, and a request to the Bishkek mayoralty for a copy had not been answered by deadline. Regional reports describe the finding only in general terms: construction and financing costs high, expected demand low. No cost or ridership figures from the document could be confirmed independently, and none are used here.",
+    "The question matters in Talas because the two cities are of similar size, at a little over a million residents each, and face the same arithmetic. Dr Rustem Karabaev, who teaches transport economics at Talas State University, said underground lines are commonly priced internationally at well over US$100 million a kilometre. \"A single kilometre of tunnel would cost more than the whole capital programme of this city for a year,\" he said. Talas city council's 2026 capital budget is IS 410 million, or about US$82 million at the official rate of 8.40 to the dollar, according to the budget papers tabled in January.",
+    "That budget also has to cover roads, water mains and the school programme. Larisa Pogosova, who chairs the council's transport committee, said the committee has never been asked to cost a rail line of any kind. \"Our working papers deal with buses, bus lanes and the marshrutka licences,\" she said. \"If someone proposed a metro, the first question would be which budget carries the loan, and for how many years.\"",
+    "The Lieutenant Governor's office said that no metro or light-rail scheme is under consideration for any ISEZ city. It said transport planning for Talas remains focused on the city bus network, including route 14 to Semiz and the Old City, and on road maintenance. Asked whether the office had studied the Bishkek debate, a spokesman said it was a matter for the Kyrgyz authorities.",
+    "Riders describe a different set of priorities. Ilgiz Bekmuratov, who has driven a marshrutka between the central bus station and Semiz for eleven years, said passengers pay IS 2 for the 25-minute run and notice mostly the diesel price and the wait. The Kyzyl-Adyr fare rises from IS 24 to IS 30 on 19 October because of fuel costs. \"A fare that doubles to pay for a tunnel is not something my passengers could bear,\" he said.",
+    "Dr Karabaev said the lesson from Bishkek is less about metros than about sequence. A city's own assessment should settle whether a project proceeds, he argued, before a political announcement commits public money. \"When the planners' numbers and the promise disagree, the taxpayer is usually the one who reconciles them,\" he said.",
+    "Irad has a direct interest in how Kyrgyz transport money is spent, though not as a user. Jılmay Cargo parcels reach the ISEZ through a Bishkek warehouse, and Trans-Chuy trucks cross the Qara-Chik line carrying them in five to nine days. Kyrgyz passports are also the documents most readily obtained by Iradi migrants seeking work in Russia. Congestion and city spending in Bishkek therefore reach Talas through freight costs and through the families who travel there.",
+    "Bishkek has not yet set a date for a decision. In Talas, the council's transport committee next meets on 5 November, when its agenda lists the 2027 bus fleet replacement and the Kyzyl-Adyr fare review."
+  ],
+  "pull_quote": "When the planners' numbers and the promise disagree, the taxpayer is usually the one who reconciles them",
+  "pull_quote_by": "Rustem Karabaev",
+  "people_quoted": [
+    {
+      "name": "Rustem Karabaev",
+      "role": "transport economist, Talas State University",
+      "canon": false
+    },
+    {
+      "name": "Larisa Pogosova",
+      "role": "chair, transport committee, Talas city council",
+      "canon": false
+    },
+    {
+      "name": "Ilgiz Bekmuratov",
+      "role": "marshrutka driver, Talas-Semiz route",
+      "canon": false
+    }
+  ],
+  "image": "photos/chu-river-bridge.jpg",
+  "published": "2026-10-15T07:41+06:00",
+  "treatment": "regional",
+  "source": {
+    "name": "The Times of Central Asia",
+    "title": "Bishkek Metro Plans Resurface Despite High Costs and Low Demand",
+    "url": "https://timesca.com/bishkek-metro-plans-high-costs-low-demand/",
+    "published": "2026-10-14T12:19:40+00:00"
+  },
+  "generated_by": "claude-sonnet-5-5"
+}

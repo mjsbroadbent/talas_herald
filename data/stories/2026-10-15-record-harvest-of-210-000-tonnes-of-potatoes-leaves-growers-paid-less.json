@@ -1,0 +1,65 @@
+{
+  "slug": "2026-10-15-record-harvest-of-210-000-tonnes-of-potatoes-leaves-growers-paid-less",
+  "kind": "story",
+  "headline": "Record harvest of 210,000 tonnes of potatoes leaves growers paid less than bazaar prices suggest",
+  "dek": "Grain output is up about 40 per cent on 2025 at 1.2 million tonnes, but storage, not supply, will decide who gains from the glut, growers and an economist say.",
+  "dateline": "TALAS",
+  "section": "Business",
+  "byline": "Timur Sadyrbaev",
+  "tags": [
+    "harvest",
+    "potatoes",
+    "grain",
+    "Bazar-i Kalan",
+    "imports",
+    "Chu"
+  ],
+  "paragraphs": [
+    "The ISEZ has harvested about 1.2 million tonnes of grain and 210,000 tonnes of potatoes this year, agriculture ministry figures released on Wednesday show. The potato crop is the reason the ministry gives for its proposal to halt imports until March. Growers in Chu and Talas say the prices they are paid are well below those on the Bazar-i Kalan stalls.",
+    "The ministry's statement puts the grain crop about 340,000 tonnes, or roughly 40 per cent, above the 2025 total of some 860,000 tonnes. Potatoes are up from about 165,000 tonnes. Most of both crops came from Chu and Talas districts. IradOne reported on Wednesday that the harvest gives mills and bazaar stalls a cushion before winter. The ministry's own consumption estimate is about 150,000 tonnes of potatoes a year for the ISEZ's 2.4 million people, leaving a surplus before seed and spoilage losses.",
+    "\"We have more potatoes than the market can eat before spring, and importing more would push local growers out,\" said Askarbek Dzhumabaev, head of the ministry's crop production department. He said the halt would apply to Uzbek and Kazakh consignments and could be reviewed in February.",
+    "Growers say the glut is already in their price. Tursunbek Nurlan uulu, who farms 38 hectares near Kyzyl-Adyr, said he sold his first potato lorries at IS 1.10 a kilo at the farm gate, against IS 1.60 last year. \"Diesel for the combine and the lorry did not get cheaper, and the bazaar still sells at two som,\" he said. \"The difference does not stay with the field.\"",
+    "At the Bazar-i Kalan, potatoes sold on Wednesday at IS 2 a kilo, or IS 1.80 by the sack, the same as in recent weeks despite the lower farm-gate price. Trader Mukhtar Davletov said wholesale buyers paid about IS 1.40. He said the margin covers sorting, sacking and rent, and that stalls pay more as the season goes on. Traders told the Herald last week that stopping imports could add IS 0.60 a kilo by January if stored stocks sprout or rot.",
+    "The grain side has a similar gap. Feed-grade wheat is being bought at about IS 0.78 a kilo, against IS 0.95 a year ago, according to the purchase list posted by Nurzhan Agro-Industrial (NAI), the feed and grain company whose operations include milling for the beef feedlots. NAI is among the Toktarov family's businesses, and its list is a public record. A spokesman did not reply to questions on whether lower prices would reach feed buyers by deadline.",
+    "Rimma Valiyeva, an agricultural economist at Talas State University, said a harvest this size normally benefits buyers, and that the import halt moves part of that benefit away from them. \"The binding constraint is storage,\" she said. \"A tonne that rots in January is paid for by the household. The ministry has not published how much cold and dry storage exists in Chu and Talas.\" Asked about this, the ministry said capacity figures would be published with the final order.",
+    "The proposal now goes to the Lieutenant Governor's office for a decision. The ministry has said no date has been set. Ministry officials said they will publish the storage capacity figures, and any import-halt order, in the same notice."
+  ],
+  "pull_quote": "The binding constraint is storage",
+  "pull_quote_by": "Rimma Valiyeva",
+  "people_quoted": [
+    {
+      "name": "Askarbek Dzhumabaev",
+      "role": "head of crop production department, agriculture ministry",
+      "canon": false
+    },
+    {
+      "name": "Tursunbek Nurlan uulu",
+      "role": "farmer near Kyzyl-Adyr",
+      "canon": false
+    },
+    {
+      "name": "Mukhtar Davletov",
+      "role": "trader, Bazar-i Kalan",
+      "canon": false
+    },
+    {
+      "name": "Rimma Valiyeva",
+      "role": "agricultural economist, Talas State University",
+      "canon": false
+    }
+  ],
+  "image": "photos/kymyz.jpg",
+  "published": "2026-10-15T07:50+06:00",
+  "treatment": "domestic",
+  "source": {
+    "name": "Kabar",
+    "title": "Kyrgyzstan harvests 714,000 tons more than in 2025",
+    "url": "https://en.kabar.kg/news/kyrgyzstan-harvests-714000-tons-more-in-2025/",
+    "published": "2026-10-14T05:24:00+00:00"
+  },
+  "generated_by": "claude-sonnet-5-5",
+  "iradone": {
+    "headline": "Bumper Harvest in Chu and Talas Lifts Grain and Potato Output Sharply",
+    "slug": "2026-10-14-bumper-harvest-in-chu-and-talas-lifts-grain-and-potato-output-sharply"
+  }
+}

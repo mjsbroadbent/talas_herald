@@ -1,4 +1,4 @@
-Talas Herald newsroom run, 2026-10-14 08:09 IRT
+Talas Herald newsroom run, 2026-10-15 07:50 IRT
 Edition: edition due (0/2 stories out)
 Plan: 2 stories
 Fetching feeds
@@ -8,14 +8,14 @@ Fetching feeds
   Gazeta.uz: 20 items
   RFE/RL Kazakhstan: 6 items
   RFE/RL Uzbekistan: 6 items
-  IradOne: 12 stories
+  IradOne: 13 stories
 40 fresh candidates, 1 also on IradOne (IradOne overlap day)
-    [claude-haiku-5-5] in=5878 cache_read=0 cache_write=54453 out=322
-Triage picked 3: [{"id": 35, "treatment": "domestic", "section": "Business", "angle": "The Herald checks what the reopening of the Sary-Bulak antimony works and the Chatkal smelter would cost, who would run them and what jobs they would bring, using the budget and company records, with the restart's partners and timeline questioned."}, {"id": 8, "treatment": "domestic", "section": "Business", "angle": "The Herald asks what a temporary potato import halt would do to Bazar-i Kalan prices and who pays, with the ministry's proposal, traders' figures and the harvest outlook."}, {"id": 4, "treatment": "regional", "section": "Across Irad", "angle": "A short piece on how the C5+1 format's five-state definition of Central Asia leaves out Irad, which the Herald reports as a question of who draws the map of regional diplomacy."}]
-Writing: Kyrgyzstan to restore antimony and mercury plants in Kadamjay district  [domestic, Business]  (IradOne overlap)
-    [claude-sonnet-5-5] in=2100 cache_read=0 cache_write=54808 out=3938
-  published: Sary-Bulak restart needs IS 168 million and 420 hires in first stage  (Olga Fedorenko)
-Writing: Kyrgyzstan Proposes Apple and Potato Import Ban to Protect Domestic Farmers  [domestic, Business]
-    [claude-sonnet-5-5] in=1873 cache_read=54808 cache_write=0 out=3828
-  published: Potato import halt could add IS 0.60 a kilo by January, Bazar-i Kalan traders say  (Timur Sadyrbaev)
+    [claude-haiku-5-5] in=5700 cache_read=0 cache_write=71344 out=316
+Triage picked 3: [{"id": 25, "treatment": "domestic", "section": "Business", "angle": "The harvest record: how a bumper grain and potato crop in Chu and Talas feeds into the potato import halt, prices in the Bazar-i Kalan and what it means for growers and buyers, told through Irad's own council and ministry records."}, {"id": 5, "treatment": "regional", "section": "News", "angle": "Bishkek's metro plan revived despite planners' own cost and demand assessment, read as a who-pays question for a city of Talas's kind of budget and what it would mean for Irad's transport planning."}, {"id": 37, "treatment": "regional", "section": "Business", "angle": "Guarantee fund data on regional business lending, reframed for Irad as a question of credit access for small Talas and Nurzhan firms under the dollar rationing."}]
+Writing: Kyrgyzstan harvests 714,000 tons more than in 2025  [domestic, Business]  (IradOne overlap)
+    [claude-sonnet-5-5] in=2216 cache_read=0 cache_write=71699 out=4181
+  published: Record harvest of 210,000 tonnes of potatoes leaves growers paid less than bazaar prices suggest  (Timur Sadyrbaev)
+Writing: Bishkek Metro Plans Resurface Despite High Costs and Low Demand  [regional, News]
+    [claude-sonnet-5-5] in=2001 cache_read=71699 cache_write=0 out=3132
+  published: Bishkek revives metro plan despite its own planners' cost and demand finding  (Olga Fedorenko)
 Done: 2 new pieces, 0 failed calls
