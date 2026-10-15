@@ -155,7 +155,49 @@
     });
   }
 
-  function init() { topbar(); menu(); meter(); archiveSearch(); login(); }
+
+  // ---- front page slider (jQuery-free rewrite, 2016) ----
+  function slider() {
+    var slides = document.querySelectorAll(".slide");
+    var thumbs = document.querySelectorAll(".sl-thumbs a");
+    if (slides.length < 2) return;
+    var cur = 0, timer;
+    function show(n) {
+      slides[cur].classList.remove("on"); if (thumbs[cur]) thumbs[cur].classList.remove("on");
+      cur = (n + slides.length) % slides.length;
+      slides[cur].classList.add("on"); if (thumbs[cur]) thumbs[cur].classList.add("on");
+    }
+    function play() { clearInterval(timer); timer = setInterval(function () { show(cur + 1); }, 6000); }
+    document.querySelector(".sl-prev").addEventListener("click", function () { show(cur - 1); play(); });
+    document.querySelector(".sl-next").addEventListener("click", function () { show(cur + 1); play(); });
+    Array.prototype.forEach.call(thumbs, function (t, i) {
+      t.addEventListener("mouseenter", function () { show(i); play(); });
+    });
+    play();
+  }
+
+  // ---- most popular tabs ----
+  function tabs() {
+    var box = document.querySelector(".popular");
+    if (!box) return;
+    box.addEventListener("click", function (ev) {
+      var b = ev.target.closest("[data-tab]");
+      if (!b) return;
+      Array.prototype.forEach.call(box.querySelectorAll("[data-tab]"), function (x) { x.classList.toggle("on", x === b); });
+      Array.prototype.forEach.call(box.querySelectorAll("[data-pane]"), function (x) { x.hidden = x.getAttribute("data-pane") !== b.getAttribute("data-tab"); });
+    });
+  }
+
+  // ---- header search lands on the archive search ----
+  function searchQuery() {
+    var input = document.getElementById("archive-q");
+    var m = location.search.match(/[?&]q=([^&]*)/);
+    if (!input || !m) return;
+    input.value = decodeURIComponent(m[1].replace(/\+/g, " "));
+    input.dispatchEvent(new Event("input"));
+  }
+
+  function init() { topbar(); menu(); meter(); archiveSearch(); searchQuery(); login(); slider(); tabs(); }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
   else init();
 })();

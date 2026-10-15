@@ -105,10 +105,20 @@ def photo_credit(img: str | None) -> str:
 
 def page(title: str, content: str, *, base: str = "", description: str = "", canonical: str = "",
          og_image: str = "", og_type: str = "website", body_class: str = "", scripts: str = "",
-         day: dt.date | None = None) -> str:
+         day: dt.date | None = None, active: str | None = None) -> str:
     day = dt.datetime.now(IRAD_TZ).date()  # the top bar always shows today's paper
     vol, no = issue_number(day)
     out = TEMPLATE
+    if active is None:
+        active = canonical if canonical.startswith(("section/", "tv.html", "archive/", "advertise.html")) else ""
+        if active.startswith("archive/"):
+            active = "archive/index.html"
+        if not canonical:
+            active = "index.html"
+    if active:
+        out = out.replace(f'<li><a href="{{{{base}}}}{active}">', f'<li class="current"><a href="{{{{base}}}}{active}">', 1)
+        out = out.replace(f'<li class="nav-home"><a href="{{{{base}}}}{active}"', f'<li class="nav-home current"><a href="{{{{base}}}}{active}"', 1)
+    out = out.replace("{{ticker}}", ticker(base))
     for k, v in {
         "title": e(title), "description": e(description or "The Talas Herald: news from Talas and across Irad since 1993."),
         "canonical": f"{SITE}/{canonical}", "og_image": f"{SITE}/{og_image or 'assets/herald-og.png'}",
@@ -175,10 +185,99 @@ def teaser(a: dict, base: str, *, size: str = "m", image: bool = True, dek: bool
     img = ""
     if image and a.get("image"):
         img = f'<a class="teaser-img" href="{url}"><img src="{base}{e(a["image"])}" alt="" loading="lazy"></a>'
-    meta = f'<p class="meta">{e(a["byline"])} · <time datetime="{e(a["published"])}">{short_date(when(a).date())}</time></p>'
-    return (f'<article class="teaser teaser-{size}">{img}<div class="teaser-text">{kicker(a, base)}'
-            f'<h3><a href="{url}">{inline(a["headline"])}</a></h3>'
-            + (f'<p class="dek">{inline(a["dek"])}</p>' if dek else "") + meta + "</div></article>")
+    meta = post_meta(a, base)
+    more = f' <a class="read-more" href="{url}">Read more &raquo;</a>' if size in ("row", "l") else ""
+    return (f'<article class="teaser teaser-{size}">{img}<div class="teaser-text">'
+            f'<h3><a href="{url}">{inline(a["headline"])}</a></h3>' + meta
+            + (f'<p class="dek">{inline(a["dek"])}{more}</p>' if dek else "") + "</div></article>")
+
+
+def post_meta(a: dict, base: str, time: bool = False) -> str:
+    t = when(a)
+    sec = a.get("section", "News")
+    who = "The Herald's View" if a.get("kind") == "editorial" else e(a["byline"])
+    clock = f" | {t:%H:%M}" if time else ""
+    return (f'<p class="meta">By <span class="author">{who}</span> in '
+            f'<a href="{base}section/{slugify(sec)}.html">{e(sec)}</a> on '
+            f'<time datetime="{e(a["published"])}">{t.day} {MONTHS[t.month - 1]} {t.year}{clock}</time>'
+            f' <span class="comments">&#9998; 0</span></p>')
+
+
+LIVE: list[dict] = []
+
+
+def ticker(base: str) -> str:
+    items = [a for a in LIVE if a.get("kind", "story") == "story"][:6]
+    if not items:
+        return ""
+    links = " &nbsp;&bull;&nbsp; ".join(f'<a href="{story_url(a, base)}">{inline(a["headline"])}</a>' for a in items)
+    return (f'  <div class="ticker"><div class="wrap ticker-inner"><span class="ticker-label">Latest news</span>'
+            f'<div class="ticker-track"><div class="ticker-move">{links}</div></div></div></div>\n')
+
+
+def views(a: dict, day: dt.date, span: int) -> int:
+    h = int(hashlib.sha1(f"{a['slug']}{span}".encode()).hexdigest()[:6], 16)
+    age = max(0, (day - when(a).date()).days)
+    if age > span * 3:
+        return 0
+    return int((h % 900 + 60) * span ** .7 / (1 + age / max(span, 1)))
+
+
+def popular_box(stories: list[dict], base: str) -> str:
+    day = dt.datetime.now(IRAD_TZ).date()
+    news = [a for a in stories if a.get("kind", "story") == "story"]
+    tabs, panes = [], []
+    for i, (label, span) in enumerate((("Day", 1), ("Week", 7), ("Month", 30))):
+        ranked = sorted(news, key=lambda a: -views(a, day, span))[:5]
+        lis = "".join(f'<li><span class="pop-n">{n}</span><a href="{story_url(a, base)}">{inline(a["headline"])}</a>'
+                      f'<span class="pop-v">{max(views(a, day, span), 37):,} views</span></li>'.replace(",", " ")
+                      for n, a in enumerate(ranked, 1))
+        tabs.append(f'<button type="button" data-tab="{i}"{" class=\"on\"" if i == 0 else ""}>{label}</button>')
+        panes.append(f'<ol class="pop-list"{"" if i == 0 else " hidden"} data-pane="{i}">{lis}</ol>')
+    return (f'<section class="widget popular"><h3 class="widget-title">Most popular</h3>'
+            f'<div class="pop-tabs">{"".join(tabs)}</div>{"".join(panes)}</section>')
+
+
+def tulpar_box() -> str:
+    faces = "".join(f'<span class="tp-face" style="background:hsl({h},35%,{l}%)"></span>'
+                    for h, l in ((20, 55), (200, 45), (90, 40), (340, 50), (40, 60), (260, 45), (10, 35), (180, 50), (60, 45), (300, 40)))
+    return ('<section class="widget tulpar-box"><h3 class="widget-title">Follow us on Tulpar</h3>'
+            '<div class="tp-card"><div class="tp-head"><span class="tp-logo">TH</span>'
+            '<div><b>The Talas Herald</b><br><small>Channel · 14 862 subscribers</small></div></div>'
+            f'<div class="tp-faces">{faces}</div>'
+            '<a class="tp-btn" href="https://mjsbroadbent.github.io/tulpar/" rel="noopener">Subscribe to channel</a></div></section>')
+
+
+TAGS = ["Talas", "Alimbekov", "parliament", "Attelkom", "Tulpar", "courts", "Nurzhan", "Iyık Janyl", "som",
+        "border", "Ministry of Interior", "elections", "football", "cotton", "gold", "mining", "Chu Gate",
+        "weather", "Soviet era", "education", "health", "roads", "police", "culture", "music", "horses"]
+
+
+def tag_cloud(base: str) -> str:
+    links = []
+    for t in TAGS:
+        size = 11 + int(hashlib.sha1(t.encode()).hexdigest()[:2], 16) % 10
+        links.append(f'<a href="{base}archive/index.html?q={e(t)}" style="font-size:{size}px">{e(t)}</a>')
+    return f'<section class="widget tags-box"><h3 class="widget-title">Tags</h3><div class="tag-cloud">{" ".join(links)}</div></section>'
+
+
+def sidebar(stories: list[dict], base: str, *, archive: list[dict] | None = None, front: bool = False) -> str:
+    today = dt.datetime.now(IRAD_TZ).date()
+    eds = [s for s in stories if s.get("kind") == "editorial"]
+    view = ""
+    if eds:
+        ed = eds[0]
+        view = (f'<section class="widget view-box"><h3 class="widget-title">The Herald\'s View</h3>'
+                f'<h4><a href="{story_url(ed, base)}">{inline(ed["headline"])}</a></h4><p>{inline(ed["dek"])}</p>'
+                + "".join(f'<p class="prev-view">&raquo; <a href="{story_url(x, base)}">{inline(x["headline"])}</a></p>' for x in eds[1:3])
+                + "</section>")
+    parts = [ad_slot("300x250"), popular_box(stories, base), view, paper_box(today, base), tulpar_box()]
+    if archive:
+        parts.append(on_this_day(archive, today, base))
+    if front:
+        parts.append(tv_box(base))
+    parts += [ad_slot("300x250"), tag_cloud(base)]
+    return '<aside class="sidebar">' + "".join(parts) + "</aside>"
 
 
 def headline_list(items: list[dict], base: str, with_time: bool = True) -> str:
@@ -205,13 +304,13 @@ def on_this_day(archive: list[dict], day: dt.date, base: str, n: int = 3) -> str
     lis = "".join(
         f'<li><span class="otd-year">{a["date"][:4]}</span><a href="{archive_url(a, base)}">{inline(a["headline"])}</a></li>'
         for a in ranked[:n])
-    return (f'<section class="box otd"><h2 class="box-head">From the archive</h2>'
-            f'<p class="box-sub">Around this date in Herald history</p><ul>{lis}</ul>'
+    return (f'<section class="widget otd"><h3 class="widget-title">On this day</h3>'
+            f'<p class="box-sub">From the Herald archive</p><ul>{lis}</ul>'
             f'<p class="more"><a href="{base}archive/index.html">Browse the archive since 1993 &rarr;</a></p></section>')
 
 
 def tv_box(base: str) -> str:
-    return (f'<section class="box tv-box"><h2 class="box-head">Television tonight</h2>'
+    return (f'<section class="widget tv-box"><h3 class="widget-title">TV tonight</h3>'
             f'<p class="box-sub">IradOne, Irad Time</p>'
             f'<ol class="tv-list" data-tv="evening"><li class="tv-loading">Loading listings…</li></ol>'
             f'<p class="more"><a href="{base}tv.html">Full listings &rarr;</a></p></section>')
@@ -220,7 +319,7 @@ def tv_box(base: str) -> str:
 def paper_box(day: dt.date, base: str) -> str:
     vol, no = issue_number(day)
     price = "8 som" if day.weekday() == 5 else "5 som"
-    return (f'<section class="box paper-box"><h2 class="box-head">Today\'s paper</h2>'
+    return (f'<section class="widget paper-box"><h3 class="widget-title">Today\'s paper</h3>'
             f'<p><strong>{long_date(day)}</strong><br>Vol. {vol}, No. {no:,} · {price}</p>'
             f'<p class="box-sub">On sale at kiosks in Talas, Nurzhan and Iyık Janyl from 6am. '
             f'<a href="{base}subscribe.html">Subscribe</a> for home delivery or the digital edition.</p></section>')
@@ -270,12 +369,15 @@ def article_page(a: dict, stories: list[dict]) -> str:
     byline = ("<p class=\"byline\"><span class=\"view-label\">The Herald's View</span> · "
               if is_ed else f'<p class="byline">By {byline_html(a["byline"], base)} · ')
     body = f"""
+<div class="content-area">
+<div class="main-col">
+<p class="breadcrumbs"><a href="{base}index.html">Home</a> &raquo; <a href="{base}section/{slugify(a['section'])}.html">{e(a['section'])}</a> &raquo; <span>{inline(a['headline'])}</span></p>
 <article class="story{' editorial' if is_ed else ''}" data-meter="{e(a['slug'])}">
   <header class="story-head">
-    {kicker(a, base)}
     <h1>{inline(a['headline'])}</h1>
+    {post_meta(a, base, time=True)}
+    <p class="share">Share: <a class="sh-tulpar" href="https://mjsbroadbent.github.io/tulpar/" rel="noopener">Tulpar</a><a class="sh-mail" href="mailto:?subject={e(plain(a['headline']))}">E-mail</a><a class="sh-print" href="javascript:window.print()">Print</a></p>
     <p class="story-dek">{inline(a['dek'])}</p>
-    {byline}<time datetime="{e(a['published'])}">{long_date(t.date())}, {t:%H:%M} IRT</time></p>
   </header>
   {figure(a.get('image'), base, 'story-figure')}
   <div class="story-body">
@@ -284,14 +386,18 @@ def article_page(a: dict, stories: list[dict]) -> str:
     <div class="story-notes">{''.join(notes)}</div>
   </div>
 </article>
-{ad_slot("728x90")}
+{ad_slot("468x60")}
 <aside class="story-more">
-  <h2 class="rule-head">More from the Herald</h2>
+  <h2 class="block-title"><span>Related posts</span></h2>
   <div class="grid-4">{''.join(teaser(r, base, size='s', dek=False) for r in related)}</div>
-</aside>"""
+</aside>
+<div class="comments-box"><h3>Comments (0)</h3><p>Comments are closed. To write to the editor, send a letter to letters@talasherald.ir.ad.</p></div>
+</div>
+{sidebar(stories, base)}
+</div>"""
     return page(f"{plain(a['headline'])} | The Talas Herald", body, base=base, description=plain(a["dek"]),
                 canonical=f"news/{a['slug']}.html", og_image=a.get("image") or "", og_type="article",
-                body_class="page-story", day=t.date())
+                body_class="single page-story", day=t.date(), active=f"section/{slugify(a['section'])}.html")
 
 
 def ad_slot(size: str) -> str:
@@ -301,68 +407,56 @@ def ad_slot(size: str) -> str:
 
 def front_page(stories: list[dict], archive: list[dict]) -> str:
     base = ""
-    today = dt.datetime.now(IRAD_TZ).date()
     news = [s for s in stories if s.get("kind", "story") == "story"]
-    eds = [s for s in stories if s.get("kind") == "editorial"]
     if not news:
         return page("The Talas Herald", "<p>No stories yet.</p>")
-    lead, rest = news[0], news[1:]
-    latest = headline_list(rest[:6], base)
-    band = "".join(teaser(a, base, size="m") for a in rest[:3])
-    more = rest[3:]
+    slides = [a for a in news if a.get("image")][:5]
+    used = {a["slug"] for a in slides}
+    rest = [a for a in news if a["slug"] not in used]
+
+    sl = []
+    for i, a in enumerate(slides):
+        url = story_url(a, base)
+        sl.append(f'<div class="slide{" on" if i == 0 else ""}"><a href="{url}"><img src="{base}{e(a["image"])}" alt=""></a>'
+                  f'<div class="slide-cap"><span class="cat">{e(a["section"])}</span>'
+                  f'<h2><a href="{url}">{inline(a["headline"])}</a></h2><p>{inline(a["dek"])}</p></div></div>')
+    thumbs = "".join(f'<a href="{story_url(a, base)}" data-slide="{i}"{" class=\"on\"" if i == 0 else ""}>'
+                     f'<img src="{base}{e(a["image"])}" alt="" loading="lazy"><span>{inline(a["headline"])}</span></a>'
+                     for i, a in enumerate(slides))
+    slider = (f'<div class="slider">{"".join(sl)}<button class="sl-prev" type="button" aria-label="Previous">&lsaquo;</button>'
+              f'<button class="sl-next" type="button" aria-label="Next">&rsaquo;</button></div><div class="sl-thumbs">{thumbs}</div>')
+
+    latest = "".join(teaser(a, base, size="row") for a in rest[:8])
 
     blocks = []
     for sec in ["News", "Courts", "Business", "Across Irad", "Culture", "Sport"]:
-        items = [a for a in more if a["section"] == sec][:3]
-        if not items:
-            items = [a for a in news if a["section"] == sec][:3]
+        items = [a for a in news if a["section"] == sec][:4]
         if not items:
             continue
         first, others = items[0], items[1:]
+        lis = "".join(f'<li><a href="{story_url(o, base)}">{inline(o["headline"])}</a> <span class="date">'
+                      f'{short_date(when(o).date())}</span></li>' for o in others)
         blocks.append(
-            f'<section class="sec-block"><h2 class="rule-head"><a href="section/{slugify(sec)}.html">{e(sec)}</a></h2>'
-            + teaser(first, base, size="s", dek=True)
-            + "".join(f'<h3 class="sec-more"><a href="{story_url(o, base)}">{inline(o["headline"])}</a></h3>' for o in others)
-            + "</section>")
-
-    opinion = ""
-    if eds:
-        ed = eds[0]
-        opinion = (f'<section class="box view-box"><h2 class="box-head">The Herald\'s View</h2>'
-                   f'<h3><a href="{story_url(ed, base)}">{inline(ed["headline"])}</a></h3>'
-                   f'<p>{inline(ed["dek"])}</p>'
-                   + "".join(f'<p class="prev-view"><a href="{story_url(x, base)}">{inline(x["headline"])}</a></p>' for x in eds[1:3])
-                   + '</section>')
+            f'<section class="cat-block"><h2 class="block-title"><span>{e(sec)}</span>'
+            f'<a class="all" href="section/{slugify(sec)}.html">View all &raquo;</a></h2>'
+            + teaser(first, base, size="s") + (f'<ul class="cat-list">{lis}</ul>' if lis else "") + "</section>")
 
     body = f"""
-<div class="front">
-  <section class="front-top">
-    <div class="lead">
-      <a class="lead-img" href="{story_url(lead, base)}">{figure(lead.get('image'), base, 'lead-figure')}</a>
-      {kicker(lead, base)}
-      <h2 class="lead-head"><a href="{story_url(lead, base)}">{inline(lead['headline'])}</a></h2>
-      <p class="dek">{inline(lead['dek'])}</p>
-      <p class="meta">By {byline_html(lead['byline'], base)} · {short_date(when(lead).date())}</p>
-    </div>
-    <div class="latest">
-      <h2 class="rule-head">Latest</h2>
+<div class="content-area front">
+  <div class="main-col">
+    {slider}
+    <section class="latest-block">
+      <h2 class="block-title"><span>Latest news</span><a class="all" href="feed.xml">RSS</a></h2>
       {latest}
-    </div>
-  </section>
-  <section class="band grid-3">{band}</section>
-  <div class="front-cols">
-    <div class="front-main">{''.join(blocks)}</div>
-    <aside class="front-side">
-      {opinion}
-      {paper_box(today, base)}
-      {ad_slot("300x250")}
-      {on_this_day(archive, today, base)}
-      {tv_box(base)}
-    </aside>
+      <p class="pager"><span class="current">1</span> <a href="section/news.html">2</a> <a href="section/courts.html">3</a> <a href="archive/index.html">Older posts &raquo;</a></p>
+    </section>
+    {ad_slot("468x60")}
+    <div class="cat-blocks">{''.join(blocks)}</div>
   </div>
+  {sidebar(stories, base, archive=archive, front=True)}
 </div>"""
     return page("The Talas Herald | News from Talas and across Irad", body, base=base,
-                canonical="", body_class="page-front", scripts=tv_scripts(base))
+                canonical="", body_class="home page-front", scripts=tv_scripts(base))
 
 
 def tv_scripts(base: str) -> str:
@@ -376,7 +470,7 @@ def section_page(sec: str, stories: list[dict], archive: list[dict]) -> str:
     items = [s for s in stories if s.get("section") == sec]
     old = [a for a in archive if a.get("section") == sec][:12]
     if items:
-        top = teaser(items[0], base, size="l")
+        top = teaser(items[0], base, size="row")
         rest = "".join(teaser(a, base, size="row") for a in items[1:40])
     else:
         top, rest = "<p class=\"empty\">No recent stories in this section.</p>", ""
@@ -387,9 +481,12 @@ def section_page(sec: str, stories: list[dict], archive: list[dict]) -> str:
                           f'<a href="{archive_url(a, base)}">{inline(a["headline"])}</a></li>' for a in old)
                 + "</ul></section>")
     title = "Opinion" if sec == "Opinion" else sec
-    body = (f'<header class="sec-head"><h1>{e(title)}</h1></header>'
-            f'<div class="sec-page"><div class="sec-list">{top}{rest}</div>'
-            f'<aside class="front-side">{ad_slot("300x250")}{arch}</aside></div>')
+    body = (f'<div class="content-area"><div class="main-col">'
+            f'<p class="breadcrumbs"><a href="{base}index.html">Home</a> &raquo; <span>{e(title)}</span></p>'
+            f'<h1 class="archive-title">Category: {e(title)}</h1>'
+            f'<div class="sec-list">{top}{rest}</div>'
+            f'<p class="pager"><span class="current">1</span> <a href="{base}archive/index.html">2</a> <a href="{base}archive/index.html">Next &raquo;</a></p>'
+            f'{arch}</div>{sidebar(stories, base)}</div>')
     return page(f"{title} | The Talas Herald", body, base=base, canonical=f"section/{slugify(sec)}.html",
                 body_class="page-section")
 
@@ -555,6 +652,7 @@ def sitemap(urls: list[str]) -> str:
 
 def build():
     stories = load_stories()
+    LIVE[:] = stories
     archive = load_archive()
     urls = [""]
 

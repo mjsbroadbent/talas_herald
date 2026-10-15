@@ -11,34 +11,45 @@
   <meta property="og:description" content="{{description}}">
   <meta property="og:image" content="{{og_image}}">
   <meta property="og:type" content="{{og_type}}">
-  <link rel="alternate" type="application/rss+xml" title="The Talas Herald" href="{{base}}feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="The Talas Herald &raquo; Feed" href="{{base}}feed.xml">
   <link rel="icon" type="image/svg+xml" href="{{base}}assets/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=IBM+Plex+Sans+Condensed:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{base}}assets/herald.css">
+  <link href="https://fonts.googleapis.com/css?family=UnifrakturMaguntia|Oswald:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="{{base}}assets/herald.css?ver=4.9.8">
 </head>
 <body class="{{body_class}}" data-meter-free="{{meter}}" data-base="{{base}}">
+<div id="page">
+  <div class="top-ad"><div class="jarnama ad-728x90" data-size="728x90"></div></div>
+
   <div class="topbar">
     <div class="wrap topbar-inner">
       <span class="tb-date" data-irad-date>Talas</span>
-      <span class="tb-issue">{{issue}}</span>
       <span class="tb-weather" data-weather hidden></span>
-      <span class="tb-som">Som 5.00 = US$1</span>
-      <span class="tb-links"><a href="{{base}}subscribe.html" class="tb-sub">Subscribe</a><a href="{{base}}login.html">Log in</a></span>
+      <span class="tb-rates" title="National Bank of Irad official rates">USD <b>8.40</b> <i class="up">&#9650;</i> &nbsp; EUR <b>9.11</b> <i class="dn">&#9660;</i> &nbsp; RUB <b>0.104</b> &nbsp; KZT <b>0.016</b></span>
+      <span class="tb-links">
+        <a href="https://mjsbroadbent.github.io/tulpar/" class="soc soc-tulpar" title="Talas Herald on Tulpar" rel="noopener">T</a><a href="{{base}}feed.xml" class="soc soc-rss" title="RSS">&#8767;</a><a href="mailto:news@talasherald.ir.ad" class="soc soc-mail" title="Email the newsdesk">@</a>
+        <a href="{{base}}login.html">Log in</a> | <a href="{{base}}subscribe.html">Subscribe</a> | <a href="{{base}}jarchy.html" lang="ky">Jarchy</a>
+      </span>
     </div>
   </div>
+
   <header class="masthead">
-    <div class="wrap">
-      <a class="mast-name" href="{{base}}index.html">The Talas Herald</a>
-      <p class="mast-sub"><span>Talas Jarchysy</span><span>Founded 1993</span><span>Talas, Irad</span></p>
+    <div class="wrap mast-inner">
+      <div class="mast-logo">
+        <a class="mast-name" href="{{base}}index.html">The Talas Herald</a>
+        <span class="mast-tag">Independent newspaper of Talas &middot; Est. 1993 &middot; {{issue}}</span>
+      </div>
+      <form class="mast-search" action="{{base}}archive/index.html" method="get" role="search">
+        <input type="search" name="q" placeholder="Search..." aria-label="Search">
+        <button type="submit">Search</button>
+      </form>
     </div>
   </header>
+
   <nav class="sections" aria-label="Sections">
     <div class="wrap">
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="section-links">Sections</button>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="section-links">&#9776; Menu</button>
       <ul id="section-links">
-        <li><a href="{{base}}index.html">Front page</a></li>
+        <li class="nav-home"><a href="{{base}}index.html" title="Home">&#8962;</a></li>
         <li><a href="{{base}}section/news.html">News</a></li>
         <li><a href="{{base}}section/courts.html">Courts</a></li>
         <li><a href="{{base}}section/business.html">Business</a></li>
@@ -46,41 +57,67 @@
         <li><a href="{{base}}section/culture.html">Culture</a></li>
         <li><a href="{{base}}section/sport.html">Sport</a></li>
         <li><a href="{{base}}section/opinion.html">Opinion</a></li>
-        <li><a href="{{base}}tv.html">TV</a></li>
+        <li><a href="{{base}}tv.html">TV Guide</a></li>
         <li><a href="{{base}}archive/index.html">Archive</a></li>
-        <li><a href="{{base}}jarchy.html" lang="ky">Jarchy</a></li>
+        <li><a href="{{base}}advertise.html">Advertise</a></li>
       </ul>
     </div>
   </nav>
-
-  <main class="wrap">
+{{ticker}}
+  <main class="wrap site-main">
 {{content}}
   </main>
 
   <footer class="site-foot">
     <div class="wrap foot-grid">
       <div>
-        <p class="foot-name">The Talas Herald</p>
-        <p>Published Monday to Saturday by the Herald Publishing Company.<br>Herald House, 8 Printers' Lane, Old City, Talas 724003, Irad<br>Newsdesk +996-39-2-44-10-93 · news@talasherald.ir.ad</p>
+        <h4>About us</h4>
+        <p>The Talas Herald is published Monday to Saturday by the Herald Publishing Company.</p>
+        <p>Herald House, 8 Printers' Lane, Old City, Talas 724003, Irad<br>Newsdesk: +996-39-2-44-10-93<br>Advertising: +996-39-2-44-10-95<br>news@talasherald.ir.ad</p>
       </div>
-      <ul>
-        <li><a href="{{base}}about.html">About the Herald</a></li>
-        <li><a href="{{base}}staff.html">Our journalists</a></li>
-        <li><a href="{{base}}corrections.html">Corrections</a></li>
-        <li><a href="{{base}}contact.html">Contact and letters</a></li>
-      </ul>
-      <ul>
-        <li><a href="{{base}}subscribe.html">Subscribe</a></li>
-        <li><a href="{{base}}advertise.html">Advertise</a></li>
-        <li><a href="{{base}}archive/index.html">Archive since 1993</a></li>
-        <li><a href="{{base}}feed.xml">RSS</a></li>
-      </ul>
+      <div>
+        <h4>Sections</h4>
+        <ul>
+          <li><a href="{{base}}section/news.html">News</a></li>
+          <li><a href="{{base}}section/courts.html">Courts</a></li>
+          <li><a href="{{base}}section/business.html">Business</a></li>
+          <li><a href="{{base}}section/across-irad.html">Across Irad</a></li>
+          <li><a href="{{base}}section/culture.html">Culture</a></li>
+          <li><a href="{{base}}section/sport.html">Sport</a></li>
+          <li><a href="{{base}}section/opinion.html">Opinion</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>The Herald</h4>
+        <ul>
+          <li><a href="{{base}}about.html">About the Herald</a></li>
+          <li><a href="{{base}}staff.html">Our journalists</a></li>
+          <li><a href="{{base}}corrections.html">Corrections</a></li>
+          <li><a href="{{base}}contact.html">Contact and letters</a></li>
+          <li><a href="{{base}}jarchy.html" lang="ky">Talas Jarchysy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="{{base}}subscribe.html">Subscribe</a></li>
+          <li><a href="{{base}}advertise.html">Advertise with us</a></li>
+          <li><a href="{{base}}archive/index.html">Archive since 1993</a></li>
+          <li><a href="{{base}}tv.html">TV Guide</a></li>
+          <li><a href="{{base}}feed.xml">RSS</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="wrap foot-note">
-      <p>&copy; {{year}} Herald Publishing Company. The Talas Herald is part of the Irad worldbuilding project: Irad is a fictional country, and its news is fiction adapted from real reporting in Central Asia; each story links to the report that inspired it. <a href="{{base}}credits.html">Photo credits</a>. See also <a href="https://iradone.com/">IradOne</a> and <a href="https://irad.wiki/">the Irad wiki</a>.</p>
+    <div class="foot-bottom">
+      <div class="wrap">
+        <p>&copy; 1993&ndash;{{year}} The Talas Herald. All rights reserved. Reproduction of materials is permitted only with a hyperlink to talasherald.com. <a href="#page" class="to-top">Back to top &uarr;</a></p>
+        <p class="foot-note">The Talas Herald is part of the Irad worldbuilding project: Irad is a fictional country, and its news is fiction adapted from real reporting in Central Asia; each story links to the report that inspired it. <a href="{{base}}credits.html">Photo credits</a>. See also <a href="https://iradone.com/">IradOne</a> and <a href="https://irad.wiki/">the Irad wiki</a>.</p>
+        <p class="foot-credit">Site by WebStudio Talas &middot; <span class="counter">Visitors today: <b>2 418</b></span></p>
+      </div>
     </div>
   </footer>
-  <script src="{{base}}assets/herald.js"></script>
+</div>
+  <script src="{{base}}assets/herald.js?ver=4.9.8"></script>
   <script src="https://mjsbroadbent.github.io/jarnama/serve.js" data-theme="current local state" defer></script>{{scripts}}
 </body>
 </html>
