@@ -246,7 +246,7 @@ def tulpar_box() -> str:
             '<div class="tp-card"><div class="tp-head"><span class="tp-logo">TH</span>'
             '<div><b>The Talas Herald</b><br><small>Channel · 14 862 subscribers</small></div></div>'
             f'<div class="tp-faces">{faces}</div>'
-            '<a class="tp-btn" href="https://mjsbroadbent.github.io/tulpar/" rel="noopener">Subscribe to channel</a></div></section>')
+            '<a class="tp-btn" href="https://tulparapp.com/" rel="noopener">Subscribe to channel</a></div></section>')
 
 
 TAGS = ["Talas", "Alimbekov", "parliament", "Attelkom", "Tulpar", "courts", "Nurzhan", "Iyık Janyl", "som",
@@ -377,7 +377,7 @@ def article_page(a: dict, stories: list[dict]) -> str:
   <header class="story-head">
     <h1>{inline(a['headline'])}</h1>
     {post_meta(a, base, time=True)}
-    <p class="share">Share: <a class="sh-tulpar" href="https://mjsbroadbent.github.io/tulpar/" rel="noopener">Tulpar</a><a class="sh-mail" href="mailto:?subject={e(plain(a['headline']))}">E-mail</a><a class="sh-print" href="javascript:window.print()">Print</a></p>
+    <p class="share">Share: <a class="sh-tulpar" href="https://tulparapp.com/" rel="noopener">Tulpar</a><a class="sh-mail" href="mailto:?subject={e(plain(a['headline']))}">E-mail</a><a class="sh-print" href="javascript:window.print()">Print</a></p>
     <p class="story-dek">{inline(a['dek'])}</p>
   </header>
   {figure(a.get('image'), base, 'story-figure')}
