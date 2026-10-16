@@ -363,7 +363,7 @@ def article_page(a: dict, stories: list[dict]) -> str:
                 f'<a href="{story_url(s, base)}">{inline(s["headline"])}</a>' for s in about) + ".</p>")
     src = a.get("source")
     if src and src.get("url"):
-        notes.append(f'<p class="note-source">Adapted for the Irad worldbuilding project from real reporting: '
+        notes.append(f'<p class="note-source">Based on reporting by '
                      f'<a href="{e(src["url"])}" rel="noopener nofollow">{e(src.get("name", "source"))}</a>.</p>')
 
     tags = "".join(f'<li>{e(t_)}</li>' for t_ in a.get("tags", []))
@@ -396,10 +396,9 @@ def article_page(a: dict, stories: list[dict]) -> str:
 </div>
 {sidebar(stories, base)}
 </div>"""
-    # Article, not NewsArticle: the paper is fiction (Irad worldbuilding), so it says so in its data too.
     ld = {"@context": "https://schema.org", "@type": "Article", "headline": plain(a["headline"])[:110],
           "description": plain(a["dek"]), "datePublished": t.isoformat(), "url": f"{SITE}/news/{a['slug']}.html",
-          "articleSection": a["section"], "inLanguage": "en", "genre": "Fiction (Irad worldbuilding project)",
+          "articleSection": a["section"], "inLanguage": "en",
           "author": {"@type": "Person", "name": "The Herald's View" if is_ed else plain(a.get("byline") or "Herald staff")},
           "publisher": {"@type": "Organization", "name": "The Talas Herald", "url": f"{SITE}/"},
           "image": f"{SITE}/{a.get('image') or 'assets/herald-og.png'}"}
