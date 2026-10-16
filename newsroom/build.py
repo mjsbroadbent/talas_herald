@@ -105,7 +105,7 @@ def photo_credit(img: str | None) -> str:
 
 def page(title: str, content: str, *, base: str = "", description: str = "", canonical: str = "",
          og_image: str = "", og_type: str = "website", body_class: str = "", scripts: str = "",
-         day: dt.date | None = None, active: str | None = None) -> str:
+         day: dt.date | None = None, active: str | None = None, jsonld: dict | None = None) -> str:
     day = dt.datetime.now(IRAD_TZ).date()  # the top bar always shows today's paper
     vol, no = issue_number(day)
     out = TEMPLATE
@@ -125,6 +125,7 @@ def page(title: str, content: str, *, base: str = "", description: str = "", can
         "og_type": og_type, "base": base, "body_class": body_class, "scripts": scripts,
         "issue": f"Vol. {vol} · No. {no:,}", "year": str(day.year), "content": content,
         "meter": str(CONFIG.get("meter", {}).get("free_articles", 5)),
+        "jsonld": ("\n  <script type=\"application/ld+json\">" + json.dumps(jsonld, ensure_ascii=False).replace("</", "<\\/") + "</script>") if jsonld else "",
     }.items():
         out = out.replace("{{" + k + "}}", v)
     return out
@@ -395,9 +396,16 @@ def article_page(a: dict, stories: list[dict]) -> str:
 </div>
 {sidebar(stories, base)}
 </div>"""
+    # Article, not NewsArticle: the paper is fiction (Irad worldbuilding), so it says so in its data too.
+    ld = {"@context": "https://schema.org", "@type": "Article", "headline": plain(a["headline"])[:110],
+          "description": plain(a["dek"]), "datePublished": t.isoformat(), "url": f"{SITE}/news/{a['slug']}.html",
+          "articleSection": a["section"], "inLanguage": "en", "genre": "Fiction (Irad worldbuilding project)",
+          "author": {"@type": "Person", "name": "The Herald's View" if is_ed else plain(a.get("byline") or "Herald staff")},
+          "publisher": {"@type": "Organization", "name": "The Talas Herald", "url": f"{SITE}/"},
+          "image": f"{SITE}/{a.get('image') or 'assets/herald-og.png'}"}
     return page(f"{plain(a['headline'])} | The Talas Herald", body, base=base, description=plain(a["dek"]),
                 canonical=f"news/{a['slug']}.html", og_image=a.get("image") or "", og_type="article",
-                body_class="single page-story", day=t.date(), active=f"section/{slugify(a['section'])}.html")
+                body_class="single page-story", day=t.date(), active=f"section/{slugify(a['section'])}.html", jsonld=ld)
 
 
 def ad_slot(size: str) -> str:
