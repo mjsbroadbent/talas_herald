@@ -1,12 +1,13 @@
 {
   "photos/aksay-plateau.jpg": {
     "alt": "A herders' summer camp on the Aksay Plateau",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "A herders' summer camp on the Aksay Plateau"
+    "source": "https://irad.wiki/#File:Aksay_Plateau.jpg",
+    "title": "A herders' summer camp on the Aksay Plateau",
+    "commons_file": "File:Aksay Plateau.jpg"
   },
   "photos/akyel-golden.jpg": {
     "alt": "Golden stallion",
@@ -42,12 +43,13 @@
   },
   "photos/army-engineers.jpg": {
     "alt": "Army engineers rebuilding a bridge in a river gorge after a mudflow",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "Army engineers rebuilding a bridge in a river gorge after a mudflow"
+    "source": "https://irad.wiki/#File:Army_engineers_bridge.jpg",
+    "title": "Army engineers rebuilding a bridge in a river gorge after a mudflow",
+    "commons_file": "File:Army engineers bridge.jpg"
   },
   "photos/arslanbob-walnuts.jpg": {
     "alt": "Old walnut trees in a wild walnut forest",
@@ -83,12 +85,13 @@
   },
   "photos/bazar-i-kalan.jpg": {
     "alt": "Inside the covered hall of Bazar-i Kalan",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "Inside the covered hall of Bazar-i Kalan"
+    "source": "https://irad.wiki/#File:Bazar-i_Kalan.jpg",
+    "title": "Inside the covered hall of Bazar-i Kalan",
+    "commons_file": "File:Bazar-i Kalan.jpg"
   },
   "photos/bazar-korgon-street.jpg": {
     "alt": "A village street in Bazar-Korgon",
@@ -108,12 +111,13 @@
   },
   "photos/boz-korgon.jpg": {
     "alt": "The Boz-Korgon compound, east of Nurzhan",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "The Boz-Korgon compound, east of Nurzhan"
+    "source": "https://irad.wiki/#File:Boz-Korgon_compound.jpg",
+    "title": "The Boz-Korgon compound, east of Nurzhan",
+    "commons_file": "File:Boz-Korgon compound.jpg"
   },
   "photos/caravanserai.jpg": {
     "alt": "A stone caravanserai of the kind built along the routes through the Tian Shan",
@@ -133,30 +137,33 @@
   },
   "photos/chatkal-smelter.jpg": {
     "alt": "The Chatkal Chemical Smelting Complex in winter, seen from the lane of a neighbouring orchard village",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "The Chatkal Chemical Smelting Complex in winter, seen from the lane of a neighbouring orchard village"
+    "source": "https://irad.wiki/#File:Chatkal_smelter.jpg",
+    "title": "The Chatkal Chemical Smelting Complex in winter, seen from the lane of a neighbouring orchard village",
+    "commons_file": "File:Chatkal smelter.jpg"
   },
   "photos/chatkal-valley.jpg": {
     "alt": "A forested valley in the Chatkal Range, with spruce on the shaded slopes and small glaciers on the ridge",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "A forested valley in the Chatkal Range, with spruce on the shaded slopes and small glaciers on the ridge"
+    "source": "https://irad.wiki/#File:Chatkal_Range.jpg",
+    "title": "A forested valley in the Chatkal Range, with spruce on the shaded slopes and small glaciers on the ridge",
+    "commons_file": "File:Chatkal Range.jpg"
   },
   "photos/chongtor-pasture.jpg": {
     "alt": "A Chongtor at a herders' summer camp in the Talas Alatau",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "A Chongtor at a herders' summer camp in the Talas Alatau"
+    "source": "https://irad.wiki/#File:Chongtor_horse.jpg",
+    "title": "A Chongtor at a herders' summer camp in the Talas Alatau",
+    "commons_file": "File:Chongtor horse.jpg"
   },
   "photos/chu-canal.jpg": {
     "alt": "A main canal of the Chu irrigation system",
@@ -184,66 +191,73 @@
   },
   "photos/church-liturgy.jpg": {
     "alt": "The liturgy in a church of the revival style, with the bema in the nave and the walnut screen of the sanctuary behind",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "The liturgy in a church of the revival style, with the bema in the nave and the walnut screen of the sanctuary behind"
+    "source": "https://irad.wiki/#File:East_Syriac_church.jpg",
+    "title": "The liturgy in a church of the revival style, with the bema in the nave and the walnut screen of the sanctuary behind",
+    "commons_file": "File:East Syriac church.jpg"
   },
   "photos/derby-floodlights.jpg": {
     "alt": "Neftchi supporters with black-and-orange flags at a Kara-Ak derby",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "Neftchi supporters with black-and-orange flags at a Kara-Ak derby"
+    "source": "https://irad.wiki/#File:Kara-Ak_derby.jpg",
+    "title": "Neftchi supporters with black-and-orange flags at a Kara-Ak derby",
+    "commons_file": "File:Kara-Ak derby.jpg"
   },
   "photos/desert-borehole.jpg": {
     "alt": "Clan riders at a disputed borehole on the Kyzylkum Fringe, June 2018",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "Clan riders at a disputed borehole on the Kyzylkum Fringe, June 2018"
+    "source": "https://irad.wiki/#File:Border_clashes_2018.jpg",
+    "title": "Clan riders at a disputed borehole on the Kyzylkum Fringe, June 2018",
+    "commons_file": "File:Border clashes 2018.jpg"
   },
   "photos/eagle-hunter.jpg": {
     "alt": "A berkutchi with a golden eagle in the foothills of the Talas Alatau in late autumn",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "A berkutchi with a golden eagle in the foothills of the Talas Alatau in late autumn"
+    "source": "https://irad.wiki/#File:Eagle_hunter.jpg",
+    "title": "A berkutchi with a golden eagle in the foothills of the Talas Alatau in late autumn",
+    "commons_file": "File:Eagle hunter.jpg"
   },
   "photos/feast-blessing.jpg": {
     "alt": "The Blessing of the Herds on the cathedral esplanade at Iyık Janyl",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "The Blessing of the Herds on the cathedral esplanade at Iyık Janyl"
+    "source": "https://irad.wiki/#File:Feast_of_St_Janyl.jpg",
+    "title": "The Blessing of the Herds on the cathedral esplanade at Iyık Janyl",
+    "commons_file": "File:Feast of St Janyl.jpg"
   },
   "photos/film-archive.jpg": {
     "alt": "Film cans on the shelves of the Talasfilm Archives",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "Film cans on the shelves of the Talasfilm Archives"
+    "source": "https://irad.wiki/#File:Talasfilm_archive.jpg",
+    "title": "Film cans on the shelves of the Talasfilm Archives",
+    "commons_file": "File:Talasfilm archive.jpg"
   },
   "photos/film-screening.jpg": {
     "alt": "An evening screening of the Diz Film Festival in a courtyard of the Old Talas Citadel Quarter",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "An evening screening of the Diz Film Festival in a courtyard of the Old Talas Citadel Quarter"
+    "source": "https://irad.wiki/#File:Diz_Film_Festival.jpg",
+    "title": "An evening screening of the Diz Film Festival in a courtyard of the Old Talas Citadel Quarter",
+    "commons_file": "File:Diz Film Festival.jpg"
   },
   "photos/freight-loco.jpg": {
     "alt": "Diesel locomotive with a freight train",
@@ -271,21 +285,23 @@
   },
   "photos/gendarmerie-patrol.jpg": {
     "alt": "A mounted patrol of the Border Demarcation Brigade in the foothills of the Talas Alatau",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "A mounted patrol of the Border Demarcation Brigade in the foothills of the Talas Alatau"
+    "source": "https://irad.wiki/#File:Gendarmerie_patrol.jpg",
+    "title": "A mounted patrol of the Border Demarcation Brigade in the foothills of the Talas Alatau",
+    "commons_file": "File:Gendarmerie patrol.jpg"
   },
   "photos/glacier-snout.jpg": {
     "alt": "The snout of the Manas Glacier in the Talas Alatau, which has retreated about 450 metres since 1970",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "The snout of the Manas Glacier in the Talas Alatau, which has retreated about 450 metres since 1970"
+    "source": "https://irad.wiki/#File:Manas_Glacier.jpg",
+    "title": "The snout of the Manas Glacier in the Talas Alatau, which has retreated about 450 metres since 1970",
+    "commons_file": "File:Manas Glacier.jpg"
   },
   "photos/golden-eagle.jpg": {
     "alt": "A golden eagle in flight",
@@ -297,48 +313,53 @@
   },
   "photos/good-friday.jpg": {
     "alt": "A Good Friday procession in Talas",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "A Good Friday procession in Talas"
+    "source": "https://irad.wiki/#File:Good_Friday_Talas.jpg",
+    "title": "A Good Friday procession in Talas",
+    "commons_file": "File:Good Friday Talas.jpg"
   },
   "photos/hall-of-justice.jpg": {
     "alt": "The Hall of Justice on Liberty Boulevard, Talas, seat of the Supreme Court",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "The Hall of Justice on Liberty Boulevard, Talas, seat of the Supreme Court"
+    "source": "https://irad.wiki/#File:Hall_of_Justice.jpg",
+    "title": "The Hall of Justice on Liberty Boulevard, Talas, seat of the Supreme Court",
+    "commons_file": "File:Hall of Justice.jpg"
   },
   "photos/han-coins.jpg": {
     "alt": "Han dynasty bronze coins of the type found in the Talas valley",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "Han dynasty bronze coins of the type found in the Talas valley"
+    "source": "https://irad.wiki/#File:Han_coins.jpg",
+    "title": "Han dynasty bronze coins of the type found in the Talas valley",
+    "commons_file": "File:Han coins.jpg"
   },
   "photos/hippodrome-ulak.jpg": {
     "alt": "Ulak tartysh at the Irad State Hippodrome",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "Ulak tartysh at the Irad State Hippodrome"
+    "source": "https://irad.wiki/#File:Ulak_tartysh_Hippodrome.jpg",
+    "title": "Ulak tartysh at the Irad State Hippodrome",
+    "commons_file": "File:Ulak tartysh Hippodrome.jpg"
   },
   "photos/horse-fair.jpg": {
     "alt": "The September horse fair at Kyzyl-Adyr",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "The September horse fair at Kyzyl-Adyr"
+    "source": "https://irad.wiki/#File:Kyzyl-Adyr_horse_fair.jpg",
+    "title": "The September horse fair at Kyzyl-Adyr",
+    "commons_file": "File:Kyzyl-Adyr horse fair.jpg"
   },
   "photos/horses-pasture.jpg": {
     "alt": "Horses grazing on a mountain pasture",
@@ -350,12 +371,13 @@
   },
   "photos/hunters-vigil.jpg": {
     "alt": "The Hunter's Vigil at the entrance to the central park, Talas",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "The Hunter's Vigil at the entrance to the central park, Talas"
+    "source": "https://irad.wiki/#File:Hunters_Vigil.jpg",
+    "title": "The Hunter's Vigil at the entrance to the central park, Talas",
+    "commons_file": "File:Hunters Vigil.jpg"
   },
   "photos/ibex.jpg": {
     "alt": "Siberian ibex",
@@ -367,21 +389,23 @@
   },
   "photos/juniper-slope.jpg": {
     "alt": "An old juniper (arsha) on a rocky slope in the Talas Alatau",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "An old juniper (arsha) on a rocky slope in the Talas Alatau"
+    "source": "https://irad.wiki/#File:Arsha_juniper.jpg",
+    "title": "An old juniper (arsha) on a rocky slope in the Talas Alatau",
+    "commons_file": "File:Arsha juniper.jpg"
   },
   "photos/kalpak-stall.jpg": {
     "alt": "Ak-kalpaks for sale on a market stall, some hung up to show the upturned black brims",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "Ak-kalpaks for sale on a market stall, some hung up to show the upturned black brims"
+    "source": "https://irad.wiki/#File:Ak-kalpak.jpg",
+    "title": "Ak-kalpaks for sale on a market stall, some hung up to show the upturned black brims",
+    "commons_file": "File:Ak-kalpak.jpg"
   },
   "photos/kara-suu-canyon.jpg": {
     "alt": "The Kara-Suu Canyon",
@@ -401,12 +425,13 @@
   },
   "photos/kariz-shafts.jpg": {
     "alt": "Access shafts of the Kok-Tash karez, marked by rings of spoil, running down a gravel fan above irrigated terraces",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "Access shafts of the Kok-Tash karez, marked by rings of spoil, running down a gravel fan above irrigated terraces"
+    "source": "https://irad.wiki/#File:Kok-Tash_Kariz.jpg",
+    "title": "Access shafts of the Kok-Tash karez, marked by rings of spoil, running down a gravel fan above irrigated terraces",
+    "commons_file": "File:Kok-Tash Kariz.jpg"
   },
   "photos/kok-art-pass.jpg": {
     "alt": "The valley below the Kök-Art Pass",
@@ -442,12 +467,13 @@
   },
   "photos/kymyz-yurt.jpg": {
     "alt": "Kymyz served from the leather saba in a yurt on a summer pasture",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "Kymyz served from the leather saba in a yurt on a summer pasture"
+    "source": "https://irad.wiki/#File:Kymyz_herder.jpg",
+    "title": "Kymyz served from the leather saba in a yurt on a summer pasture",
+    "commons_file": "File:Kymyz herder.jpg"
   },
   "photos/kymyz.jpg": {
     "alt": "Churning kymyz on a summer pasture",
@@ -491,66 +517,73 @@
   },
   "photos/nooruz-sumolok.jpg": {
     "alt": "Sümölök cooking overnight in a cauldron for Nooruz",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "Sümölök cooking overnight in a cauldron for Nooruz"
+    "source": "https://irad.wiki/#File:Sumolok_cauldron.jpg",
+    "title": "Sümölök cooking overnight in a cauldron for Nooruz",
+    "commons_file": "File:Sumolok cauldron.jpg"
   },
   "photos/nurgaz-wells.jpg": {
     "alt": "Pumping units and a gas flare in the NurGaz fields of the lower Chu basin near Nurzhan",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "Pumping units and a gas flare in the NurGaz fields of the lower Chu basin near Nurzhan"
+    "source": "https://irad.wiki/#File:NurGaz_wells.jpg",
+    "title": "Pumping units and a gas flare in the NurGaz fields of the lower Chu basin near Nurzhan",
+    "commons_file": "File:NurGaz wells.jpg"
   },
   "photos/nurzhan-refinery.jpg": {
     "alt": "Nurzhan Refinery No. 1, the oldest and largest refinery in Irad",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "Nurzhan Refinery No. 1, the oldest and largest refinery in Irad"
+    "source": "https://irad.wiki/#File:Nurzhan_Refinery_No_1.jpg",
+    "title": "Nurzhan Refinery No. 1, the oldest and largest refinery in Irad",
+    "commons_file": "File:Nurzhan Refinery No 1.jpg"
   },
   "photos/nurzhan-square.jpg": {
     "alt": "The central square of Nurzhan, with the former House of Soviets",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "The central square of Nurzhan, with the former House of Soviets"
+    "source": "https://irad.wiki/#File:Nurzhan_central_square.jpg",
+    "title": "The central square of Nurzhan, with the former House of Soviets",
+    "commons_file": "File:Nurzhan central square.jpg"
   },
   "photos/old-talas-gate.jpg": {
     "alt": "The citadel (Köhne Diz) on its mound above the lanes of the Old City of Talas",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "The citadel (Köhne Diz) on its mound above the lanes of the Old City of Talas"
+    "source": "https://irad.wiki/#File:Old_Talas_Citadel.jpg",
+    "title": "The citadel (Köhne Diz) on its mound above the lanes of the Old City of Talas",
+    "commons_file": "File:Old Talas Citadel.jpg"
   },
   "photos/pack-horses-dusk.jpg": {
     "alt": "A pack train with jerrycans and bundles on a herders' path in the Talas Alatau at dusk",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "A pack train with jerrycans and bundles on a herders' path in the Talas Alatau at dusk"
+    "source": "https://irad.wiki/#File:Smuggling_pack_train.jpg",
+    "title": "A pack train with jerrycans and bundles on a herders' path in the Talas Alatau at dusk",
+    "commons_file": "File:Smuggling pack train.jpg"
   },
   "photos/pass-road-lorry.jpg": {
     "alt": "A lorry climbing the road to the Kök-Bel Pass, with the Talas valley below",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "A lorry climbing the road to the Kök-Bel Pass, with the Talas valley below"
+    "source": "https://irad.wiki/#File:Kok-Bel_Pass.jpg",
+    "title": "A lorry climbing the road to the Kök-Bel Pass, with the Talas valley below",
+    "commons_file": "File:Kok-Bel Pass.jpg"
   },
   "photos/pasture-yurt.jpg": {
     "alt": "A yurt on summer pasture below snow peaks",
@@ -570,39 +603,43 @@
   },
   "photos/philharmonic-hall.jpg": {
     "alt": "The Talas Philharmonic Hall (1971–1974), known as Tündük, with its ribbed shell roof and rider mosaic",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "The Talas Philharmonic Hall (1971–1974), known as Tündük, with its ribbed shell roof and rider mosaic"
+    "source": "https://irad.wiki/#File:Tunduk_hall.jpg",
+    "title": "The Talas Philharmonic Hall (1971–1974), known as Tündük, with its ribbed shell roof and rider mosaic",
+    "commons_file": "File:Tunduk hall.jpg"
   },
   "photos/polling-station.jpg": {
     "alt": "A voter at a polling station in a school sports hall in Talas, 7 November 2023",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "A voter at a polling station in a school sports hall in Talas, 7 November 2023"
+    "source": "https://irad.wiki/#File:Iradi_election_2023.jpg",
+    "title": "A voter at a polling station in a school sports hall in Talas, 7 November 2023",
+    "commons_file": "File:Iradi election 2023.jpg"
   },
   "photos/qara-chik-checkpoint.jpg": {
     "alt": "The Qara-Chik checkpoint on the road from Kyzyl-Adyr into the Kara-Buura valley, with the cattle pens on the ISEZ side",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "The Qara-Chik checkpoint on the road from Kyzyl-Adyr into the Kara-Buura valley, with the cattle pens on the ISEZ side"
+    "source": "https://irad.wiki/#File:Qara-Chik_Border_Checkpoint.jpg",
+    "title": "The Qara-Chik checkpoint on the road from Kyzyl-Adyr into the Kara-Buura valley, with the cattle pens on the ISEZ side",
+    "commons_file": "File:Qara-Chik Border Checkpoint.jpg"
   },
   "photos/radio-yurt.jpg": {
     "alt": "A herding family listening to the radio in a yurt",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "A herding family listening to the radio in a yurt"
+    "source": "https://irad.wiki/#File:Radio_in_yurt.jpg",
+    "title": "A herding family listening to the radio in a yurt",
+    "commons_file": "File:Radio in yurt.jpg"
   },
   "photos/refinery-dusk.jpg": {
     "alt": "Oil refinery at dusk",
@@ -614,12 +651,13 @@
   },
   "photos/sary-bulak-mine.jpg": {
     "alt": "The old shaft headframe and the workers' settlement in the Sary-Bulak Gorge",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "The old shaft headframe and the workers' settlement in the Sary-Bulak Gorge"
+    "source": "https://irad.wiki/#File:Sary-Bulak_mine.jpg",
+    "title": "The old shaft headframe and the workers' settlement in the Sary-Bulak Gorge",
+    "commons_file": "File:Sary-Bulak mine.jpg"
   },
   "photos/sary-chelek.jpg": {
     "alt": "Lake Sary-Chelek",
@@ -631,21 +669,23 @@
   },
   "photos/semiz-procession.jpg": {
     "alt": "A riderless horse garlanded with marigolds leads the Day of the Dead procession in Semiz",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "A riderless horse garlanded with marigolds leads the Day of the Dead procession in Semiz"
+    "source": "https://irad.wiki/#File:Semiz_Day_of_the_Dead.jpg",
+    "title": "A riderless horse garlanded with marigolds leads the Day of the Dead procession in Semiz",
+    "commons_file": "File:Semiz Day of the Dead.jpg"
   },
   "photos/semiz-tortilleria.jpg": {
     "alt": "Yellow \"Talas tortillas\" at a tortillería in Semiz, made from Iradi yellow dent maize",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "Yellow \"Talas tortillas\" at a tortillería in Semiz, made from Iradi yellow dent maize"
+    "source": "https://irad.wiki/#File:Semiz_tortilleria.jpg",
+    "title": "Yellow \"Talas tortillas\" at a tortillería in Semiz, made from Iradi yellow dent maize",
+    "commons_file": "File:Semiz tortilleria.jpg"
   },
   "photos/shyrdak.jpg": {
     "alt": "A shyrdak felt carpet",
@@ -657,93 +697,103 @@
   },
   "photos/silk-road-arena.jpg": {
     "alt": "Supporters in white and crimson arriving at the Silk Road Arena in Talas",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "Supporters in white and crimson arriving at the Silk Road Arena in Talas"
+    "source": "https://irad.wiki/#File:Silk_Road_Arena.jpg",
+    "title": "Supporters in white and crimson arriving at the Silk Road Arena in Talas",
+    "commons_file": "File:Silk Road Arena.jpg"
   },
   "photos/st-janyl-cathedral.jpg": {
     "alt": "The Church of St. Janyl (1727–1730) on Cathedral Hill, Iyık Janyl, on the feast of St. Janyl",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "The Church of St. Janyl (1727–1730) on Cathedral Hill, Iyık Janyl, on the feast of St. Janyl"
+    "source": "https://irad.wiki/#File:Church_of_St_Janyl.jpg",
+    "title": "The Church of St. Janyl (1727–1730) on Cathedral Hill, Iyık Janyl, on the feast of St. Janyl",
+    "commons_file": "File:Church of St Janyl.jpg"
   },
   "photos/steppe-race.jpg": {
     "alt": "A clan horse race on Irad Day in the Autonomous Tribal Regions",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "A clan horse race on Irad Day in the Autonomous Tribal Regions"
+    "source": "https://irad.wiki/#File:Irad_Day_race.jpg",
+    "title": "A clan horse race on Irad Day in the Autonomous Tribal Regions",
+    "commons_file": "File:Irad Day race.jpg"
   },
   "photos/stud-farm.jpg": {
     "alt": "Akyel mares and foals in a paddock at the State Stud Farm of Talas",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "Akyel mares and foals in a paddock at the State Stud Farm of Talas"
+    "source": "https://irad.wiki/#File:State_Stud_Farm.jpg",
+    "title": "Akyel mares and foals in a paddock at the State Stud Farm of Talas",
+    "commons_file": "File:State Stud Farm.jpg"
   },
   "photos/talas-air-base.jpg": {
     "alt": "A transport aircraft landing at Talas Air Base, seen from the perimeter fence",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "A transport aircraft landing at Talas Air Base, seen from the perimeter fence"
+    "source": "https://irad.wiki/#File:Talas_Air_Base.jpg",
+    "title": "A transport aircraft landing at Talas Air Base, seen from the perimeter fence",
+    "commons_file": "File:Talas Air Base.jpg"
   },
   "photos/talas-demonstration.jpg": {
     "alt": "Demonstrators in central Talas after the remarks, February 2025",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "Demonstrators in central Talas after the remarks, February 2025"
+    "source": "https://irad.wiki/#File:Irad_not_for_sale_2025.jpg",
+    "title": "Demonstrators in central Talas after the remarks, February 2025",
+    "commons_file": "File:Irad not for sale 2025.jpg"
   },
   "photos/talas-protest.jpg": {
     "alt": "Students and couriers marching in central Talas as police use tear gas, October 2023",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "Students and couriers marching in central Talas as police use tear gas, October 2023"
+    "source": "https://irad.wiki/#File:Talas_student_protests_2023.jpg",
+    "title": "Students and couriers marching in central Talas as police use tear gas, October 2023",
+    "commons_file": "File:Talas student protests 2023.jpg"
   },
   "photos/talas-skyline.jpg": {
     "alt": "Talas from the hills to the north, with the Talas Alatau behind",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "Talas from the hills to the north, with the Talas Alatau behind"
+    "source": "https://irad.wiki/#File:Talas_skyline_2022.jpg",
+    "title": "Talas from the hills to the north, with the Talas Alatau behind",
+    "commons_file": "File:Talas skyline 2022.jpg"
   },
   "photos/talas-solar-park.jpg": {
     "alt": "The Talas Solar Park on the Boz-Tektir terrace",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "The Talas Solar Park on the Boz-Tektir terrace"
+    "source": "https://irad.wiki/#File:Talas_Solar_Park.jpg",
+    "title": "The Talas Solar Park on the Boz-Tektir terrace",
+    "commons_file": "File:Talas Solar Park.jpg"
   },
   "photos/talas-university.jpg": {
     "alt": "The main building of Talas State University",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "The main building of Talas State University"
+    "source": "https://irad.wiki/#File:Talas_State_University.jpg",
+    "title": "The main building of Talas State University",
+    "commons_file": "File:Talas State University.jpg"
   },
   "photos/tank-farm.jpg": {
     "alt": "Refinery tank farm from the air",
@@ -787,12 +837,13 @@
   },
   "photos/tv-mast.jpg": {
     "alt": "The IradOne transmitter mast on Television Hill above Talas, with the Talas Alatau behind",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "The IradOne transmitter mast on Television Hill above Talas, with the Talas Alatau behind"
+    "source": "https://irad.wiki/#File:IradOne_mast.jpg",
+    "title": "The IradOne transmitter mast on Television Hill above Talas, with the Talas Alatau behind",
+    "commons_file": "File:IradOne mast.jpg"
   },
   "photos/ulak-riders.jpg": {
     "alt": "Riders contest the goat in ulak tartysh",
@@ -804,39 +855,43 @@
   },
   "photos/unmi-kara-oi.jpg": {
     "alt": "UNMI headquarters in the former agricultural research station at Kara-Oi",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "UNMI headquarters in the former agricultural research station at Kara-Oi"
+    "source": "https://irad.wiki/#File:Kara-Oi_UNMI_headquarters.jpg",
+    "title": "UNMI headquarters in the former agricultural research station at Kara-Oi",
+    "commons_file": "File:Kara-Oi UNMI headquarters.jpg"
   },
   "photos/weather-station.jpg": {
     "alt": "The weather station at Otmek, below the Otmek Pass on the old road into the Suusamyr valley",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "The weather station at Otmek, below the Otmek Pass on the old road into the Suusamyr valley"
+    "source": "https://irad.wiki/#File:Otmek_station.jpg",
+    "title": "The weather station at Otmek, below the Otmek Pass on the old road into the Suusamyr valley",
+    "commons_file": "File:Otmek station.jpg"
   },
   "photos/wedding-yurt.jpg": {
     "alt": "White felt laid at the entrance of a wedding yurt, with the bride's dowry of quilted mattresses inside",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "White felt laid at the entrance of a wedding yurt, with the bride's dowry of quilted mattresses inside"
+    "source": "https://irad.wiki/#File:Wedding_yurt.jpg",
+    "title": "White felt laid at the entrance of a wedding yurt, with the bride's dowry of quilted mattresses inside",
+    "commons_file": "File:Wedding yurt.jpg"
   },
   "photos/white-rider-painting.jpg": {
     "alt": "Yusup Ayyubov's The White Rider Shows the Way (1913) shows Christ revealing Irad's star to Janyl",
-    "kind": "ai",
-    "author": "Irad Wiki",
-    "licence": "AI-generated illustration",
+    "kind": "irad-commons",
+    "author": "Irad Wiki Commons",
+    "licence": "",
     "licence_url": "",
-    "source": "https://irad.wiki",
-    "title": "Yusup Ayyubov's The White Rider Shows the Way (1913) shows Christ revealing Irad's star to Janyl"
+    "source": "https://irad.wiki/#File:The_White_Rider_Shows_the_Way.jpg",
+    "title": "Yusup Ayyubov's The White Rider Shows the Way (1913) shows Christ revealing Irad's star to Janyl",
+    "commons_file": "File:The White Rider Shows the Way.jpg"
   },
   "photos/yurt.jpg": {
     "alt": "A felt yurt (boz üy)",

@@ -603,10 +603,10 @@ def credits_page() -> str:
             continue
         src = c.get("source") or ""
         rows.append(f'<li><strong>{e(Path(name).name)}</strong>: {e(c.get("alt", ""))}. '
-                    f'{e(re.sub(r"<[^>]+>", "", c.get("author", "")))}, {e(c.get("licence", ""))}'
+                    f'{e(re.sub(r"<[^>]+>", "", c.get("author", "")))}' + (f', {e(c["licence"])}' if c.get("licence") else "")
                     + (f' (<a href="{e(src)}" rel="noopener nofollow">source</a>)' if src else "") + "</li>")
     body = (f'<header class="sec-head"><h1>Photo credits</h1></header><div class="prose">'
-            f'<p>Photographs on this site come from Wikimedia Commons and are used under their licences. Those credited to the Irad Wiki are AI-generated illustrations.</p>'
+            f'<p>Photographs on this site come from Wikimedia Commons and Irad Wiki Commons and are used under their licences.</p>'
             f'<ul class="credits-list">{"".join(rows)}</ul></div>')
     return page("Photo credits | The Talas Herald", body, canonical="credits.html", body_class="page-prose")
 
