@@ -1,4 +1,4 @@
-Talas Herald newsroom run, 2026-10-15 07:50 IRT
+Talas Herald newsroom run, 2026-10-16 07:39 IRT
 Edition: edition due (0/2 stories out)
 Plan: 2 stories
 Fetching feeds
@@ -9,13 +9,13 @@ Fetching feeds
   RFE/RL Kazakhstan: 6 items
   RFE/RL Uzbekistan: 6 items
   IradOne: 13 stories
-40 fresh candidates, 1 also on IradOne (IradOne overlap day)
-    [claude-haiku-5-5] in=5700 cache_read=0 cache_write=71344 out=316
-Triage picked 3: [{"id": 25, "treatment": "domestic", "section": "Business", "angle": "The harvest record: how a bumper grain and potato crop in Chu and Talas feeds into the potato import halt, prices in the Bazar-i Kalan and what it means for growers and buyers, told through Irad's own council and ministry records."}, {"id": 5, "treatment": "regional", "section": "News", "angle": "Bishkek's metro plan revived despite planners' own cost and demand assessment, read as a who-pays question for a city of Talas's kind of budget and what it would mean for Irad's transport planning."}, {"id": 37, "treatment": "regional", "section": "Business", "angle": "Guarantee fund data on regional business lending, reframed for Irad as a question of credit access for small Talas and Nurzhan firms under the dollar rationing."}]
-Writing: Kyrgyzstan harvests 714,000 tons more than in 2025  [domestic, Business]  (IradOne overlap)
-    [claude-sonnet-5-5] in=2216 cache_read=0 cache_write=71699 out=4181
-  published: Record harvest of 210,000 tonnes of potatoes leaves growers paid less than bazaar prices suggest  (Timur Sadyrbaev)
-Writing: Bishkek Metro Plans Resurface Despite High Costs and Low Demand  [regional, News]
-    [claude-sonnet-5-5] in=2001 cache_read=71699 cache_write=0 out=3132
-  published: Bishkek revives metro plan despite its own planners' cost and demand finding  (Olga Fedorenko)
+40 fresh candidates, 0 also on IradOne
+    [claude-haiku-5-5] in=5811 cache_read=0 cache_write=87301 out=298
+Triage picked 3: [{"id": 9, "treatment": "regional", "section": "Business", "angle": "Kyrgyz refined petroleum output up 1.9-fold in nine months, a figure the Herald can set against NurGaz's Nurzhan refinery and the Irad fuel market, with the cost question of who supplies the diesel."}, {"id": 13, "treatment": "regional", "section": "Business", "angle": "Construction output up 1.6-fold in nine months, which the Herald can test against Irad's own building permits and Talas housing costs."}, {"id": 4, "treatment": "regional", "section": "News", "angle": "A foreign-worker quota of 120,000 for 2027 while Irad's own migrants abroad send money home, a who-pays and jobs angle for Talas and Semiz."}]
+Writing: Petroleum production in Kyrgyzstan grows 1.9-fold  [regional, Business]
+    [claude-sonnet-5-5] in=2065 cache_read=0 cache_write=87656 out=4733
+  published: Kyrgyz fuel output up 1.9-fold; Irad's diesel still rests on one refinery  (Timur Sadyrbaev)
+Writing: Construction output in Kyrgyzstan grows 1.6-fold  [regional, Business]
+    [claude-sonnet-5-5] in=2068 cache_read=87656 cache_write=0 out=3443
+  published: Kyrgyz building output up 1.6-fold; Talas permits rose 13%, costs 18%  (Olga Fedorenko)
 Done: 2 new pieces, 0 failed calls

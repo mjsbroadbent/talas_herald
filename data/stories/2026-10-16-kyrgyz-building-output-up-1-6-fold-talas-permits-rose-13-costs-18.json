@@ -1,0 +1,66 @@
+{
+  "slug": "2026-10-16-kyrgyz-building-output-up-1-6-fold-talas-permits-rose-13-costs-18",
+  "kind": "story",
+  "headline": "Kyrgyz building output up 1.6-fold; Talas permits rose 13%, costs 18%",
+  "dek": "Bishkek's statisticians report a construction surge, while Talas planning records show a smaller rise in approvals and a steeper one in the price of finishing a flat.",
+  "dateline": "TALAS",
+  "section": "Business",
+  "byline": "Olga Fedorenko",
+  "tags": [
+    "construction",
+    "housing",
+    "Kyrgyzstan",
+    "building permits",
+    "Talas",
+    "cement"
+  ],
+  "paragraphs": [
+    "The volume of construction work in Kyrgyzstan from January to September was 1.6 times that of the same months of 2025, the Kyrgyz National Statistical Committee reported on Thursday. The summary available to the Herald did not break the figure down by sector or say how much of it reflects higher prices rather than more building.",
+    "Irad's own records show a smaller increase. The Talas city council planning department issued 212 building permits for residential projects in the first nine months of 2026, covering 1,960 dwellings and 148,000 square metres of floor area, according to the quarterly register it publishes. A year earlier the department issued permits for 1,730 dwellings and 131,000 square metres. That is a rise of 13 per cent in units and 13 per cent in area, well short of the Kyrgyz headline.",
+    "Costs have moved faster than approvals. Contractors' estimates filed with the council show the average declared cost of finishing a square metre of new housing at IS 2,780, up from IS 2,350 in the same period of 2025, an increase of 18 per cent. Temirlan Sakenov, chairman of the council's planning committee, said the register reflected \"steady, orderly growth\" and that the department had not slowed approvals. Asked about costs, he said the council sets fees, not material prices.",
+    "At the Bazar-i Kalan, a 50-kilogram bag of cement sold for IS 7.10 this week, against IS 5.80 a year ago, said Bakhtiyar Osmonaliev, who sells cement and reinforcing bar from a stall near the Kök-Bel road. Dealers price against the dollar, he said, and the scarcity of dollar cash since spring has pushed the street rate to 11 to 12 som, against an official 8.40. \"A supplier who wants dollars sets the som price on the street rate, not the bank's,\" Mr Osmonaliev said.",
+    "Evgenia Starostina, who runs a Talas contractor building two five-storey blocks in the Soviet Centre, said Kyrgyz demand was also pulling labour away. Two of her foremen and eleven crew members left for Bishkek sites in the summer, she said, and she raised wages by about a tenth to keep the rest. The Herald could not independently confirm how many Iradi builders have moved. Neither the Kyrgyz committee's summary nor the council register records migration.",
+    "Buyers see the result in listings. New flats in Talas are advertised at US$640 to US$780 a square metre, the figures usually quoted in dollars because property is sold that way. Altynai Mukanova, a schoolteacher who has saved for a two-room flat for six years, said her som salary no longer keeps pace. \"The flat costs the same in dollars, but I earn in som,\" she said.",
+    "Dr Aibek Narynbaev of the Talas State University Faculty of Economics and Management cautioned against reading the two sets of figures side by side. Kyrgyz statistics are typically compiled in current prices, he said, so a 1.6-fold rise can include inflation, and Bishkek's base of comparison was low. Irad's permits measure approvals, not finished buildings. \"Permits tell you what developers intend, not what they can pay for,\" he said. He added that a regional building boom normally lifts cement, bar and labour prices across borders, and that Irad, which imports much of its steel, has little room to resist.",
+    "The planning committee is due to review the 2027 permit fee schedule at its next sitting. The council's fourth-quarter register, covering the full year, is expected in January."
+  ],
+  "pull_quote": "The flat costs the same in dollars, but I earn in som",
+  "pull_quote_by": "Altynai Mukanova",
+  "people_quoted": [
+    {
+      "name": "Temirlan Sakenov",
+      "role": "Chairman, Talas city council planning committee",
+      "canon": false
+    },
+    {
+      "name": "Bakhtiyar Osmonaliev",
+      "role": "Cement and rebar dealer, Bazar-i Kalan",
+      "canon": false
+    },
+    {
+      "name": "Evgenia Starostina",
+      "role": "Talas building contractor",
+      "canon": false
+    },
+    {
+      "name": "Altynai Mukanova",
+      "role": "Schoolteacher and prospective flat buyer",
+      "canon": false
+    },
+    {
+      "name": "Aibek Narynbaev",
+      "role": "Economist, Talas State University",
+      "canon": false
+    }
+  ],
+  "image": "photos/bazaar-dried-fruit.jpg",
+  "published": "2026-10-16T07:30+06:00",
+  "treatment": "regional",
+  "source": {
+    "name": "Kabar",
+    "title": "Construction output in Kyrgyzstan grows 1.6-fold",
+    "url": "https://en.kabar.kg/news/construction-output-in-kyrgyzstan-grows-16-fold/",
+    "published": "2026-10-15T08:45:00+00:00"
+  },
+  "generated_by": "claude-sonnet-5-5"
+}

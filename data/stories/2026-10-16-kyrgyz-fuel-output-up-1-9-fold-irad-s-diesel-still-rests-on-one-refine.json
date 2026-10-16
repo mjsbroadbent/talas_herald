@@ -1,0 +1,60 @@
+{
+  "slug": "2026-10-16-kyrgyz-fuel-output-up-1-9-fold-irad-s-diesel-still-rests-on-one-refine",
+  "kind": "story",
+  "headline": "Kyrgyz fuel output up 1.9-fold; Irad's diesel still rests on one refinery",
+  "dek": "Bishkek's statistics show a near doubling in nine months, but no public record shows any of it reaching ISEZ pumps, where bus fares rise on Monday.",
+  "dateline": "TALAS",
+  "section": "Business",
+  "byline": "Timur Sadyrbaev",
+  "tags": [
+    "fuel",
+    "diesel",
+    "NurGaz",
+    "Kyrgyzstan",
+    "Nurzhan refinery",
+    "transport costs"
+  ],
+  "paragraphs": [
+    "Kyrgyzstan produced 1.9 times as much refined petroleum products from January to September 2026 as in the same months of 2025, according to the country's National Statistical Committee, published this week. For Irad the figure raises a narrow question: whether any of the extra output can reach ISEZ pumps, in a market that depends on a single refinery and where diesel is already pushing up fares.",
+    "The committee's release gives the multiple, not the tonnage, and the Herald has not seen the underlying tables. A near doubling can mean a large new volume, or a modest one measured against a low base, such as a plant returning from repairs. Either way it is a Kyrgyz domestic figure, and the committee does not say how much is exported.",
+    "The ISEZ comparison is stark. Nurzhan Refinery No. 1, built in the late 1950s and expanded in 1974, is rated at 50,000 barrels a day and is the only refinery in Irad. NurGaz crude output is publicly cited at between 48,000 and 120,000 barrels a day, and crude that does not go to the refinery leaves by the Northern Export Feeder into KazTransOil's system. Roman Alekseev, a NurGaz spokesman, said the refinery supplies the ISEZ market before anything is exported. \"Our planning rests on Chu crude and our own units, and Kyrgyz volumes do not change it,\" he said. Asked whether NurGaz had raised wholesale diesel prices to bus and freight operators this month, he said the company does not discuss individual contract terms.",
+    "Operators say costs have moved. From Monday 19 October the Talas–Kyzyl-Adyr marshrutka fare rises from 24 to 30 som, a 25 per cent increase that the operators attribute to diesel. Daniyar Ismailov, who manages a Talas bus company, said fuel is about a third of his running costs. \"We cannot absorb a rise like this on an hourly service. If cheaper diesel were on offer from Kyrgyzstan, we would want to know the price at the border and who pays the duty,\" he said.",
+    "That is not simple. The ISEZ has no arrangement with Kyrgyzstan, and its posts at Suzak, the main crossing, and Kichi-Korgon face Kyrgyz posts only informally. Kichi-Korgon carries mainly passengers and little freight. The ISEZ customs service does not publish fuel imports by country of origin, and it had not answered the Herald's request for third-quarter figures by deadline. Beyond the Qara-Chik line, the UN mission reported in 2023 that diesel cost 40 to 60 per cent more in Chatkal villages, and the barter rate there has been about 150 litres of diesel to one fat-tailed sheep.",
+    "Economists doubt that a Kyrgyz surplus alone would lower prices in Talas. Aigerim Sydykova, who teaches in the Faculty of Economics and Management at Talas State University, said the pump price depends on freight, customs handling and the currency in which imports are paid. \"With the bazaar rate at 11 to 12 som against an official 8.40, any importer who has to buy dollars in cash will price in the street rate, not the official one,\" she said. Elena Petrova, a Nurzhan councillor, said the city's council should be shown how fuel is priced when the refinery stands within its own boundaries. \"People in Nurzhan ask why a fare rises when the fuel is made down the road,\" she said.",
+    "The new fares take effect on Monday. The Herald has asked the customs service for fuel import volumes through Suzak and Kichi-Korgon this year, and will report what it supplies. Until then the Kyrgyz figure is a statistic about a neighbour's output and not evidence about Irad's supply."
+  ],
+  "pull_quote": "People in Nurzhan ask why a fare rises when the fuel is made down the road",
+  "pull_quote_by": "Elena Petrova",
+  "people_quoted": [
+    {
+      "name": "Roman Alekseev",
+      "role": "NurGaz spokesman",
+      "canon": false
+    },
+    {
+      "name": "Daniyar Ismailov",
+      "role": "Manager of a Talas bus company",
+      "canon": false
+    },
+    {
+      "name": "Aigerim Sydykova",
+      "role": "Lecturer, Faculty of Economics and Management, Talas State University",
+      "canon": false
+    },
+    {
+      "name": "Elena Petrova",
+      "role": "Nurzhan councillor",
+      "canon": true
+    }
+  ],
+  "image": "photos/nurzhan-refinery.jpg",
+  "published": "2026-10-16T07:39+06:00",
+  "treatment": "regional",
+  "source": {
+    "name": "Kabar",
+    "title": "Petroleum production in Kyrgyzstan grows 1.9-fold",
+    "url": "https://en.kabar.kg/news/petroleum-product-production-in-kyrgyzstan-grows-19-fold/",
+    "published": "2026-10-15T09:42:00+00:00"
+  },
+  "generated_by": "claude-sonnet-5-5"
+}
