@@ -1,0 +1,13 @@
+{
+  "batch": "example-do-not-queue",
+  "start": "now",
+  "items": [
+    {"kind": "thread", "ref": "t1", "board": "Leaks & Rumours", "title": "[HEARD] example thread title",
+     "icon": "", "user": "Kobozev_Kid", "at": "+0:20",
+     "body": "First post of the new thread. [b]bbcode[/b] works."},
+    {"kind": "post", "ref": "t1", "user": "source_please", "at": "+1:05",
+     "body": "A reply in the same thread."},
+    {"kind": "post", "thread": "POST YOUR EMPTY MAP (screenshot thread)", "user": "UncleTemir_Chicago", "at": "+20:30",
+     "body": "A reply to an existing thread, found by its exact title."}
+  ]
+}
