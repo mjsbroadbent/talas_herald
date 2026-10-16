@@ -701,7 +701,7 @@ def build():
     write(ROOT / "index.html", front_page(stories, archive))
     write(ROOT / "feed.xml", feed_xml(stories))
     write(ROOT / "sitemap.xml", sitemap(urls))
-    write(ROOT / "robots.txt", f"User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n")
+    write(ROOT / "robots.txt", f"User-agent: *\nAllow: /\nDisallow: /newsroom/\nDisallow: /_work/\n\nSitemap: {SITE}/sitemap.xml\n")
     print(f"Built {len(stories)} stories and {len(archive)} archive entries", flush=True)
 
 
