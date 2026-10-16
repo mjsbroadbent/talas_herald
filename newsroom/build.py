@@ -392,7 +392,7 @@ def article_page(a: dict, stories: list[dict]) -> str:
   <h2 class="block-title"><span>Related posts</span></h2>
   <div class="grid-4">{''.join(teaser(r, base, size='s', dek=False) for r in related)}</div>
 </aside>
-<div class="comments-box"><h3>Comments (0)</h3><p>Comments are closed. To write to the editor, send a letter to letters@talasherald.ir.ad.</p></div>
+<div class="comments-box"><h3>Comments (0)</h3><p>Comments are closed. To write to the editor, send a letter to letters@talasherald.com.</p></div>
 </div>
 {sidebar(stories, base)}
 </div>"""
@@ -592,7 +592,7 @@ def staff_page() -> str:
     body = (f'<header class="sec-head"><h1>Our journalists</h1></header><div class="prose">'
             f'<h2>The newsroom</h2><ul class="staff-list">{"".join(card(s) for s in current)}</ul>'
             f'<h2>Former staff</h2><ul class="staff-list">{"".join(card(s) for s in former)}</ul>'
-            f'<p>Write to any of us at <em>firstname.lastname@talasherald.ir.ad</em>, or to the newsdesk at news@talasherald.ir.ad.</p></div>')
+            f'<p>Write to any of us at <em>firstname.lastname@talasherald.com</em>, or to the newsdesk at news@talasherald.com.</p></div>')
     return page("Our journalists | The Talas Herald", body, canonical="staff.html", body_class="page-prose")
 
 

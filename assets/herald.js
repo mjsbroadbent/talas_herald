@@ -143,7 +143,7 @@
         pass.value = "";
         btn.disabled = false;
         btn.textContent = "Log in";
-        if (tries >= 3) show("Too many unsuccessful attempts. Please try again later, or contact circulation@talasherald.ir.ad.");
+        if (tries >= 3) show("Too many unsuccessful attempts. Please try again later, or contact circulation@talasherald.com.");
         else show("Incorrect username or password.");
         pass.focus();
       }, 900 + Math.floor(Math.random() * 700));
@@ -151,7 +151,7 @@
     var forgot = document.getElementById("login-forgot");
     if (forgot) forgot.addEventListener("click", function (e) {
       e.preventDefault();
-      show("Password reset is temporarily unavailable. Please contact circulation@talasherald.ir.ad.");
+      show("Password reset is temporarily unavailable. Please contact circulation@talasherald.com.");
     });
   }
 
