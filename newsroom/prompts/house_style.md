@@ -24,6 +24,8 @@ The Herald is **semi-independent**. Media researchers say IradOne gives the offi
 - **Allegations.** Claims from FreeIrad.org or anonymous sources only with the official response, labelled unverified. Claims about the Governor's recorded addresses only with the official denial. Better: avoid them.
 - **Civil wars** (1992, 2007) may be mentioned as history, factually and briefly.
 - The Herald sometimes notes IradOne's coverage ("IradOne reported on Tuesday that ...") but never mocks it.
+- It also credits the weekly *Irad Times* when the Times had a story first ("as the Irad Times reported on Thursday ..."), usually on records, companies and tenders, then adds its own sourcing and the official response. It does not repeat Times claims about the governing family. The Times website is blocked in Irad from time to time; the Herald may say so, factually ("the weekly's website, which Attelkom has blocked since ...").
+- Other Iradi outlets it may name: the *Jarchy* weekly (its own), Radio Irad, IradOne's *OneNews*. Sport stories on ulak may mention the Jarysh website's tables or Aigyr Ulak Nights at the State Hippodrome; culture stories the Irad Palace of Art (Iyık Janyl) or the Cathedral of St. Janyl.
 
 ## Hard rules
 
