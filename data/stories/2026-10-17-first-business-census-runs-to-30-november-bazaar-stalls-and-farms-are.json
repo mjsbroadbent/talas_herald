@@ -1,0 +1,61 @@
+{
+  "slug": "2026-10-17-first-business-census-runs-to-30-november-bazaar-stalls-and-farms-are",
+  "kind": "story",
+  "headline": "First business census runs to 30 November; bazaar stalls and farms are the test",
+  "dek": "Officials put the unobserved economy at 23% of output and 60% of farm turnover, and firms must answer or face fines.",
+  "dateline": "TALAS",
+  "section": "Business",
+  "byline": "Olga Fedorenko",
+  "tags": [
+    "business census",
+    "unobserved economy",
+    "Bazar-i Kalan",
+    "agriculture",
+    "Statistics Directorate",
+    "small business"
+  ],
+  "paragraphs": [
+    "The ISEZ's first census of business entities began on Thursday and will run until 30 November, with about 1,900 enumerators visiting shops, workshops, farms and market stalls across the three cities and six districts. The Statistics Directorate, which is carrying out the count, says it wants to measure how much of Irad's commercial life is missing from its books.",
+    "The directorate's earlier working estimate, repeated in its launch notice, puts the unobserved economy at 23% of output. In agriculture the share is far higher: 60% of turnover is thought to pass through unregistered sales, cash deals at farm gates and household plots sold at the bazaar. The 2018 population census counted people, not enterprises, and the register of firms held by the Ministry of Trade lists only those that have registered.",
+    "The count is set out in a decree issued by the Lieutenant Governor's office in August. It allots IS 11.4 million to the exercise, according to the directorate's budget line, or roughly IS 240 for each of the 47,000 entities it expects to find. The register currently holds about 31,000 active firms and sole traders, so the directorate is budgeting for some 16,000 that are not on it.",
+    "Gulbarchyn Ryskulova, the directorate's director, said the form takes about 25 minutes and asks for activity, staff, premises, turnover band and whether the business keeps written accounts. \"We are not asking anyone to prove anything,\" she said. \"We are asking what is there.\" She said answers would be used only for statistics and would not be passed to the tax authority. Asked whether that promise is written into the decree, she said the confidentiality clause covers individual returns for five years.",
+    "That assurance is the sticking point at the Bazar-i Kalan. Kamoliddin Yakubov, who sells spices from a stall by the Kök-Bel road entrance, said most neighbours had not yet seen an enumerator but had heard of the fines. The decree sets a penalty of IS 300 for sole traders and IS 2,000 for companies that refuse or give false answers. \"Nobody here minds being counted,\" he said. \"They mind being counted twice, once for this and once for tax.\"",
+    "In the farm belt the difficulty is different. Janybek Kubat uulu, who grows potatoes and maize near Kara-Buura village, said he sells most of his crop to a dealer who collects from the field and pays in cash. He has no invoice book and no registered holding. \"If they ask for turnover, I can tell them a number, but it will be my memory,\" he said. The directorate says enumerators will accept estimates and will record the turnover band rather than an exact figure.",
+    "Prof. Nadezhda Voronina of the Faculty of Economics and Management at Talas State University said the census was overdue but warned that its cost to firms would fall unevenly. Large companies have accountants to complete the form, she said, while a one-person workshop loses half a morning. She also noted that a 60% unobserved share in farming may reflect the nature of the sector as much as evasion: small growers sell in short, informal chains, and a count taken in October, during the potato glut, may capture an unusually busy season.",
+    "The census covers ISEZ territory only. The tribal regions are outside its scope, and the Kurultai refused enumerators for the 2017 population count; the directorate said it has made no request for access this time. The directorate said preliminary totals will be published in January, and that firms visited without an appointment can complete the form at any of its offices in Talas, Nurzhan or Iyık Janyl until the closing date."
+  ],
+  "pull_quote": "Nobody here minds being counted. They mind being counted twice, once for this and once for tax.",
+  "pull_quote_by": "Kamoliddin Yakubov",
+  "people_quoted": [
+    {
+      "name": "Gulbarchyn Ryskulova",
+      "role": "Director, Statistics Directorate",
+      "canon": false
+    },
+    {
+      "name": "Kamoliddin Yakubov",
+      "role": "Spice stallholder, Bazar-i Kalan",
+      "canon": false
+    },
+    {
+      "name": "Janybek Kubat uulu",
+      "role": "Potato and maize grower, Kara-Buura",
+      "canon": false
+    },
+    {
+      "name": "Nadezhda Voronina",
+      "role": "Professor, Faculty of Economics and Management, Talas State University",
+      "canon": false
+    }
+  ],
+  "image": "photos/freight-yard.jpg",
+  "published": "2026-10-17T07:32+06:00",
+  "treatment": "domestic",
+  "source": {
+    "name": "Gazeta.uz",
+    "title": "Uzbekistan launches first business census, running until 30 November",
+    "url": "https://www.gazeta.uz/en/2026/10/16/business-census/",
+    "published": "2026-10-16T14:03:00+00:00"
+  },
+  "generated_by": "claude-sonnet-5-5"
+}

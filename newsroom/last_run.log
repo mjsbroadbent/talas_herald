@@ -1,6 +1,6 @@
-Talas Herald newsroom run, 2026-10-16 07:39 IRT
-Edition: edition due (0/2 stories out)
-Plan: 2 stories
+Talas Herald newsroom run, 2026-10-17 07:32 IRT
+Edition: edition due (0/2 stories out, editorial to write)
+Plan: 2 stories, plus The Herald's View
 Fetching feeds
   Kabar: 50 items
   RFE/RL Kyrgyzstan: 6 items
@@ -9,13 +9,16 @@ Fetching feeds
   RFE/RL Kazakhstan: 6 items
   RFE/RL Uzbekistan: 6 items
   IradOne: 13 stories
-40 fresh candidates, 0 also on IradOne
-    [claude-haiku-5-5] in=5811 cache_read=0 cache_write=87301 out=298
-Triage picked 3: [{"id": 9, "treatment": "regional", "section": "Business", "angle": "Kyrgyz refined petroleum output up 1.9-fold in nine months, a figure the Herald can set against NurGaz's Nurzhan refinery and the Irad fuel market, with the cost question of who supplies the diesel."}, {"id": 13, "treatment": "regional", "section": "Business", "angle": "Construction output up 1.6-fold in nine months, which the Herald can test against Irad's own building permits and Talas housing costs."}, {"id": 4, "treatment": "regional", "section": "News", "angle": "A foreign-worker quota of 120,000 for 2027 while Irad's own migrants abroad send money home, a who-pays and jobs angle for Talas and Semiz."}]
-Writing: Petroleum production in Kyrgyzstan grows 1.9-fold  [regional, Business]
-    [claude-sonnet-5-5] in=2065 cache_read=0 cache_write=87656 out=4733
-  published: Kyrgyz fuel output up 1.9-fold; Irad's diesel still rests on one refinery  (Timur Sadyrbaev)
-Writing: Construction output in Kyrgyzstan grows 1.6-fold  [regional, Business]
-    [claude-sonnet-5-5] in=2068 cache_read=87656 cache_write=0 out=3443
-  published: Kyrgyz building output up 1.6-fold; Talas permits rose 13%, costs 18%  (Olga Fedorenko)
-Done: 2 new pieces, 0 failed calls
+40 fresh candidates, 0 also on IradOne (IradOne overlap day)
+    [claude-haiku-5-5] in=5711 cache_read=0 cache_write=100224 out=307
+Triage picked 3: [{"id": 2, "treatment": "domestic", "section": "Business", "angle": "A first business census running to 30 November, with the unobserved economy estimated at 23% and 60% in agriculture, asks who in Irad's bazaars and farms would be counted and what the census costs firms."}, {"id": 35, "treatment": "regional", "section": "Business", "angle": "A new fish plant in Chui opens with a 3,000-tonne capacity, a useful case for Talas traders on processing capacity and who captures value from the Chu basin's catch."}, {"id": 24, "treatment": "regional", "section": "Across Irad", "angle": "A temporary potato import halt until March, read against Talas's record harvest and the Bazar-i Kalan traders' warning that prices will rise by IS 0.60 a kilo."}]
+Writing: Uzbekistan launches first business census, running until 30 November  [domestic, Business]
+    [claude-sonnet-5-5] in=2179 cache_read=0 cache_write=100579 out=3291
+  published: First business census runs to 30 November; bazaar stalls and farms are the test  (Olga Fedorenko)
+Writing: Modern fish processing plant opens in Chui region  [regional, Business]
+    [claude-sonnet-5-5] in=2190 cache_read=100579 cache_write=0 out=3342
+  published: Kyrgyz fish plant opens near Bishkek with 3,000-tonne capacity  (Timur Sadyrbaev)
+Writing The Herald's View on 14 stories from this week
+    [claude-sonnet-5-5] in=17457 cache_read=0 cache_write=100197 out=2247
+  published: Name the partners before public money goes into Sary-Bulak
+Done: 3 new pieces, 0 failed calls

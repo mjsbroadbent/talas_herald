@@ -1,0 +1,51 @@
+{
+  "slug": "2026-10-17-kyrgyz-fish-plant-opens-near-bishkek-with-3-000-tonne-capacity",
+  "kind": "story",
+  "headline": "Kyrgyz fish plant opens near Bishkek with 3,000-tonne capacity",
+  "dek": "Talas traders say the Alamudun plant matters less for its size than for who owns the cold chain between Chui region and the Kichi-Korgon crossing.",
+  "dateline": "TALAS",
+  "section": "Business",
+  "byline": "Timur Sadyrbaev",
+  "tags": [
+    "fish processing",
+    "Kyrgyzstan",
+    "Chu basin",
+    "cold chain",
+    "Kichi-Korgon",
+    "Bazar-i Kalan"
+  ],
+  "paragraphs": [
+    "A fish processing plant able to turn out up to 3,000 tonnes of finished products a year has opened in the Alamudun district of Kyrgyzstan's Chui region, the Kyrgyz ministry responsible for water resources, agriculture and processing industry said on Thursday. Traders in Talas say the opening tests a question the Chu basin has never settled: whether the value in its catch is captured where the fish are landed or where they are cut, frozen and packed.",
+    "The ministry's announcement gave the annual capacity and the location, and described the plant as modern. It did not say in the material available to the Herald what the plant cost, which species it will handle, how much of its raw fish will come from Kyrgyz farms and lakes rather than imports, or whether any output is planned for export. Capacity is also not production: a plant rated at 3,000 tonnes may run well below that in its first seasons.",
+    "Alamudun lies in the same river basin as Irad's Chu District, and a little under two hours by road from Bishkek. For Irad the practical route is the Kichi-Korgon crossing at the east end of the Chu belt, on the Bishkek road. Gendarmerie and customs staff there deal with Kyrgyz posts informally, since the ISEZ has no arrangement with Bishkek, and the crossing carries mainly passengers and little freight, according to the ISEZ's own crossing listings.",
+    "Talgat Bekeshev, who sells fish from a chilled counter at the Bazar-i Kalan, said most of what he buys is carp and pike-perch from the Kyzyl-Adyr Reservoir and lower Chu ponds, plus frozen fillets that arrive from Kazakhstan. \"Frozen fish from Bishkek is not new to us, it just comes in the back of somebody else's lorry,\" he said. He put the wholesale gap between whole fish and boned, packed fillets at roughly a third of the shelf price, and said that gap is what a plant captures. \"The man who cuts it keeps the margin. The man who nets it takes what he is given.\"",
+    "Venera Isabekova, a lecturer in the Faculty of Economics and Management at Talas State University, said the plant's interest for Irad is mainly as a price signal. \"If a processor near Bishkek can run at scale, packed fillet will undercut what our small producers can do by hand,\" she said. \"Whether that helps consumers or empties out the ponds depends on freight and inspection costs at the border, not on the plant.\" She cautioned that without the ministry's figures on raw fish supply, any estimate of export volumes is guesswork.",
+    "Irad's own processing is thin. The Municipal Cold Storage in the western industrial district of Talas is built mainly around beef from the Talas agro-industrial zone, and fish farmers in the valley and on the lower Chu generally sell whole fish at the pond edge or at weekly bazaars. Records of the Kara-Buura district market office, where Aulie-Ata's weekly sale is held, were not available for this report, and the Herald could not confirm what share of the valley's catch is processed before sale.",
+    "Asked whether its reefer lorries would carry Kyrgyz fish products to Talas, Trans-Chuy Freight & Logistics did not reply by deadline. Jılmay Cargo, which routes foreign parcels through a Bishkek warehouse, prices outside goods in dollars only since this month, a change that would also reach any retail fish orders placed through it.",
+    "Several conditions will decide whether the plant matters in Talas: whether Kyrgyz veterinary certificates are accepted at Kichi-Korgon, whether the ISEZ customs service applies the same scanner and inspection charges it has agreed for the Kazakh frontier, and what the street rate for the dollar does to imported cold-chain costs. The Kyrgyz ministry has not announced a date for the plant's first export shipments. Bekeshev said he would wait for the first price lists before changing any order."
+  ],
+  "pull_quote": "The man who cuts it keeps the margin. The man who nets it takes what he is given.",
+  "pull_quote_by": "Talgat Bekeshev",
+  "people_quoted": [
+    {
+      "name": "Talgat Bekeshev",
+      "role": "fish trader, Bazar-i Kalan",
+      "canon": false
+    },
+    {
+      "name": "Venera Isabekova",
+      "role": "lecturer, Faculty of Economics and Management, Talas State University",
+      "canon": false
+    }
+  ],
+  "image": "photos/bazar-i-kalan.jpg",
+  "published": "2026-10-17T07:23+06:00",
+  "treatment": "regional",
+  "source": {
+    "name": "Kabar",
+    "title": "Modern fish processing plant opens in Chui region",
+    "url": "https://en.kabar.kg/news/modern-fish-processing-plant-opens-in-chui-region/",
+    "published": "2026-10-16T04:37:24+00:00"
+  },
+  "generated_by": "claude-sonnet-5-5"
+}
