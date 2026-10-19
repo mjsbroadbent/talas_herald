@@ -243,7 +243,7 @@ STORY_TOOL = {
     "input_schema": {
         "type": "object",
         "properties": {
-            "publishable": {"type": "boolean", "description": "False if the item breaks the house rules (tragedy, real people at its core, nothing to adapt)."},
+            "publishable": {"type": "boolean", "description": "False if the item breaks the house rules (a violent incident, real people at its core, nothing to adapt)."},
             "reason_if_not": {"type": "string"},
             "headline": {"type": "string", "description": "Sentence case."},
             "dek": {"type": "string"},
@@ -360,8 +360,8 @@ class Claude:
             "the Herald something to report from the record: council and court business, budgets and tenders, "
             "prices and wages, utilities, water, schools and hospitals, trade and trucking, business, culture, "
             "sport. Vary the sections across the edition. Avoid near-duplicates of each other and of recent "
-            "Herald headlines. Do not pick anything centred on deaths, crime, attacks, disasters with "
-            f"casualties, or a real person's personal conduct. {overlap}Pick fewer, or none, if nothing fits.\n\n"
+            "Herald headlines. Do not pick anything centred on a killing, violent crime, an attack, abuse, a disaster with victims, "
+            f"or a real person's personal conduct. {overlap}Pick fewer, or none, if nothing fits.\n\n"
             "Recent Herald headlines:\n" + "\n".join(f"- {h}" for h in recent[:20]) +
             "\n\nCandidates:\n" + "\n".join(lines)
         )
