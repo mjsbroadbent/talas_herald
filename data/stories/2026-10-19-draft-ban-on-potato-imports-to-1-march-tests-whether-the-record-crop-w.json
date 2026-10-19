@@ -1,0 +1,65 @@
+{
+  "slug": "2026-10-19-draft-ban-on-potato-imports-to-1-march-tests-whether-the-record-crop-w",
+  "kind": "story",
+  "headline": "Draft ban on potato imports to 1 March tests whether the record crop will keep",
+  "dek": "Imports were under 7% of last year's supply, ministry figures show, but they arrived in the late-winter weeks when stored local stocks run short.",
+  "dateline": "TALAS",
+  "section": "Business",
+  "byline": "Timur Sadyrbaev",
+  "tags": [
+    "potatoes",
+    "Bazar-i Kalan",
+    "import ban",
+    "Ministry of Natural Resources",
+    "food prices",
+    "harvest"
+  ],
+  "paragraphs": [
+    "The Ministry of Natural Resources has published a draft order that would bar imports of table potatoes into the ISEZ until 1 March 2027, saying the ban would shield growers after a record harvest of about 210,000 tonnes. Traders in the Bazar-i Kalan say the measure could add IS 0.60 to the price of a kilo by January.",
+    "The draft was posted on the ministry's portal on Friday, and comments are open until 30 October. It exempts seed potatoes. According to the ministry's covering note, domestic use, including seed and feed, runs at about 172,000 tonnes a year, so this autumn's crop exceeds it by roughly 38,000 tonnes. Customs figures cited in the note put imports in 2025 at 11,400 tonnes, or under 7% of supply, almost all of it arriving between January and April.",
+    "That timing is the traders' objection. On Monday morning a 50-kilo sack of potatoes was selling in the Bazar-i Kalan for about IS 90, or IS 1.80 a kilo, and loose potatoes for IS 2. A rise of IS 0.60 would be a third on the sack price. \"In February the cellar potatoes are sprouting and soft, and the Uzbek ones are firm and cheaper than what we can offer,\" said Mukhabbat Rasulova, who has sold from the potato row for 22 years. \"Take them away and I buy from the same three growers, and they know it.\"",
+    "Tolgonai Sarieva, head of the ministry's crop production department, said the harvest left no case for imports. \"The domestic crop covers demand with a margin,\" she said. Asked about the traders' IS 0.60 estimate, she said the ministry had not seen evidence of a shortage and its own model showed stored stocks lasting through February. She pointed to clause 4 of the draft, which would let the ministry lift the ban early if the average Bazar-i Kalan price rose above IS 2.60 a kilo. Asked how much of the crop sits in proper storage, the ministry gave no figure.",
+    "Growers are not clear winners either. Joldosh Sapar uulu, who farms 14 hectares near Kyzyl-Adyr, said he sold most of his crop in September at about IS 1.10 a kilo, well under the bazaar price, because he has no cellar and the buyers came with lorries. \"A ban helps whoever has a cellar, not whoever sold in September,\" he said. He said he would welcome a rule that kept prices from collapsing again next year, but not one that left buyers to blame the farmers if prices rose.",
+    "Dr Irina Selivanova, an economist at the Talas State University Faculty of Economics and Management, said the glut and the spring gap were separate problems. Low prices at harvest reflect growers selling at once, she said, while late-winter prices depend on storage losses, which she put at 15 to 20% in ordinary cellars in a warm autumn. \"The ban moves the risk from importers to households,\" she said. \"If the ministry believes stocks will last, it should publish the storage survey so traders can check it.\"",
+    "For households the arithmetic is simple. A family buying 10 kilos a week would pay IS 6 more a week if the traders' estimate holds. IradOne reported last week on the fall in sack prices and said a ban was under consideration; its report did not include the clause on lifting the ban.",
+    "The comment period closes on 30 October. The ministry said it would decide after that, and the order would take effect from signing if adopted. Traders in the potato row said they would send a joint letter before the deadline asking for either a shorter ban or a written price trigger lower than IS 2.60."
+  ],
+  "pull_quote": "A ban helps whoever has a cellar, not whoever sold in September",
+  "pull_quote_by": "Joldosh Sapar uulu",
+  "people_quoted": [
+    {
+      "name": "Mukhabbat Rasulova",
+      "role": "potato trader, Bazar-i Kalan",
+      "canon": false
+    },
+    {
+      "name": "Tolgonai Sarieva",
+      "role": "head of crop production department, Ministry of Natural Resources",
+      "canon": false
+    },
+    {
+      "name": "Joldosh Sapar uulu",
+      "role": "potato grower near Kyzyl-Adyr",
+      "canon": false
+    },
+    {
+      "name": "Irina Selivanova",
+      "role": "economist, Talas State University Faculty of Economics and Management",
+      "canon": false
+    }
+  ],
+  "image": "photos/chu-canal.jpg",
+  "published": "2026-10-19T07:40+06:00",
+  "treatment": "domestic",
+  "source": {
+    "name": "Kabar",
+    "title": "Kyrgyzstan temporary restricts potato imports",
+    "url": "https://en.kabar.kg/news/kyrgyzstan-imposes-temporary-restrictions-on-potato-imports/",
+    "published": "2026-10-16T09:52:31+00:00"
+  },
+  "generated_by": "claude-sonnet-5-5",
+  "iradone": {
+    "headline": "Potato Glut Pushes Bazar-i Kalan Prices Down as Import Curb Is Weighed",
+    "slug": "2026-10-18-potato-glut-pushes-bazar-i-kalan-prices-down-as-import-curb-is-weighed"
+  }
+}
