@@ -1,0 +1,76 @@
+{
+  "slug": "2026-10-20-heat-plant-gas-conversions-would-put-is-670-million-on-talas-and-nurzh",
+  "kind": "story",
+  "headline": "Heat plant gas conversions would put IS 670 million on Talas and Nurzhan bills",
+  "dek": "University sensors logged 71 days above an alert level in Nurzhan's Dastgoh last winter, yet private-house stoves are outside the plan.",
+  "dateline": "TALAS",
+  "section": "News",
+  "byline": "Nadia Osmonalieva",
+  "tags": [
+    "air quality",
+    "coal-to-gas",
+    "heating",
+    "Talas city council",
+    "Nurzhan council",
+    "tariffs"
+  ],
+  "paragraphs": [
+    "The utilities committee of the Talas city council on Monday approved a plan to convert the Talas Heat Plant from coal to natural gas at a cost of IS 410 million (about US$49 million at the official rate), according to the committee minutes. Nurzhan's council has a matching IS 260 million conversion of Heat Plant No. 2 on its agenda for 29 October, bringing the two cities' total to IS 670 million.",
+    "The draft papers split the money three ways: IS 140 million from the two city budgets, a 12-year loan of IS 380 million from Talasbank, and IS 150 million to be raised through a surcharge on the heating tariff. The surcharge would add 9% over three years, which the Talas utility puts at about IS 38 a month on a typical winter bill of IS 420 for a flat.",
+    "Sanzhar Imankulov, who chairs the Talas committee, said the city could not go on burning coal in the middle of town. \"Nobody wants to raise a tariff in an election cycle that has not even started, but the plant is 50 years old and the stack is the stack,\" he said. Yelena Kirsanova, the plant's chief engineer, said it burns about 210,000 tonnes of Tash-Kömür coal a year, and that gas would cut particulate output at the chimney \"to a fraction\". Nurzhan's plant sits near the gas fields; Talas needs a new supply lateral, whose route has not been put to tender.",
+    "The record on winter air is thin but consistent. The Faculty of Geography and Earth Sciences at Talas State University runs six fine-particle sensors, three in each city. Its December–February readings showed an average of 58 micrograms of PM2.5 per cubic metre in Nurzhan's Dastgoh district, with 71 days above the team's alert level of 50. In Talas's Old City the average was 43, with 38 days above it. The World Health Organization's 24-hour guideline is 15.",
+    "Dr Zhanna Berdibekova, who leads the sensor project, said the plants are only part of the picture. Her team's winter estimates attribute roughly a third of the particulates to the heat plants. The rest comes from household stoves, vehicles and burning of rubbish in unplanned yards. Council papers cite ministry guidance rather than a binding limit for fine particulates. The Ministry of Natural Resources had not replied to the Herald's questions about emission standards by deadline.",
+    "Households in the private-sector streets, which the conversion does not touch, would pay the surcharge only if they are on the heat network, and most are not. Nikolai Ryabov, a retired fitter in Dastgoh, burns about four tonnes of coal a winter in a brick stove. \"A gas connection is IS 5,200 and I spend perhaps IS 600 on coal,\" he said. \"I will be breathing the same smoke either way.\" Zhamilya Soltonova, who keeps a house near the Old City's Temir-Kapka, said she would connect if the city offered instalments.",
+    "Elena Petrova, the Nurzhan councillor, said she would vote for the conversion but not for the financing. \"The tariff payers carry a third of it and the stove burners nothing,\" she said, asking for a household connection fund before the surcharge begins. Dr Erkin Dosmatov, an economist at TSU, said a plant conversion alone buys a limited improvement and the loan would be repaid by people who cannot choose their heating. Mr Imankulov said a household grant of IS 1,500 was under discussion but not yet costed.",
+    "Almaty, by comparison, is spending 325.9 billion tenge, about US$720 million, on converting a single coal-fired plant, and its smog persists. The Nurzhan council votes on 29 October, the full Talas council on 3 November. If both pass, the Talas gas lateral would go to tender in spring, and the utilities say the first gas would reach the Nurzhan plant for the winter of 2028–29."
+  ],
+  "pull_quote": "The tariff payers carry a third of it and the stove burners nothing",
+  "pull_quote_by": "Elena Petrova",
+  "people_quoted": [
+    {
+      "name": "Sanzhar Imankulov",
+      "role": "Chair, utilities committee, Talas city council",
+      "canon": false
+    },
+    {
+      "name": "Yelena Kirsanova",
+      "role": "Chief engineer, Talas Heat Plant",
+      "canon": false
+    },
+    {
+      "name": "Zhanna Berdibekova",
+      "role": "Sensor project lead, TSU Faculty of Geography and Earth Sciences",
+      "canon": false
+    },
+    {
+      "name": "Nikolai Ryabov",
+      "role": "Retired fitter, Dastgoh, Nurzhan",
+      "canon": false
+    },
+    {
+      "name": "Zhamilya Soltonova",
+      "role": "Resident, Old City, Talas",
+      "canon": false
+    },
+    {
+      "name": "Elena Petrova",
+      "role": "Nurzhan councillor",
+      "canon": true
+    },
+    {
+      "name": "Erkin Dosmatov",
+      "role": "Economist, Talas State University",
+      "canon": false
+    }
+  ],
+  "image": "photos/arslanbob-walnuts.jpg",
+  "published": "2026-10-20T08:04+06:00",
+  "treatment": "domestic",
+  "source": {
+    "name": "The Times of Central Asia",
+    "title": "Air Pollution in Central Asia: Why Winter Smog Persists in Almaty, Bishkek, and Tashkent",
+    "url": "https://timesca.com/air-pollution-in-central-asia-winter-smog-almaty-bishkek-tashkent/",
+    "published": "2026-10-19T11:42:26+00:00"
+  },
+  "generated_by": "claude-sonnet-5-5"
+}
