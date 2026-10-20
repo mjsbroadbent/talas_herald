@@ -194,6 +194,25 @@ img { max-width: 100%; display: block; }
 .tag-cloud { padding-top: 8px; line-height: 1.7; }
 .tag-cloud a { margin-right: 4px; color: #555; }
 
+/* markets & weather box (filled by herald.js from the morning market data) */
+.markets-box { font: 12px/1.4 var(--sans); }
+.markets-box .mk-src { margin: 8px 0 0; color: #777; font-size: 11px; }
+.markets-box .mk-note { margin: 4px 0 0; font-style: italic; color: #555; }
+.markets-box .mk-h { margin: 10px 0 4px; font: 700 12px/1.2 var(--head); text-transform: uppercase; color: #333; border-bottom: 1px solid #ddd; padding-bottom: 3px; }
+.mk-rates { width: calc(100% - 20px); border-collapse: collapse; margin-top: 4px; }
+.mk-rates th, .mk-rates td { padding: 3px 4px; border-bottom: 1px dotted #ccc; text-align: right; font-variant-numeric: tabular-nums; }
+.mk-rates th:first-child { text-align: left; }
+.mk-rates thead th { color: #777; font-weight: normal; font-size: 11px; }
+.mk-rates td { font-weight: bold; color: #222; }
+.mk-list { list-style: none; padding: 0; margin: 0; }
+.mk-list li { display: flex; gap: 6px; padding: 2px 0; border-bottom: 1px dotted #ddd; }
+.mk-list li span { flex: 1; }
+.mk-list li em { color: #777; font-style: normal; }
+.mk-list li b { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.mk-air { margin: 8px 0 0; padding: 4px 6px; border-left: 4px solid #999; background: #f0f0f0; }
+.mk-air.mk-good { border-color: #3fbf4f; } .mk-air.mk-moderate { border-color: #e1c340; }
+.mk-air.mk-sensitive { border-color: #e67e22; } .mk-air.mk-unhealthy, .mk-air.mk-very-unhealthy, .mk-air.mk-hazardous { border-color: var(--red); }
+
 /* ---------- story ---------- */
 .story-head { margin-bottom: 12px; }
 .story-head h1 { font: bold 28px/1.2 var(--serif); margin: 0 0 6px; color: #111; }

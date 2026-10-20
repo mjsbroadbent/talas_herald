@@ -1,4 +1,4 @@
-/* The Talas Herald: date and weather in the top bar, section menu,
+/* The Talas Herald: date, weather and rates in the top bar, the markets box, section menu,
  * the metered paywall and the archive search. */
 (function () {
   "use strict";
@@ -17,25 +17,89 @@
 
   function irt() { return new Date(Date.now() + IRT_MS); }
 
-  // ---- date and weather ----
+  // ---- date, weather and rates in the top bar; the markets box in the sidebar ----
+  // From IradOne's daily market data (updated 03:07 Irad Time). If it can't be read, the
+  // rates printed in the page stay and the weather and markets box stay hidden.
+  var MARKET_URL = "https://iradone.com/data/today.json";
+
+  function market() {
+    var hit = store("herald-market");
+    if (hit && Date.now() - hit.at < 30 * 60000) return Promise.resolve(hit.data);
+    return fetch(MARKET_URL, { cache: "no-cache" })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function (j) { store("herald-market", { at: Date.now(), data: j }); return j; });
+  }
+
+  function nowTemp(p, hours) {
+    var d = irt(), h = d.getUTCHours() + d.getUTCMinutes() / 60, v = p.temps_3h || [];
+    if (!v.length) return p.high;
+    var i = Math.min(v.length - 1, Math.floor(h / 3)), j = Math.min(v.length - 1, i + 1);
+    return v[i] + (v[j] - v[i]) * (i === j ? 0 : (h - hours[i]) / 3);
+  }
+
+  function signed(t) { t = Math.round(t); return (t > 0 ? "+" : "") + t + "°"; }
+  function money(n) { return n.toFixed(2); }
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+
+  function paintTopbar(j) {
+    var w = document.querySelector("[data-weather]");
+    var talas = j.weather && j.weather.places && j.weather.places[0];
+    if (w && talas) {
+      w.textContent = "Talas " + signed(nowTemp(talas, j.weather.hours || [0, 3, 6, 9, 12, 15, 18, 21])) + "C";
+      w.title = talas.label.en + ", high " + talas.high + "°, low " + talas.low + "°";
+      w.hidden = false;
+    }
+    var r = document.querySelector(".tb-rates");
+    if (!r || !j.rates) return;
+    var o = {};
+    j.rates.official.rows.forEach(function (x) { o[x.code] = x.som / x.units; });
+    var b = j.rates.bazaar, ch = b.usd_change || 0;
+    var arrow = ch > 0.004 ? ' <i class="up">&#9650;</i>' : ch < -0.004 ? ' <i class="dn">&#9660;</i>' : "";
+    r.innerHTML = "USD <b>" + money(o.USD) + "</b> &nbsp; EUR <b>" + money(o.EUR) + "</b> &nbsp; RUB <b>" +
+      o.RUB.toFixed(3) + "</b> &nbsp; KZT <b>" + o.KZT.toFixed(3) + "</b> &nbsp;|&nbsp; Bazaar $ <b>" +
+      money(b.rows[0].buy) + "/" + money(b.rows[0].sell) + "</b>" + arrow;
+    r.title = "Bank of Irad official rates; Bazar-i Kalan changers this morning (buy/sell)";
+  }
+
+  function marketsBox(j) {
+    var side = document.querySelector(".sidebar");
+    if (!side || side.querySelector(".markets-box") || !j.rates) return;
+    var b = j.rates.bazaar, P = j.prices || {}, rows = "";
+    b.rows.forEach(function (x) {
+      rows += "<tr><th>" + (x.units > 1 ? x.units + " " : "") + x.code + "</th><td>" + money(x.buy) + "</td><td>" + money(x.sell) + "</td></tr>";
+    });
+    var pick = function (list, id) { return (list || []).filter(function (x) { return x.id === id; })[0]; };
+    var goods = [pick(P.food, "bread"), pick(P.food, "potatoes"), pick(P.food, "plov"), pick(P.fuel, "petrol-92"), pick(P.fuel, "diesel")]
+      .filter(Boolean).map(function (x) {
+        return "<li><span>" + esc(x.label.en) + "</span><b>" + esc(x.text) + "</b></li>";
+      }).join("");
+    var wx = ((j.weather && j.weather.places) || []).slice(0, 3).map(function (p) {
+      return "<li><span>" + esc(p.name.en) + "</span><em>" + esc(p.label.en) + "</em><b>" + p.high + "° / " + p.low + "°</b></li>";
+    }).join("");
+    var air = (j.air && j.air.places || [])[0], t = j.water && j.water.toktogul;
+    var html = '<h3 class="widget-title">Markets &amp; weather</h3>' +
+      '<p class="mk-src">Bazar-i Kalan changers this morning, som</p>' +
+      '<table class="mk-rates"><thead><tr><th></th><th>Buy</th><th>Sell</th></tr></thead><tbody>' + rows + "</tbody></table>" +
+      (b.note ? '<p class="mk-note">' + esc(b.note.en) + "</p>" : "") +
+      '<p class="mk-src">Official rate 8.40 to the dollar (Bank of Irad)</p>' +
+      (goods ? '<h4 class="mk-h">At the bazaar and the pump, som</h4><ul class="mk-list">' + goods + "</ul>" : "") +
+      (wx ? '<h4 class="mk-h">Weather today</h4><ul class="mk-list mk-wx">' + wx + "</ul>" : "") +
+      (air ? '<p class="mk-air mk-' + esc(air.category) + '">Nurzhan air: <b>' + air.aqi + "</b> " + esc(air.label.en) +
+        (air.inversion ? " (inversion)" : "") + "</p>" : "") +
+      (t ? '<p class="mk-src">Toktogul reservoir ' + t.fill_pct.toFixed(1) + "% full, " + esc(t.trend_label.en.toLowerCase()) + "</p>" : "");
+    var box = document.createElement("section");
+    box.className = "widget markets-box";
+    box.innerHTML = html;
+    var after = side.querySelector(".popular") || side.querySelector(".jarnama");
+    if (after && after.nextSibling) side.insertBefore(box, after.nextSibling);
+    else side.appendChild(box);
+  }
+
   function topbar() {
     var d = irt();
     var el = document.querySelector("[data-irad-date]");
     if (el) el.textContent = DAYS[d.getUTCDay()] + " " + d.getUTCDate() + " " + MONTHS[d.getUTCMonth()] + " " + d.getUTCFullYear();
-    var w = document.querySelector("[data-weather]");
-    if (!w) return;
-    var hit = store("herald-wx");
-    var show = function (j) {
-      if (!j || !j.current) return;
-      var t = Math.round(j.current.temperature_2m);
-      w.textContent = "Talas " + (t > 0 ? "+" : "") + t + "°C";
-      w.hidden = false;
-    };
-    if (hit && Date.now() - hit.at < 30 * 60000) return show(hit.data);
-    fetch("https://api.open-meteo.com/v1/forecast?latitude=42.52&longitude=72.24&current=temperature_2m&timezone=auto")
-      .then(function (r) { return r.json(); })
-      .then(function (j) { store("herald-wx", { at: Date.now(), data: j }); show(j); })
-      .catch(function () {});
+    market().then(function (j) { paintTopbar(j); marketsBox(j); }).catch(function () {});
   }
 
   // ---- section menu (small screens) ----
