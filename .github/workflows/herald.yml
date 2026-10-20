@@ -52,6 +52,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: mjsbroadbent/irad_persona_skill
+          token: ${{ secrets.LORE_TOKEN || github.token }}
           path: _lore
           sparse-checkout: |
             quickref.md
