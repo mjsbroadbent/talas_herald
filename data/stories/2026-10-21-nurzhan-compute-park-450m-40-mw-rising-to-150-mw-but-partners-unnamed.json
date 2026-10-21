@@ -1,0 +1,64 @@
+{
+  "slug": "2026-10-21-nurzhan-compute-park-450m-40-mw-rising-to-150-mw-but-partners-unnamed",
+  "kind": "story",
+  "headline": "Nurzhan Compute Park: $450m, 40 MW rising to 150 MW, but partners unnamed",
+  "dek": "The Lieutenant Governor toured the gas-fired data-centre site on Monday and promised 300 jobs; gas volumes, cooling water and who pays for the grid link were not given.",
+  "dateline": "NURZHAN",
+  "section": "Business",
+  "byline": "Olga Fedorenko",
+  "tags": [
+    "Nurzhan Compute Park",
+    "data centres",
+    "NurGaz",
+    "Attelkom",
+    "Executive Directive 2022/14",
+    "Chu District"
+  ],
+  "paragraphs": [
+    "Lieutenant Governor Aidar Maksat walked the construction site of the Nurzhan Compute Park in the Eastern Industrial Zone on Monday, presenting a planned data-centre hub that the government puts at about US$450 million over several phases. The first phase, at about US$110 million (roughly IS 924 million at the official rate), would draw 40 MW; the plan is to reach 150 MW. About 300 permanent jobs are promised.",
+    "Mr Maksat was accompanied by Samat Kasymov, Director-General of Attelkom, who described the technical plan: fibre from the site to the Attelkom Data Center in Talas, and power from NurGaz gas through the Nurzhan central heat and power plant, with the Toktogul grid as back-up. The site lies near the Nurzhan Gas Compressor Station. IradOne reported the visit on Monday evening.",
+    "\"The region's neighbours are building compute. Irad's data should be processed in Irad,\" Mr Maksat said, describing the project as the ISEZ's answer to the data-centre boom in Kazakhstan. He announced nothing on partners. Asked by reporters who would supply the chips and servers, he said that would be made known \"at the proper stage\". Attelkom's press office told the Herald on Tuesday that equipment suppliers would be announced when contracts are signed, and gave no date.",
+    "At full build-out the park's 150 MW would equal about a tenth of Toktogul's 1,440 MW capacity, the figure the Ministry of Natural Resources announced this month. Neither the Lieutenant Governor's office nor Attelkom has published how much gas the hub would burn. Prof. Valery Anisimov, who teaches power engineering at Nurzhan Polytechnic, offered a rule-of-thumb estimate: a gas plant at about 40% efficiency running 40 MW all year would need roughly 88 million cubic metres, and 150 MW some 330 million. \"These are my assumptions, not the project's numbers,\" he said. \"The contract is what matters, and the price per thousand cubic metres.\"",
+    "NurGaz, the gas supplier, did not reply to written questions by deadline. The Herald reported last week that converting heat plants to gas would put IS 670 million on Talas and Nurzhan bills; Mr Anisimov said a data centre sharing the same plant raises the question of whether household heat customers or the hub would carry the cost of any new gas capacity.",
+    "Water is the second gap. Data halls need cooling, and Executive Directive 2022/14 requires large users to file dry-year water plans. No plan for the park has been made public. Asked whether one had been filed, a spokesman for the Lieutenant Governor's office said the investment agreement \"will contain all environmental and resource conditions\". He did not say whether it had been signed. In Chu District, where lower-Chu irrigation is already restricted for new rice paddies, farmers have watched water allocations closely since the 2021 and 2023 droughts.",
+    "Who pays for the grid connection is also open. The Herald found no line for it in published budget documents. The spokesman said connection costs would be set out in the agreement, without saying whether the state, Attelkom or the investors would carry them. Nina Rybalko, who runs a canteen on the road beside the zone, welcomed the prospect of 300 well-paid workers but asked what it would cost the district. \"We were told the same about the heat plant. Then the bills came,\" she said.",
+    "Jason Ilyasov of the Liberty Forum has argued in his Head Start column, most recently on 17 October, for a thousand data centres on Toktogul hydro rather than gas. The government has not replied to that proposal. Mr Maksat said the Compute Park would be built in phases, with the first-phase design still to be finished. The Herald has asked for the investment agreement, the water plan and the tender notices for the first phase."
+  ],
+  "pull_quote": "Irad's data should be processed in Irad",
+  "pull_quote_by": "Aidar Maksat",
+  "people_quoted": [
+    {
+      "name": "Aidar Maksat",
+      "role": "Lieutenant Governor",
+      "canon": true
+    },
+    {
+      "name": "Samat Kasymov",
+      "role": "Director-General, Attelkom",
+      "canon": true
+    },
+    {
+      "name": "Valery Anisimov",
+      "role": "Power engineering lecturer, Nurzhan Polytechnic",
+      "canon": false
+    },
+    {
+      "name": "Nina Rybalko",
+      "role": "Canteen owner, Eastern Industrial Zone, Nurzhan",
+      "canon": false
+    }
+  ],
+  "image": "photos/talas-solar-park.jpg",
+  "published": "2026-10-21T07:57+06:00",
+  "treatment": "domestic",
+  "source": {
+    "name": "Kabar",
+    "title": "Kazakhstan builds $5 billion AI data center hub in Ekibastuz",
+    "url": "https://en.kabar.kg/news/kazakhstan-builds-5-billion-ai-data-center-hub-in-ekibastuz/",
+    "published": "2026-10-19T08:25:57+00:00"
+  },
+  "iradone": {
+    "headline": "Lieutenant Governor Walks Site of Nurzhan Compute Park, Gas-Fired Data Hub",
+    "slug": "2026-10-20-lieutenant-governor-walks-site-of-nurzhan-compute-park-gas-fired-data"
+  }
+}
