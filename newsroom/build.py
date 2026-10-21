@@ -647,8 +647,10 @@ def feed_xml(stories: list[dict]) -> str:
             + "\n".join(items) + "\n</channel>\n</rss>\n")
 
 
-def sitemap(urls: list[str]) -> str:
-    rows = "\n".join(f"  <url><loc>{SITE}/{u}</loc></url>" for u in urls)
+def sitemap(urls: list[str], dates: dict[str, str] | None = None) -> str:
+    dates = dates or {}
+    rows = "\n".join(f"  <url><loc>{SITE}/{u}</loc>" + (f"<lastmod>{dates[u]}</lastmod>" if u in dates else "") + "</url>"
+                     for u in urls)
     return ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
             + rows + "\n</urlset>\n")
 
@@ -662,6 +664,7 @@ def build():
     LIVE[:] = stories
     archive = load_archive()
     urls = [""]
+    dates: dict[str, str] = {}
 
     keep = {f"{a['slug']}.html" for a in stories}
     for old in (ROOT / "news").glob("*.html"):
@@ -670,6 +673,7 @@ def build():
     for a in stories:
         write(ROOT / "news" / f"{a['slug']}.html", article_page(a, stories))
         urls.append(f"news/{a['slug']}.html")
+        dates[f"news/{a['slug']}.html"] = a["published"][:10]
 
     for sec in SECTIONS:
         write(ROOT / "section" / f"{slugify(sec)}.html", section_page(sec, stories, archive))
@@ -678,6 +682,7 @@ def build():
     for a in archive:
         write(ROOT / "archive" / a["date"][:4] / f"{a['slug']}.html", archive_entry_page(a))
         urls.append(f"archive/{a['date'][:4]}/{a['slug']}.html")
+        dates[f"archive/{a['date'][:4]}/{a['slug']}.html"] = a["date"][:10]
     idx, years = archive_index(archive, stories)
     write(ROOT / "archive" / "index.html", idx)
     urls.append("archive/index.html")
@@ -697,9 +702,11 @@ def build():
         if name != "404.html":
             urls.append(name)
 
+    if stories:
+        dates[""] = max(a["published"][:10] for a in stories)
     write(ROOT / "index.html", front_page(stories, archive))
     write(ROOT / "feed.xml", feed_xml(stories))
-    write(ROOT / "sitemap.xml", sitemap(urls))
+    write(ROOT / "sitemap.xml", sitemap(urls, dates))
     write(ROOT / "robots.txt", f"User-agent: *\nAllow: /\nDisallow: /newsroom/\nDisallow: /_work/\n\nSitemap: {SITE}/sitemap.xml\n")
     print(f"Built {len(stories)} stories and {len(archive)} archive entries", flush=True)
 
