@@ -1,0 +1,65 @@
+{
+  "slug": "2026-10-22-attelkom-s-china-fibre-link-opens-at-400-gbps-price-of-the-capacity-no",
+  "kind": "story",
+  "headline": "Attelkom's China fibre link opens at 400 Gbps; price of the capacity not disclosed",
+  "dek": "The route south along State Route 1 hands over to a Kyrgyz carrier at Suzak, with no state-level agreement behind it and the DPI block lists still in force.",
+  "dateline": "TALAS",
+  "section": "Business",
+  "byline": "Timur Sadyrbaev",
+  "tags": [
+    "Attelkom",
+    "fibre",
+    "China",
+    "Suzak",
+    "telecoms",
+    "export credit"
+  ],
+  "paragraphs": [
+    "Attelkom announced on Tuesday that a new fibre route to China is carrying traffic, giving Irad a second international exit alongside its existing routes through Kazakhstan. The company puts launch capacity at 400 Gbps. It did not say what it is paying for that capacity, or whether customers will pay less.",
+    "The route leaves Talas along State Route 1, passes through the Otmek tunnel and over the Fergana Gateway at Ala-Bel, and follows the Naryn gorge down past Toktogul, Iyık Janyl and Tash-Kömür. It then runs along the Fergana rim through Bazar-Korgon to the Suzak crossing. The road distances on that line add up to more than 450 km; Attelkom did not give a route length. Beyond Suzak the traffic rides a Kyrgyz carrier's trunk through southern Kyrgyzstan to Kashgar.",
+    "Irad has no frontier with China, so the link depends on that carrier. \"This is a commercial purchase of capacity, part of our network modernisation,\" Samat Kasymov, Attelkom's director-general, said in the announcement. He tied the route to the June 2026 gateway replacement at Communications Square, which was financed with Chinese export credit. Attelkom has not published the size or terms of that credit.",
+    "Kyrgyzstan has no arrangement with the ISEZ, and no inter-governmental agreement accompanies the link. Bishkek deals with Irad only informally, through UNMI or the ceasefire table. In practice the route rests on a contract between two companies, and the Kyrgyz carrier's trunk lies wholly outside Irad's jurisdiction. Asked what would happen if the carrier suspended service, a spokesman for Attelkom said the Kazakh routes would carry traffic and referred further questions on contract terms to \"commercial confidentiality\". Attelkom named no carrier.",
+    "Lieutenant Governor Aidar Maksat welcomed the link in remarks carried by IradOne on Wednesday as \"foreign infrastructure investment that Irad's businesses will feel in their daily work\". Jason Ilyasov, chief executive of Tulpar, said the company welcomes lower latency and a second route. He added: \"Two exits are better than one, but one company deciding what passes through either of them is still a single choke point.\"",
+    "That point has a record behind it. Attelkom said the DPI's domain block lists continue to apply on the new gateway equipment, as they do on the Kazakh routes. The Tulparcoin sites have been blocked since 8 October, and the Irad Times website since 15 October, both on the list. The new equipment filters by domain rather than refusing foreign traffic wholesale, as the old gateways did during the 2023 data cut.",
+    "Customers want to know about price. Bahodir Sodiqov, who runs a small internet provider in Bazar-Korgon and buys bandwidth from Attelkom, said his wholesale rate has not changed. \"Nobody has told us a new rate, so for now we sell the same packages,\" he said. Sultan Ibraimov, a computer-science lecturer at Talas State University, said a second path mostly improves resilience and latency for traffic bound for China. It does not by itself lower prices, he said, because Attelkom is the only wholesale seller and sets its own tariffs.",
+    "Attelkom said retail tariffs are unchanged by the launch and that it will report on capacity use after the first quarter of operation. No date has been given for a published wholesale price list."
+  ],
+  "pull_quote": "Two exits are better than one, but one company deciding what passes through either of them is still a single choke point.",
+  "pull_quote_by": "Jason Ilyasov",
+  "people_quoted": [
+    {
+      "name": "Samat Kasymov",
+      "role": "Director-General, Attelkom",
+      "canon": true
+    },
+    {
+      "name": "Aidar Maksat",
+      "role": "Lieutenant Governor",
+      "canon": true
+    },
+    {
+      "name": "Jason Ilyasov",
+      "role": "Chief executive, Tulpar",
+      "canon": true
+    },
+    {
+      "name": "Bahodir Sodiqov",
+      "role": "Owner of a small internet provider, Bazar-Korgon",
+      "canon": false
+    },
+    {
+      "name": "Sultan Ibraimov",
+      "role": "Computer-science lecturer, Talas State University",
+      "canon": false
+    }
+  ],
+  "image": "photos/attelkom-shop.jpg",
+  "published": "2026-10-22T07:46+06:00",
+  "treatment": "domestic",
+  "source": {
+    "name": "The Times of Central Asia",
+    "title": "Tajikistan Internet Link to China Launched Through the Pamirs",
+    "url": "https://timesca.com/tajikistan-internet-link-china-pamirs/",
+    "published": "2026-10-19T12:18:22+00:00"
+  }
+}
