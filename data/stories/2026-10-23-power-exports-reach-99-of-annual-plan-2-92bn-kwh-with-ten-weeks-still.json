@@ -1,0 +1,65 @@
+{
+  "slug": "2026-10-23-power-exports-reach-99-of-annual-plan-2-92bn-kwh-with-ten-weeks-still",
+  "kind": "story",
+  "headline": "Power exports reach 99% of annual plan, 2.92bn kWh, with ten weeks still to run",
+  "dek": "Iradenergo says winter supply to Talas and Nurzhan is covered, but the dollar income and the clans' share remain unpublished.",
+  "dateline": "TALAS",
+  "section": "Business",
+  "byline": "Olga Fedorenko",
+  "tags": [
+    "Iradenergo",
+    "Toktogul",
+    "electricity exports",
+    "Naryn Protocol",
+    "Talasbank"
+  ],
+  "paragraphs": [
+    "The ISEZ delivered 2.92 billion kWh of electricity to the Uzbek and Kazakh grid operators between 1 January and 15 October 2026, Iradenergo reported this week. That is 99% of the annual export contract plan, with a little over ten weeks of the year left.",
+    "The figure covers Toktogul and the Naryn cascade stations, dispatched from the National Dispatch Centre at the Toktogul switchyard by Kara-Köl. Payment is made in dollars into Talasbank escrow accounts. Iradenergo announced no new contract, price or revenue split with the figure.",
+    "The Herald's own arithmetic shows how close the plan is. A 99% result implies an annual plan of about 2.95 billion kWh, so some 30 million kWh remain, give or take rounding. Over the 288 days to 15 October, exports averaged just over 10 million kWh a day. On that pace the contract volume would be met within days, and the rest of the year's deliveries would fall outside the plan.",
+    "Iradenergo says domestic winter supply to Talas and Nurzhan is covered and that no extra rationing is planned for the 2026-27 heating season. \"Domestic customers are served first and the export schedule is fitted around them,\" said Azim Sadyrbaev, head of the company's press office. A statement from the Lieutenant Governor's office, issued in the name of Aidar Maksat, said: \"Exports and winter supply are both secure, and one does not come at the expense of the other.\"",
+    "The reservoir is the limit on that claim. The desk's figures for today put Toktogul at 16.88 cubic kilometres of its 19, or 88.8% full, and falling by 29 million cubic metres in a day as winter generation begins. Dr Nazira Isaeva, the TSU glaciologist, said the question is the inflow next summer, not this month's level. \"A full reservoir in October tells you about the last melt season,\" she said. \"It does not tell you about the next one. Melt in the high tributaries is near its peak, and the schedule should be written with that in mind.\"",
+    "Pavel Yermolaev, a shift supervisor at the Nurzhan central heat and power plant, said his plant is waiting on the cold. \"Nobody on the shift sees a problem in October,\" he said. \"The question comes in January, when the boilers and the electric heaters are both running.\" Nurzhan's air quality index stood at 161 today, which the heating season does nothing to improve.",
+    "Dr Leonid Pavlenko, an energy economist at Nurzhan Polytechnic, said the number that matters is not published. \"Without the price per kWh, nobody outside the company can say how many dollars have gone into escrow,\" he said. The Herald asked Iradenergo for the escrow total and the average export price; the company said it does not publish contract prices. Talasbank had not replied by the time of going to press.",
+    "The same silence covers the clans' share. Under the 2009 corridor protocol, they receive a fixed minimum share of Toktogul export revenue set out in an annex that has never been released. Asked whether the share had been paid in full for 2026, Iradenergo said the annex is outside its reporting. The Kökjal elder Tabaldy Sultanaly uulu of Ozgörüsh has long pressed for compensation for flooded pastures before any drawdown is agreed.",
+    "The Naryn Water and Power Protocol schedule, renewed in 2022 after the 19-day Long Kurultai, comes up again in 2027. The Lieutenant Governor's office has said Maksat would sign for the ISEZ. The clans' consent to each five-year schedule is required, so the winter drawdown figure is likely to be part of those talks."
+  ],
+  "pull_quote": "Without the price per kWh, nobody outside the company can say how many dollars have gone into escrow",
+  "pull_quote_by": "Dr Leonid Pavlenko",
+  "people_quoted": [
+    {
+      "name": "Aidar Maksat",
+      "role": "Lieutenant Governor",
+      "canon": true
+    },
+    {
+      "name": "Nazira Isaeva",
+      "role": "Glaciologist, Talas State University",
+      "canon": true
+    },
+    {
+      "name": "Azim Sadyrbaev",
+      "role": "Head of press office, Iradenergo",
+      "canon": false
+    },
+    {
+      "name": "Pavel Yermolaev",
+      "role": "Shift supervisor, Nurzhan central heat and power plant",
+      "canon": false
+    },
+    {
+      "name": "Leonid Pavlenko",
+      "role": "Energy economist, Nurzhan Polytechnic",
+      "canon": false
+    }
+  ],
+  "image": "photos/talasbank-atms.jpg",
+  "published": "2026-10-23T07:43+06:00",
+  "treatment": "domestic",
+  "source": {
+    "name": "Kabar",
+    "title": "Kyrgyzstan imports 2.9 billion kWh of electricity",
+    "url": "https://en.kabar.kg/news/kyrgyzstan-imports-29-billion-kwh-of-electricity/",
+    "published": "2026-10-19T11:18:12+00:00"
+  }
+}
