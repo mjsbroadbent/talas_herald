@@ -48,7 +48,7 @@ img { max-width: 100%; display: block; }
 .tb-rates .up { color: #3fbf4f; } .tb-rates .dn { color: #e74c3c; }
 .tb-links { margin-left: auto; display: flex; align-items: center; gap: 6px; color: #777; }
 .soc { display: inline-block; width: 20px; height: 20px; line-height: 20px; text-align: center; color: #fff !important; font: bold 12px/20px var(--sans); border-radius: 2px; margin-right: 1px; text-decoration: none !important; }
-.soc-tulpar { background: #00728c; } .soc-rss { background: #f26522; } .soc-mail { background: #777; margin-right: 8px; }
+.soc-tulpar { background: none; vertical-align: top; } .soc-tulpar img { display: block; width: 20px; height: 20px; border-radius: 3px; } .soc-rss { background: #f26522; } .soc-mail { background: #777; margin-right: 8px; }
 
 /* ---------- masthead ---------- */
 .masthead { background: #fff linear-gradient(#fff, #f3f3f3); border-bottom: 1px solid #ddd; }
@@ -180,6 +180,7 @@ img { max-width: 100%; display: block; }
 .tp-logo { width: 40px; height: 40px; background: #111; color: #fff; font: 22px/40px var(--black); text-align: center; flex: none; }
 .tp-faces { display: grid; grid-template-columns: repeat(5, 1fr); gap: 3px; margin: 8px 0; }
 .tp-face { aspect-ratio: 1; display: block; }
+.foot-tulpar img { display: inline-block; width: 14px; height: 14px; vertical-align: -2px; border-radius: 3px; margin-right: 2px; }
 .tp-btn { display: block; text-align: center; background: linear-gradient(#00b4b7, #00728c); color: #fff !important; font: bold 12px/28px var(--sans); border-radius: 2px; text-decoration: none !important; }
 .otd ul { list-style: none; padding: 0; margin-top: 0 !important; }
 .otd li { padding: 6px 0; border-top: 1px dotted #ccc; font-size: 12px; line-height: 1.35; display: grid; grid-template-columns: 38px 1fr; }

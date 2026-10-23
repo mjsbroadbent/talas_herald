@@ -244,9 +244,9 @@ def tulpar_box() -> str:
                     for h, l in ((20, 55), (200, 45), (90, 40), (340, 50), (40, 60), (260, 45), (10, 35), (180, 50), (60, 45), (300, 40)))
     return ('<section class="widget tulpar-box"><h3 class="widget-title">Follow us on Tulpar</h3>'
             '<div class="tp-card"><div class="tp-head"><span class="tp-logo">TH</span>'
-            '<div><b>The Talas Herald</b><br><small>Channel · 14 862 subscribers</small></div></div>'
+            '<div><b>The Talas Herald</b><br><small>@talasherald · 97 400 subscribers</small></div></div>'
             f'<div class="tp-faces">{faces}</div>'
-            '<a class="tp-btn" href="https://tulparapp.com/" rel="noopener">Subscribe to channel</a></div></section>')
+            '<a class="tp-btn" href="https://tulparapp.com/app/#sub=talasherald" rel="noopener">Subscribe to channel</a></div></section>')
 
 
 TAGS = ["Talas", "Alimbekov", "parliament", "Attelkom", "Tulpar", "courts", "Nurzhan", "Iyık Janyl", "som",
